@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="join_1_style.css">
+    <link rel="stylesheet" href="rtpjoin_1_style.css">
     <style type="text/css"></style>
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
     <script type="text/javascript" src="script.js"></script>
