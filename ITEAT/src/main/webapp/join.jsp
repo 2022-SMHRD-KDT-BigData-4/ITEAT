@@ -1,357 +1,327 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>  
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
 
-    <link rel="stylesheet" href="rtpjoin_1_style.css">
-    <style type="text/css"></style>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
-    <script type="text/javascript" src="script.js"></script>
-    <script type="text/javascript"></script>
-    <style>
-    * {
-  margin: 15;
-  padding: 0;
-  box-sizing: border-box;
-  /* border: 1px solid silver; */
+<link rel="stylesheet" href="rtpjoin_1_style.css">
+<style type="text/css"></style>
+<script type="text/javascript"
+	src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript"></script>
+<style>
+* {
+	margin: 15;
+	padding: 0;
+	box-sizing: border-box;
+	/* border: 1px solid silver; */
 }
 
 body {
-  font-family: 'Noto Sans KR', sans-serif;
-  font-size: 14px;
-  line-height: 1.2rem;
-  color: #333;
-  letter-spacing: -0.02rem;
-  display: block;
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 14px;
+	line-height: 1.2rem;
+	color: #333;
+	letter-spacing: -0.02rem;
+	display: block;
 }
 
-#joinTt{
-  font-family: 'Noto Sans KR', sans-serif;
-  font-size: 30px;
-  text-align: center;
-  margin-top: 15px;
-  color:  #13547A;;
-}
-h1 {
-  font-size: 56px;
-  font-weight: 600;
-  line-height: 60px;
-}
-
-h2 {
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 51px;
-}
-
-h3 {
-  font-size: 28px;
-  font-weight: 400;
-  line-height: 3rem;
-  text-transform: uppercase;
-}
-
-h4 {
-  font-size: 21px;
-  font-weight: 500;
-  line-height: 28px;
-  text-transform: uppercase;
-  font-family: 'Sen', sans-serif;
-}
-
-h5 {
-  font-size: 32px;
-  font-weight: bold;
-  line-height: 24px;
-  text-transform: uppercase;
-  color: #545454;
-  font-family: 'Sen', sans-serif;
-}
-
-h6 {
-  font-size: 19px;
+#joinTt {
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 30px;
+	text-align: center;
+	margin-top: 15px;
+	color: #13547A;;
 }
 
 a:link {
-  color: #292929;
-  text-decoration: none;
+	color: #292929;
+	text-decoration: none;
 }
 
 a:visited {
-  color: #292929;
+	color: #292929;
 }
 
 a:hover {
-  color: #292929;
+	color: #292929;
 }
 
 a:active {
-  color: #292929;
+	color: #292929;
 }
 
 ul li {
-  list-style: none;
+	list-style: none;
 }
 
 button {
-  border: 1px solid #13547A;
-  background-color: #fff;
-  color: #13547A;
-  font-size: 16px;
-  font-weight: 500;
-  font-family: 'Noto Sans KR', sans-serif;
-  cursor: pointer;
+	border: 1px solid #13547A;
+	background-color: #fff;
+	color: #13547A;
+	font-size: 16px;
+	font-weight: 500;
+	font-family: 'Noto Sans KR', sans-serif;
+	cursor: pointer;
 }
 
 img {
-  width: 100px;
+	width: 100px;
 }
 
 input, textarea, select {
-  font-family: 'Noto Sans KR', sans-serif;
+	font-family: 'Noto Sans KR', sans-serif;
 }
 
-input[type=search], input[type=email], input[type=password], input[type=text], input[type=number]  {
-  width: 100%;
-  height: 48px;
-  padding: 0 11px 1px 15px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #333;
-  appearance: none;
-  outline: 0;
+input[type=search], input[type=email], input[type=password], input[type=text],
+	input[type=number] {
+	width: 100%;
+	height: 48px;
+	padding: 0 11px 1px 15px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #333;
+	appearance: none;
+	outline: 0;
 }
-textarea{
-  width: 100%;
-  height: 100px;
-  padding: 0 11px 1px 15px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #333;
-  appearance: none;
-  outline: 0;
+
+textarea {
+	width: 100%;
+	height: 100px;
+	padding: 0 11px 1px 15px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #333;
+	appearance: none;
+	outline: 0;
 }
-input[type=search]:focus, input[type=email]:focus, input[type=password]:focus, input[type=text]:focus, input[type=number]:focus, textarea:focus {
-  border: 1px solid black;
+
+input[type=search]:focus, input[type=email]:focus, input[type=password]:focus,
+	input[type=text]:focus, input[type=number]:focus, textarea:focus {
+	border: 1px solid black;
 }
 
 input[type=radio] {
-  appearance: none;
-  width: 24px;
-  height: 24px;
-  margin-right: 12px;
-  border: 1px solid #ddd;
-  background-color: #fff;
-  border-radius: 100%;
-  display: inline-block;
-  vertical-align: middle;
+	appearance: none;
+	width: 24px;
+	height: 24px;
+	margin-right: 12px;
+	border: 1px solid #ddd;
+	background-color: #fff;
+	border-radius: 100%;
+	display: inline-block;
+	vertical-align: middle;
 }
 
 input[type=radio]:checked.smallradio {
-  width: 24px;
-  height: 24px;
-  border: 7px solid #13547A;
+	width: 24px;
+	height: 24px;
+	border: 7px solid #13547A;
 }
 
 .headertop {
-  width: 100%;
-  height: 50px;
-  background: white;
-  border-bottom: 1px solid #ddd;
-  position: fixed;
-  top: 0;
+	width: 100%;
+	height: 50px;
+	background: white;
+	border-bottom: 1px solid #ddd;
+	position: fixed;
+	top: 0;
 }
 
 .headertop nav {
-  padding: 0 5%;
+	padding: 0 5%;
 }
 
 .headertop nav ul {
-  display: flex;
-  justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
 }
 
 .headertop nav ul a {
-  display: block;
-  width: auto;
-  height: 50px;
+	display: block;
+	width: auto;
+	height: 50px;
 }
 
 .headertop nav ul li {
-  list-style: none;
-  line-height: 50px;
-  font-size: 16px;
-  font-weight: 700;
+	list-style: none;
+	line-height: 50px;
+	font-size: 16px;
+	font-weight: 700;
 }
 
 .headertop nav ul li:nth-child(1) img {
-  width: 40px;
-  height: 50px;
+	width: 40px;
+	height: 50px;
 }
 
 .headertop nav ul li:nth-child(3) img {
-  width: 40px;
-  height: 40px;
+	width: 40px;
+	height: 40px;
 }
-
 
 .info_member {
-  padding: 50px 35% 0 35%;
+	padding: 50px 35% 0 35%;
 }
 
-.info_member>div> :nth-child(1) {
-  padding: 18px 0 7px 0;
-  font-weight: 500;
+.info_member>div>:nth-child(1) {
+	padding: 18px 0 7px 0;
+	font-weight: 500;
 }
 
-.info_member .notnull::after{
-  content: "*";
-  color: #ff0000;
+.info_member .notnull::after {
+	content: "*";
+	color: #d04444;
 }
 
-.info_member> :nth-child(8)> :nth-child(1)::after, .info_member> :nth-child(9)> :nth-child(1)::after,
-.info_member> :nth-child(10)> :nth-child(1)::after {
-  display: none;
+.info_member>:nth-child(8)>:nth-child(1)::after, .info_member>:nth-child(9)>:nth-child(1)::after,
+	.info_member>:nth-child(10)>:nth-child(1)::after {
+	display: none;
 }
 
-
-.boxSize{
-  
-  display: flex;
-}
-
-
-.dbCk {
-  width: 100px;
-  height: 48px;
-  margin-left: 10px;
-  transition: 0.8s;
-  flex-shrink: 0;
+.boxSize {
+	display: flex;
 }
 
 .dbCk {
-  width: 100px;
-  height: 48px;
-  margin-left: 10px;
-  transition: 0.8s;
-  flex-shrink: 0;
+	width: 100px;
+	height: 48px;
+	margin-left: 10px;
+	transition: 0.8s;
+	flex-shrink: 0;
 }
 
-
+.dbCk {
+	width: 100px;
+	height: 48px;
+	margin-left: 10px;
+	transition: 0.8s;
+	flex-shrink: 0;
+}
 
 #joinBtn {
-  margin-top: 20px;
-  text-align: center;
-  width: 15%;
-  height: 48px;
-  background-color: #13547A;
-  color: white;
-  font-size: 16px;
-  font-weight: 600;
-  border: 1px solid #13547A;
-  font-family: 'Noto Sans KR', sans-serif;
-
+	margin-top: 20px;
+	text-align: center;
+	width: 15%;
+	height: 48px;
+	background-color: #13547A;
+	color: white;
+	font-size: 16px;
+	font-weight: 600;
+	border: 1px solid #13547A;
+	font-family: 'Noto Sans KR', sans-serif;
 }
 
-#joinDiv{
-  text-align: center;
+#joinDiv {
+	text-align: center;
 }
-    </style>
+
+.dbCkRs {
+	color: #d04444;
+	font-size: 12px;
+}
+</style>
 </head>
 <body>
-    <body>
-      <form action="JoinCon">
+	<form action="#">
 
-        <div id="joinTt">회원가입</div>
-      
-      
-      
-        <div class="info_member">
-      
-          <div >
-            <p class="notnull">아이디</p>
-            <div class="boxSize">
-              <input type="text" name="uif_id" value="" placeholder="2~12자 이내" required>
-              <button class="dbCk" type="submit" name="button">중복확인</button>
-            </div>
-          </div>
-      
-          <div>
-            <p class="notnull">비밀번호</p>
-            <input type="password" name="uif_pw" value="" placeholder="비밀번호를 입력해주세요" required>
-          </div>
-      
-          <div>
-            <p class="notnull">비밀번호 확인</p>
-            <input type="password" name="uif_pwCk" value="" placeholder="비밀번호를 한번 더 입력해주세요" required>
-          </div>
-      
-          <div >
-            <p class="notnull">닉네임</p>
-            <div class="boxSize">
-              <input type="text" name="uif_nick" value="" placeholder="2~12자 이내" required>
-              <button class="dbCk" type="submit" name="button">중복확인</button>
-            </div>
-          </div>
-      
-          <div>
-            <p>개발 스택</p>
-            <select>
-              <option>
-              <option value="" selected>--선택--</option>
-              <option value="java">JAVA</option> 
-              <option value="pyhon">Python</option> 
-              <option value="html">HTML / CSS</option> 
-              <option value="js">JavaScript</option> 
-              <option value="git">Git</option> 
-              <option value="spring">Spring</option> 
-              <option value="rdbms">RDBMS</option> 
-              <option value="sql">SQL</option> 
-              <option value="c">C / C++</option> 
-            </option>
-            </select>
-            <textarea name="uif_stack" rows="3" cols="30"></textarea>
-          </div>
-      
-          <div>
-            <p>개인 블로그</p>
-            <div>
-              <textarea name="uif_blog" rows="3" cols="30" placeholder="예) velog.io/@nanana "></textarea>
-            </div>
-          </div>
-      
-          <div>
-            <p>교육 이력</p>
-            <div>
-              <textarea name="uif_edu" rows="3" cols="30" placeholder="예) 스마트인재개발원 - 빅데이터 분석서비스 개발자과정 수료 "></textarea>
-            </div>
-          </div>
-      
-          <div>
-            <p>기타 이력</p>
-            <div>
-              <textarea name="uif_etc" rows="10" cols="30" placeholder="예) 자바를 이용한 부루마블 게임 제작 "></textarea>
-            </div>
-          </div>
-      
+		<div id="joinTt">회원가입</div>
 
-      
-        </div >
 
-        <div id="joinDiv">
-          <button id="joinBtn" type="submit" name="button">가입하기</button>
-        </div>
-      </form>
-      </body>
+
+		<div class="info_member">
+
+			<div>
+				<p class="notnull">아이디</p>
+				<div class="boxSize">
+					<input type="text" name="id" value="" placeholder="2~12자 이내"
+						required>
+					<button class="dbCk" type="submit" name="button">중복확인</button>
+				</div>
+				<p class="dbCkRs">어쩌고 중복어쩌고</p>
+			</div>
+
+			<div>
+				<p class="notnull">비밀번호</p>
+				<input type="password" name="pw" value="" placeholder="비밀번호를 입력해주세요"
+					required>
+			</div>
+
+			<div>
+				<p class="notnull">비밀번호 확인</p>
+				<input type="password" name="pwCk" value=""
+					placeholder="비밀번호를 한번 더 입력해주세요" required>
+			</div>
+
+			<div>
+				<p class="notnull">닉네임</p>
+				<div class="boxSize">
+					<input type="text" name="nick" value="" placeholder="2~12자 이내"
+						required>
+					<button class="dbCk" type="submit" name="button">중복확인</button>
+				</div>
+				<p class="dbCkRs">저쩌고 어쩌고 중복</p>
+			</div>
+
+			<div>
+				<p>개발 스택</p>
+				<select>
+					<option value="" selected>--선택--</option>
+					<option value="java">JAVA</option>
+					<option value="pyhon">Python</option>
+					<option value="html">HTML / CSS</option>
+					<option value="js">JavaScript</option>
+					<option value="git">Git</option>
+					<option value="spring">Spring</option>
+					<option value="rdbms">RDBMS</option>
+					<option value="sql">SQL</option>
+					<option value="c">C / C++</option>
+				</select>
+				<textarea name="stack" rows="3" cols="30"></textarea>
+			</div>
+
+			<div>
+				<p>개인 블로그</p>
+				<div>
+					<textarea name="blog" rows="3" cols="30"
+						placeholder="예) velog.io/@nanana "></textarea>
+				</div>
+			</div>
+
+			<div>
+				<p>교육 이력</p>
+				<div>
+					<textarea name="edu" rows="3" cols="30"
+						placeholder="예) 스마트인재개발원 - 빅데이터 분석서비스 개발자과정 수료 "></textarea>
+				</div>
+			</div>
+
+			<div>
+				<p>기타 이력</p>
+				<div>
+					<textarea name="etc" rows="10" cols="30"
+						placeholder="예) 자바를 이용한 부루마블 게임 제작 "></textarea>
+				</div>
+			</div>
+
+
+
+		</div>
+
+		<div id="joinDiv">
+			<button id="joinBtn" type="submit" name="button">가입하기</button>
+		</div>
+	</form>
 </body>
 </html>
