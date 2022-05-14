@@ -34,12 +34,14 @@
 
 			<div>
 				<p class="notnull">비밀번호</p>
-				<input type="password" id="pw" name="uif_pw" value="" placeholder="4~12자 이내" minlength="4" maxlength="12" required>
+				<input type="password" id="uif_pw" name="uif_pw" value="" placeholder="4~12자 이내" oninput="uif_pwCheck()" minlength="4" maxlength="12" required>
+				<p id="pwCheck"></p>
 			</div>
 
 			<div>
 				<p class="notnull">비밀번호 확인</p>
-				<input type="password" name="pwCk" value="" placeholder="비밀번호를 한번 더 입력해주세요" minlength="4" maxlength="12" required>
+				<input type="password" id="uif_pwck" name="pwCk" value="" placeholder="비밀번호를 한번 더 입력해주세요" oninput="uif_pwckCheck()" minlength="4" maxlength="12" required>
+				<p id="pwckCheck"></p>
 			</div>
 
 			<div>
@@ -148,6 +150,53 @@
 						}
 					})
 				}
+				
+				function uif_pwCheck(){
+					
+					let uif_pw = $('#uif_pw').val().length;
+					
+					if(uif_pw==0){
+						$('#pwCheck').text('비밀번호를 입력하세요!')
+						$('#pwCheck').css({'color':'#d04444'});
+						$('#uif_pw').css({'border-color':'#d04444'});
+						
+					}else if(uif_pw<4){
+						$('#pwCheck').text('비밀번호를 4자리 이상 입력하세요');
+						$('#pwCheck').css({'color':'#d04444'});
+						$('#uif_pw').css({'border-color':'#d04444'});
+						
+					}else{
+						$('#pwCheck').text('');
+						$('#uif_pw').css({'border-color':'#1c7cb4'});
+					}
+				}
+				
+				function uif_pwckCheck(){
+					
+					let uif_pw = $('#uif_pw').val();
+					let uif_pwck = $('#uif_pwck').val();
+					
+					if(uif_pwck==0){
+						$('#pwckCheck').text('비밀번호를 입력하세요!')
+						$('#pwckCheck').css({'color':'#d04444'});
+						$('#uif_pwck').css({'border-color':'#d04444'});
+					}else if(uif_pwck.length<4){
+						$('#pwckCheck').text('비밀번호를 4자리 이상 입력하세요');
+						$('#pwckCheck').css({'color':'#d04444'});
+						$('#uif_pwck').css({'border-color':'#d04444'});
+						
+					}else if(uif_pw==uif_pwck){
+						$('#pwckCheck').text('비밀번호가 같습니다!');
+						$('#pwckCheck').css({'color':'#1c7cb4'});
+						$('#uif_pwck').css({'border-color':'#1c7cb4'});
+					}else{
+						$('#pwckCheck').text('비밀번호가 다릅니다!');
+						$('#pwckCheck').css({'color':'#d04444'});
+						$('#uif_pwck').css({'border-color':'#d04444'});
+					}
+				}
+				
+					
 	</script>
 </body>
 </html>
