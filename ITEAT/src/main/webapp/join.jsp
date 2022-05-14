@@ -27,26 +27,25 @@
 			<div>
 				<p class="notnull">아이디</p>
 				<div class="boxSize">
-					<input type="text" id="uif_id" name="uif_id" value="" placeholder="2~12자 이내" oninput="uif_idCheck()" minlength="6" maxlength="20" required>
+					<input type="text" id="uif_id" name="uif_id" value="" placeholder="2~12자 이내" oninput="uif_idCheck()" minlength="2" maxlength="12" required>
 				</div>
 				<p id="idCheck"></p>
 			</div>
 
 			<div>
 				<p class="notnull">비밀번호</p>
-				<input type="password" id="pw" name="uif_pw" value="" placeholder="비밀번호를 입력해주세요" required>
+				<input type="password" id="pw" name="uif_pw" value="" placeholder="4~12자 이내" minlength="4" maxlength="12" required>
 			</div>
 
 			<div>
 				<p class="notnull">비밀번호 확인</p>
-				<input type="password" name="pwCk" value=""
-					placeholder="비밀번호를 한번 더 입력해주세요">
+				<input type="password" name="pwCk" value="" placeholder="비밀번호를 한번 더 입력해주세요" minlength="4" maxlength="12" required>
 			</div>
 
 			<div>
 				<p class="notnull">닉네임</p>
 				<div class="boxSize">
-					<input type="text" id="uif_nick" name="uif_nick" value="" placeholder="2~12자 이내" oninput="uif_nickCheck()" required>
+					<input type="text" id="uif_nick" name="uif_nick" value="" placeholder="2~12자 이내" oninput="uif_nickCheck()" minlength="2" maxlength="12" required>
 				</div>
 				<p id="nickCheck"></p>
 			</div>
@@ -100,7 +99,7 @@
 			<input id="joinBtn" type="submit" value="가입하기">
 		</div>
 	</form>
-	<script>
+	<script>	
 				function uif_idCheck(){
 					
 					let uif_id = $('#uif_id').val();
@@ -113,9 +112,11 @@
 						dataType : 'text',
 						success : function(data){ 
 							if(data=='true'){
-								$('#idCheck').html('<p class="checkblue">사용할 수 있는 아이디입니다.<p>')
+								$('#idCheck').html('<p class="checkblue">사용할 수 있는 아이디입니다.<p>');
+								$('#uif_id').css({'border-color':'#1c7cb4'});
 							}else{
-								$('#idCheck').html('<p class="checkred">사용할 수 없는 아이디입니다.<p>')
+								$('#idCheck').html('<p class="checkred">입력하지 않았거나 사용할 수 없는 아이디입니다.<p>');
+								$('#uif_id').css({'border-color':'#d04444'});
 							}
 						},
 						error : function(){
@@ -135,9 +136,11 @@
 						dataType : 'text',
 						success : function(data){ 
 							if(data=='true'){
-								$('#nickCheck').html('<p class="checkblue">사용할 수 있는 닉네임입니다.<p>')
+								$('#nickCheck').html('<p class="checkblue">사용할 수 있는 닉네임입니다.<p>');
+								$('#uif_nick').css({'border-color':'#1c7cb4'});
 							}else{
-								$('#nickCheck').html('<p class="checkred">사용할 수 없는 닉네임입니다.<p>')
+								$('#nickCheck').html('<p class="checkred">입력하지 않았거나 사용할 수 없는 닉네임입니다.<p>');
+								$('#uif_nick').css({'border-color':'#d04444'});
 							}
 						},
 						error : function(){

@@ -148,9 +148,6 @@ input[type=search]:focus, input[type=email]:focus, input[type=password]:focus,
 .checkred{
 	color: #d04444;
 }
-
-input:required{
-	
-	border-color: #1c7cb4;
+#uif_id{
 	
 }

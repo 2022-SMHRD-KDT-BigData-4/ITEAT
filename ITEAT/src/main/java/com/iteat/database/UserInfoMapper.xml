@@ -9,11 +9,11 @@
 	</insert>
 	
 	<select id="idCheck" parameterType="String" resultType="String">
-		select uif_id from user_info where uif_id=#{uif_id}
+		select uif_id from user_info where uif_id=nvl(#{uif_id},1)
 	</select>
 	
 	<select id="nickCheck" parameterType="String" resultType="String">
-		select uif_nick from user_info where uif_nick=#{uif_nick}
+		select uif_nick from user_info where uif_nick=nvl(#{uif_nick},1)
 	</select>
 	
 </mapper>
