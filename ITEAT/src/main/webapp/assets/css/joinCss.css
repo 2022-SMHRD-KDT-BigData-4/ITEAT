@@ -126,11 +126,11 @@ input[type=search]:focus, input[type=email]:focus, input[type=password]:focus,
 	text-align: center;
 	width: 15%;
 	height: 48px;
-	background-color: #13547A;
+	background-color: rgb(221,221,221);
 	color: white;
 	font-size: 16px;
 	font-weight: 600;
-	border: 1px solid #13547A;
+	border: 1px solid rgb(221,221,221);
 	font-family: 'Noto Sans KR', sans-serif;
 }
 
@@ -149,7 +149,8 @@ input[type=search]:focus, input[type=email]:focus, input[type=password]:focus,
 	color: #d04444;
 }
 
-input:required:invalid{
-	border-color: red;
-	border-width: 1px;
+input:required{
+	
+	border-color: #1c7cb4;
+	
 }
