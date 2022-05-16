@@ -9,9 +9,6 @@
 <link rel="stylesheet" href="assets/css/main.css" />
 </head>
 
-<style>
-</style>
-
 <body style="text-align: center;">
 
 	<!-- Wrapper -->
