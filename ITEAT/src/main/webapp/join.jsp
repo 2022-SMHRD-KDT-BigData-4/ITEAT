@@ -61,44 +61,44 @@
 						스택 선택
 					</button>
 					<ul class="dropdown-menu" >
-						<label class="dropdown-item"><input class="form-check-input" type="checkbox" name="stack" value="JAVA" id="flexCheckChecked" >
+						<label class="dropdown-item"><input class="form-check-input" type="checkbox" name="uif_stack" value="JAVA" id="flexCheckChecked" >
 							<label class="form-check-label" for="flexCheckChecked">JAVA</label></label>
 			
-						<label class="dropdown-item"><input class="form-check-input" type="checkbox" name="stack" value="Python" id="flexCheckChecked">
+						<label class="dropdown-item"><input class="form-check-input" type="checkbox" name="uif_stack" value="Python" id="flexCheckChecked">
 							<label class="form-check-label" for="flexCheckChecked">Python</label></label>
 			
-						<label class="dropdown-item"><input class="form-check-input" type="checkbox" name="stack" value="JavaScript" id="flexCheckChecked" >
+						<label class="dropdown-item"><input class="form-check-input" type="checkbox" name="uif_stack" value="JavaScript" id="flexCheckChecked" >
 							<label class="form-check-label" for="flexCheckChecked">JavaScript</label></label>
 			
-						<label class="dropdown-item"><input class="form-check-input" type="checkbox" name="stack" value="TypeScript" id="flexCheckChecked" >
+						<label class="dropdown-item"><input class="form-check-input" type="checkbox" name="uif_stack" value="TypeScript" id="flexCheckChecked" >
 							<label class="form-check-label" for="flexCheckChecked">TypeScript</label></label>
 							
-						<label class="dropdown-item"><input class="form-check-input" type="checkbox" name="stack" value="PHP" id="flexCheckChecked" >
+						<label class="dropdown-item"><input class="form-check-input" type="checkbox" name="uif_stack" value="PHP" id="flexCheckChecked" >
 							<label class="form-check-label" for="flexCheckChecked">PHP</label></label>
 			
-						<label class="dropdown-item"><input class="form-check-input" type="checkbox" name="stack" value="C／C＃" id="flexCheckChecked">
+						<label class="dropdown-item"><input class="form-check-input" type="checkbox" name="uif_stack" value="C／C＃" id="flexCheckChecked">
 							<label class="form-check-label" for="flexCheckChecked">C ／ C＃</label></label>
 			
-						<label class="dropdown-item"><input class="form-check-input" type="checkbox" name="stack" value="HTML" id="flexCheckChecked">
+						<label class="dropdown-item"><input class="form-check-input" type="checkbox" name="uif_stack" value="HTML" id="flexCheckChecked">
 							<label class="form-check-label" for="flexCheckChecked">HTML</label></label>
 			
-						<label class="dropdown-item"><input class="form-check-input" type="checkbox" name="stack" value="CSS" id="flexCheckChecked">
+						<label class="dropdown-item"><input class="form-check-input" type="checkbox" name="uif_stack" value="CSS" id="flexCheckChecked">
 							<label class="form-check-label" for="flexCheckChecked">CSS</label></label>
 			
 							
-						<label class="dropdown-item"><input class="form-check-input" type="checkbox" name="stack" value="RDBMS" id="flexCheckChecked" >
+						<label class="dropdown-item"><input class="form-check-input" type="checkbox" name="uif_stack" value="RDBMS" id="flexCheckChecked" >
 							<label class="form-check-label" for="flexCheckChecked">RDBMS</label></label>
 			
 								
-						<label class="dropdown-item"><input class="form-check-input" type="checkbox" name="stack" value="AWS" id="flexCheckChecked" >
+						<label class="dropdown-item"><input class="form-check-input" type="checkbox" name="uif_stack" value="AWS" id="flexCheckChecked" >
 							<label class="form-check-label" for="flexCheckChecked">AWS</label></label>
 			
 									
-						<label class="dropdown-item"><input class="form-check-input" type="checkbox" name="stack" value="Spring" id="flexCheckChecked">
+						<label class="dropdown-item"><input class="form-check-input" type="checkbox" name="uif_stack" value="Spring" id="flexCheckChecked">
 							<label class="form-check-label" for="flexCheckChecked">Spring</label></label>
 			
 										
-						<label class="dropdown-item"><input class="form-check-input" type="checkbox" name="stack" value="React" id="flexCheckChecked" >
+						<label class="dropdown-item"><input class="form-check-input" type="checkbox" name="uif_stack" value="React" id="flexCheckChecked" >
 							<label class="form-check-label" for="flexCheckChecked">React</label></label>
 			
 						
@@ -313,7 +313,7 @@
 				
 				// 개발스텍 부분
 				let stackList = []
-	            $('input[name="stack"]').click(function(){
+	            $('input[name="uif_stack"]').click(function(){
 
 	                if($(this).prop('checked')){
 	                    
