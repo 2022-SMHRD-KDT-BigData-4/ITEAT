@@ -4,6 +4,7 @@ import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 
 import com.iteat.database.SqlSessionManager;
+import com.iteat.domain.UserInfo;
 
 public class UserInfoDAO {
 	SqlSessionFactory sqlSessionFactory = SqlSessionManager.getSqlSession();
@@ -63,5 +64,24 @@ public class UserInfoDAO {
 			sqlSession.close();
 		}
 		return check;
+	}
+	public UserInfo selectUif(UserInfo userinfo) {
+		SqlSession sqlSession = sqlSessionFactory.openSession();
+		UserInfo uif = null;
+		try {
+			
+			uif = (UserInfo)sqlSession.selectOne("com.iteat.domain.UserInfoDAO.selectUif",userinfo);
+			
+			if(uif!=null) {
+				sqlSession.commit();
+			}else {
+				sqlSession.rollback();
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}finally {
+			sqlSession.close();
+		}
+		return uif;
 	}
 }

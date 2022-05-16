@@ -27,27 +27,27 @@
 			<div>
 				<p class="notnull">아이디</p>
 				<div class="boxSize">
-					<input type="text" id="uif_id" name="uif_id" value="" placeholder="2~12자 이내" oninput="uif_idCheck()" minlength="2" maxlength="12" required>
+					<input type="text" id="uif_id" name="uif_id" value="" placeholder="2~12자 이내" onchange="joinCheck()" oninput="uif_idCheck()" minlength="2" maxlength="12" required>
 				</div>
 				<p id="idCheck"></p>
 			</div>
 
 			<div>
 				<p class="notnull">비밀번호</p>
-				<input type="password" id="uif_pw" name="uif_pw" value="" placeholder="4~12자 이내" oninput="uif_pwCheck()" minlength="4" maxlength="12" required>
+				<input type="password" id="uif_pw" name="uif_pw" value="" placeholder="4~12자 이내" onchange="joinCheck()" oninput="uif_pwCheck()" minlength="4" maxlength="12" required>
 				<p id="pwCheck"></p>
 			</div>
 
 			<div>
 				<p class="notnull">비밀번호 확인</p>
-				<input type="password" id="uif_pwck" name="pwCk" value="" placeholder="비밀번호를 한번 더 입력해주세요" oninput="uif_pwckCheck()" minlength="4" maxlength="12" required>
+				<input type="password" id="uif_pwck" name="pwCk" value="" placeholder="비밀번호를 한번 더 입력해주세요" onchange="joinCheck()" oninput="uif_pwckCheck()" minlength="4" maxlength="12" required>
 				<p id="pwckCheck"></p>
 			</div>
 
 			<div>
 				<p class="notnull">닉네임</p>
 				<div class="boxSize">
-					<input type="text" id="uif_nick" name="uif_nick" value="" placeholder="2~12자 이내" oninput="uif_nickCheck()" minlength="2" maxlength="12" required>
+					<input type="text" id="uif_nick" name="uif_nick" value="" placeholder="2~12자 이내" onchange="joinCheck()" oninput="uif_nickCheck()" minlength="2" maxlength="12" required>
 				</div>
 				<p id="nickCheck"></p>
 			</div>
@@ -105,7 +105,35 @@
 				function uif_idCheck(){
 					
 					let uif_id = $('#uif_id').val();
-								
+					
+					let idLength = 0;
+					let engCheck = /[a-z]/;
+					let numCheck = /[0-9]/;
+					let specialCheck = /[`~!@#$%^&*|\\\'\";:\/?]/gi;
+					
+					for(let i=0; i < uif_id.length; i++){
+						id = uif_id.charAt(i);
+						if(escape(id).length>4){
+							idLength += 2;
+						}else{
+							idLength += 1;
+						}
+					}
+					
+					if(uif_id == null || uif_id == ""){
+						$('#idCheck').html('<p class="checkred">아이디를 입력해주세요.<p>');
+						$('#uif_id').css({'border-color':'#d04444'});
+					}else if(uif_id.search(/\s/) != -1){
+						$('#idCheck').html('<p class="checkred">공백을 포함할 수 없습니다.<p>');
+						$('#uif_id').css({'border-color':'#d04444'});
+					}else if(idLength<2 || idLength>20){
+						$('#idCheck').html('<p class="checkred">영어 및 숫자 2~12자를 입력해주세요.<p>');
+						$('#uif_id').css({'border-color':'#d04444'});
+					}else if(specialCheck.test(uif_id)){
+						$('#idCheck').html('<p class="checkred">특수문자를 포함할 수 없습니다.<p>');
+						$('#uif_id').css({'border-color':'#d04444'});
+					}else{
+					
 					$.ajax({
 						data : {'uif_id':uif_id},
 						url : 'IdCheckCon',
@@ -117,7 +145,7 @@
 								$('#idCheck').html('<p class="checkblue">사용할 수 있는 아이디입니다.<p>');
 								$('#uif_id').css({'border-color':'#1c7cb4'});
 							}else{
-								$('#idCheck').html('<p class="checkred">입력하지 않았거나 사용할 수 없는 아이디입니다.<p>');
+								$('#idCheck').html('<p class="checkred">존재하는 아이디입니다.<p>');
 								$('#uif_id').css({'border-color':'#d04444'});
 							}
 						},
@@ -125,10 +153,40 @@
 							alert("통신실패!")
 						}
 					})
+					}
 				}
 				
 				function uif_nickCheck(){
+					
 					let uif_nick = $('#uif_nick').val();
+					
+					let nickLength = 0;
+					let engCheck = /[a-z]/;
+					let numCheck = /[0-9]/;
+					let specialCheck = /[`~!@#$%^&*|\\\'\";:\/?]/gi;
+					
+					for(let i=0; i < uif_nick.length; i++){
+						nick = uif_nick.charAt(i);
+						if(escape(nick).length>4){
+							nickLength += 2;
+						}else{
+							nickLength += 1;
+						}
+					}
+					
+					if(uif_nick == null || uif_nick == ""){
+						$('#nickCheck').html('<p class="checkred">닉네임을 입력해주세요.<p>');
+						$('#uif_nick').css({'border-color':'#d04444'});
+					}else if(uif_nick.search(/\s/) != -1){
+						$('#nickCheck').html('<p class="checkred">공백을 포함할 수 없습니다.<p>');
+						$('#uif_nick').css({'border-color':'#d04444'});
+					}else if(nickLength<2 || nickLength>20){
+						$('#nickCheck').html('<p class="checkred">영어 및 숫자 2~12자를 입력해주세요.<p>');
+						$('#uif_nick').css({'border-color':'#d04444'});
+					}else if(specialCheck.test(uif_nick)){
+						$('#nickCheck').html('<p class="checkred">특수문자를 포함할 수 없습니다.<p>');
+						$('#uif_nick').css({'border-color':'#d04444'});
+					}else{
 					
 					$.ajax({
 						data : {'uif_nick':uif_nick},
@@ -141,7 +199,7 @@
 								$('#nickCheck').html('<p class="checkblue">사용할 수 있는 닉네임입니다.<p>');
 								$('#uif_nick').css({'border-color':'#1c7cb4'});
 							}else{
-								$('#nickCheck').html('<p class="checkred">입력하지 않았거나 사용할 수 없는 닉네임입니다.<p>');
+								$('#nickCheck').html('<p class="checkred">존재하는 닉네임입니다.<p>');
 								$('#uif_nick').css({'border-color':'#d04444'});
 							}
 						},
@@ -149,6 +207,7 @@
 							alert("통신실패!")
 						}
 					})
+					}
 				}
 				
 				function uif_pwCheck(){
@@ -193,6 +252,19 @@
 						$('#pwckCheck').text('비밀번호가 다릅니다!');
 						$('#pwckCheck').css({'color':'#d04444'});
 						$('#uif_pwck').css({'border-color':'#d04444'});
+					}
+				}
+				
+				function joinCheck(){
+					let id_tag = $('#idCheck').text();
+					let pw_tag = $('#pwCheck').text();
+					let pwck_tag = $('#pwckCheck').text();
+					let nick_tag = $('#nickCheck').text();
+					if(id_tag == '사용할 수 있는 아이디입니다.' && pw_tag == '' && pwck_tag == '비밀번호가 같습니다!' && nick_tag == '사용할 수 있는 닉네임입니다.'){
+						$('#joinBtn').prop("disabled",false);
+						$('#joinBtn').css({'background-color':'#13547A'})
+					}else{
+						$('#joinBtn').prop("disabled",true);
 					}
 				}
 				
