@@ -14,6 +14,8 @@
 <script type="text/javascript"
 	src="http://code.jquery.com/jquery-latest.js"></script>
 <script type="text/javascript"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<link href="resources/bootstrap-5.2.0-beta1-dist/js/bootstrap.js">
 
 </head>
 <body>
@@ -53,20 +55,59 @@
 			</div>
 
 			<div>
-				<p>개발 스택</p>
-				<select>
-					<option value="" selected>--선택--</option>
-					<option value="java">JAVA</option>
-					<option value="pyhon">Python</option>
-					<option value="html">HTML / CSS</option>
-					<option value="js">JavaScript</option>
-					<option value="git">Git</option>
-					<option value="spring">Spring</option>
-					<option value="rdbms">RDBMS</option>
-					<option value="sql">SQL</option>
-					<option value="c">C / C++</option>
-				</select>
-				<textarea name="uif_stack" rows="3" cols="30"></textarea>
+				<div class="btn-group"><p>개발 스택</p>
+					&nbsp &nbsp &nbsp &nbsp
+					<button id="stackBtn" class="btn btn-sm dropdown-toggle btn-outline-light" type="button"  data-bs-toggle="dropdown" aria-expanded="false">
+						스택 선택
+					</button>
+					<ul class="dropdown-menu" >
+						<label class="dropdown-item"><input class="form-check-input" type="checkbox" name="stack" value="JAVA" id="flexCheckChecked" >
+							<label class="form-check-label" for="flexCheckChecked">JAVA</label></label>
+			
+						<label class="dropdown-item"><input class="form-check-input" type="checkbox" name="stack" value="Python" id="flexCheckChecked">
+							<label class="form-check-label" for="flexCheckChecked">Python</label></label>
+			
+						<label class="dropdown-item"><input class="form-check-input" type="checkbox" name="stack" value="JavaScript" id="flexCheckChecked" >
+							<label class="form-check-label" for="flexCheckChecked">JavaScript</label></label>
+			
+						<label class="dropdown-item"><input class="form-check-input" type="checkbox" name="stack" value="TypeScript" id="flexCheckChecked" >
+							<label class="form-check-label" for="flexCheckChecked">TypeScript</label></label>
+							
+						<label class="dropdown-item"><input class="form-check-input" type="checkbox" name="stack" value="PHP" id="flexCheckChecked" >
+							<label class="form-check-label" for="flexCheckChecked">PHP</label></label>
+			
+						<label class="dropdown-item"><input class="form-check-input" type="checkbox" name="stack" value="C／C＃" id="flexCheckChecked">
+							<label class="form-check-label" for="flexCheckChecked">C ／ C＃</label></label>
+			
+						<label class="dropdown-item"><input class="form-check-input" type="checkbox" name="stack" value="HTML" id="flexCheckChecked">
+							<label class="form-check-label" for="flexCheckChecked">HTML</label></label>
+			
+						<label class="dropdown-item"><input class="form-check-input" type="checkbox" name="stack" value="CSS" id="flexCheckChecked">
+							<label class="form-check-label" for="flexCheckChecked">CSS</label></label>
+			
+							
+						<label class="dropdown-item"><input class="form-check-input" type="checkbox" name="stack" value="RDBMS" id="flexCheckChecked" >
+							<label class="form-check-label" for="flexCheckChecked">RDBMS</label></label>
+			
+								
+						<label class="dropdown-item"><input class="form-check-input" type="checkbox" name="stack" value="AWS" id="flexCheckChecked" >
+							<label class="form-check-label" for="flexCheckChecked">AWS</label></label>
+			
+									
+						<label class="dropdown-item"><input class="form-check-input" type="checkbox" name="stack" value="Spring" id="flexCheckChecked">
+							<label class="form-check-label" for="flexCheckChecked">Spring</label></label>
+			
+										
+						<label class="dropdown-item"><input class="form-check-input" type="checkbox" name="stack" value="React" id="flexCheckChecked" >
+							<label class="form-check-label" for="flexCheckChecked">React</label></label>
+			
+						
+			
+			
+					</ul>
+				</div>
+				<div id='stackRs' >
+				</div>
 			</div>
 
 			<div>
@@ -268,7 +309,35 @@
 					}
 				}
 				
+				
+				
+				// 개발스텍 부분
+				let stackList = []
+	            $('input[name="stack"]').click(function(){
+
+	                if($(this).prop('checked')){
+	                    
+	                    let bgRs=$(this).val()
+	                    let bgId='bg'+$(this).val()
+	                    $('#stackRs').append('<span class="btn btn-primary btn-sm " id="'+bgId+'" >'+bgRs+'</span>')
+	                
+						
+						stackList.push(bgRs)
+	                }else{
+	                    let b='bg'+$(this).val()
+	                    let res = "#"+b
+	                    $(res).remove()
+
+						stackList =stackList.filter((element) => element !== ($(this).val()));
+						
+
+	                }
+	            })
+				
 					
 	</script>
+	
+	
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
