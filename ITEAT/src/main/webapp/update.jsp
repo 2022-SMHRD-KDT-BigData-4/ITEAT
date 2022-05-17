@@ -20,6 +20,8 @@
 
 		<div id="joinTt">개인정보수정</div>
 
+
+		<div class="info_member">
 			<div>
 				<p class="notnull">비밀번호</p>
 				<input type="password" id="uif_pw" name="uif_pw" value="" placeholder="4~12자 이내" onchange="joinCheck()" oninput="uif_pwCheck()" minlength="4" maxlength="12" required>
@@ -126,7 +128,7 @@
 
 
 		</div>
-
+		</div>
 		<div id="joinDiv">
 			<input id="joinBtn" type="submit" value="가입하기">
 		</div>
