@@ -44,7 +44,7 @@
                 </div>
                 <div>
                     <div class="writer">미니</div>
-                    <div class="title"><a href="contest_view.html">모르겠어요</a></div>
+                    <div class="title"><a href="contest_view.jsp">모르겠어요</a></div>
                     <div class="local">광주</div>
                     <div class="position">백엔드</div>
                     <div class="date">2022-05-14</div>
@@ -53,7 +53,7 @@
                 </div>
                 <div>
                     <div class="writer">미니</div>
-                    <div class="title"><a href="contest_view.html">모르겠어요</a></div>
+                    <div class="title"><a href="contest_view.jsp">모르겠어요</a></div>
                     <div class="local">광주</div>
                     <div class="position">백엔드</div>
                     <div class="date">2022-05-14</div>
@@ -62,7 +62,7 @@
                 </div>
                 <div>
                     <div class="writer">미니</div>
-                    <div class="title"><a href="contest_view.html">모르겠어요</a></div>
+                    <div class="title"><a href="contest_view.jsp">모르겠어요</a></div>
                     <div class="local">광주</div>
                     <div class="position">백엔드</div>
                     <div class="date">2022-05-14</div>
@@ -71,7 +71,7 @@
                 </div>
                 <div>
                     <div class="writer">미니</div>
-                    <div class="title"><a href="contest_view.html">모르겠어요</a></div>
+                    <div class="title"><a href="contest_view.jsp">모르겠어요</a></div>
                     <div class="local">광주</div>
                     <div class="position">백엔드</div>
                     <div class="date">2022-05-14</div>
@@ -80,7 +80,7 @@
                 </div>
                 <div>
                     <div class="writer">미니</div>
-                    <div class="title"><a href="contest_view.html">모르겠어요</a></div>
+                    <div class="title"><a href="contest_view.jsp">모르겠어요</a></div>
                     <div class="local">광주</div>
                     <div class="position">백엔드</div>
                     <div class="date">2022-05-14</div>

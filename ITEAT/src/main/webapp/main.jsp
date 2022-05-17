@@ -59,8 +59,8 @@
           </li>
           <li class="dropdown"><a href="#"><span>팀원모집</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="#">공모전</a></li>
-              <li><a href="#">스터디</a></li>
+              <li><a href="contest_list.jsp">공모전</a></li>
+              <li><a href="study_list.jsp">스터디</a></li>
             </ul>
           </li>
           <li><a href="#">묻고답하기</a></li>
@@ -74,6 +74,9 @@
              	  <c:otherwise>
                 	  <li class="login"><a href="LogoutCon">로그아웃</a></li>
                 	  <li class="Join"><a href="update.jsp">개인정보수정</a></li>
+                	  <c:if test="${loginUser.uif_type eq 'A'}">
+                   	  <li><a href="userList.jsp">전체회원정보</a><li>
+                 	  </c:if>
               	  </c:otherwise>
           </c:choose>
          

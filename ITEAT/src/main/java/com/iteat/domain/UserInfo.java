@@ -1,5 +1,6 @@
 package com.iteat.domain;
 
+import java.math.BigDecimal;
 import java.sql.Timestamp;
 
 public class UserInfo {
@@ -7,14 +8,14 @@ public class UserInfo {
 	private String uif_pw;
 	private String uif_nick;
 	private Timestamp date;
-	private int uif_level;
+	private BigDecimal uif_level;
 	private String uif_stack;
 	private String uif_blog;
 	private String uif_edu;
 	private String uif_etc;
 	private String uif_type;
 	
-	public UserInfo(String uif_id, String uif_pw, String uif_nick, Timestamp date, int uif_level, String uif_stack,
+	public UserInfo(String uif_id, String uif_pw, String uif_nick, Timestamp date, BigDecimal uif_level, String uif_stack,
 			String uif_blog, String uif_edu, String uif_etc, String uif_type) {
 		super();
 		this.uif_id = uif_id;
@@ -69,7 +70,7 @@ public class UserInfo {
 		return date;
 	}
 
-	public int getUif_level() {
+	public BigDecimal getUif_level() {
 		return uif_level;
 	}
 
