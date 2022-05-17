@@ -22,7 +22,7 @@
 
 			<div>
 				<p class="notnull">비밀번호</p>
-				<input type="password" id="uif_pw" name="uif_pw" value="" placㄴeholder="4~12자 이내" onchange="joinCheck()" oninput="uif_pwCheck()" minlength="4" maxlength="12" required>
+				<input type="password" id="uif_pw" name="uif_pw" value="" placeholder="4~12자 이내" onchange="joinCheck()" oninput="uif_pwCheck()" minlength="4" maxlength="12" required>
 				<p id="pwCheck"></p>
 			</div>
 			
