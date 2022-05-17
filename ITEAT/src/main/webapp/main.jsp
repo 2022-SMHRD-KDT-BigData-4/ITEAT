@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8" isELIgnored="false"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -64,9 +65,20 @@
           </li>
           <li><a href="#">묻고답하기</a></li>
           <li><a href="#">해저탐험</a></li>
-          <li class="login"><a href="login.jsp">로그인</a></li>
           
-          <li class="Join"><a href="join.jsp">회원가입</a></li>
+          <c:choose>
+             	  <c:when test="${empty loginUser}">
+               	    <li class="login"><a href="login.jsp">로그인</a></li>
+               	    <li class="Join"><a href="join.jsp">회원가입</a></li>
+              	  </c:when>
+             	  <c:otherwise>
+                	  <li class="login"><a href="LogoutCon">로그아웃</a></li>
+                	  <li class="Join"><a href="update.jsp">개인정보수정</a></li>
+              	  </c:otherwise>
+          </c:choose>
+         
+          
+          
           
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>

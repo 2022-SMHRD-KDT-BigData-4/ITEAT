@@ -1,13 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Document</title>
-
+<title>Insert title here</title>
 <link rel="stylesheet" href="assets/css/joinCss.css" />
 <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 <style type="text/css"></style>
@@ -21,30 +18,20 @@
 <body>
 	<form action='JoinCon' method="post" accept-charset="UTF-8">
 
-		<div id="joinTt">회원가입</div>
-
-
-
-		<div class="info_member">
-			<div>
-				<p class="notnull">아이디</p>
-				<div class="boxSize">
-					<input type="text" id="uif_id" name="uif_id" value="" placeholder="2~12자 이내" onchange="joinCheck()" oninput="uif_idCheck()" minlength="2" maxlength="12" required>
-				</div>
-				<p id="idCheck"></p>
-			</div>
+		<div id="joinTt">개인정보수정</div>
 
 			<div>
 				<p class="notnull">비밀번호</p>
-				<input type="password" id="uif_pw" name="uif_pw" value="" placeholder="4~12자 이내" onchange="joinCheck()" oninput="uif_pwCheck()" minlength="4" maxlength="12" required>
+				<input type="password" id="uif_pw" name="uif_pw" value="" placㄴeholder="4~12자 이내" onchange="joinCheck()" oninput="uif_pwCheck()" minlength="4" maxlength="12" required>
 				<p id="pwCheck"></p>
 			</div>
-
+			
 			<div>
 				<p class="notnull">비밀번호 확인</p>
 				<input type="password" id="uif_pwck" name="pwCk" value="" placeholder="비밀번호를 한번 더 입력해주세요" onchange="joinCheck()" oninput="uif_pwckCheck()" minlength="4" maxlength="12" required>
 				<p id="pwckCheck"></p>
 			</div>
+
 
 			<div>
 				<p class="notnull">닉네임</p>
@@ -145,59 +132,8 @@
 		</div>
 	</form>
 	<script>	
-				function uif_idCheck(){
+				
 					
-					let uif_id = $('#uif_id').val();
-					
-					let idLength = 0;
-					let engCheck = /[a-z]/;
-					let numCheck = /[0-9]/;
-					let specialCheck = /[`~!@#$%^&*|\\\'\";:\/?]/gi;
-					
-					for(let i=0; i < uif_id.length; i++){
-						id = uif_id.charAt(i);
-						if(escape(id).length>4){
-							idLength += 2;
-						}else{
-							idLength += 1;
-						}
-					}
-					
-					if(uif_id == null || uif_id == ""){
-						$('#idCheck').html('<p class="checkred">아이디를 입력해주세요.<p>');
-						$('#uif_id').css({'border-color':'#d04444'});
-					}else if(uif_id.search(/\s/) != -1){
-						$('#idCheck').html('<p class="checkred">공백을 포함할 수 없습니다.<p>');
-						$('#uif_id').css({'border-color':'#d04444'});
-					}else if(idLength<2 || idLength>20){
-						$('#idCheck').html('<p class="checkred">영어 및 숫자 2~12자를 입력해주세요.<p>');
-						$('#uif_id').css({'border-color':'#d04444'});
-					}else if(specialCheck.test(uif_id)){
-						$('#idCheck').html('<p class="checkred">특수문자를 포함할 수 없습니다.<p>');
-						$('#uif_id').css({'border-color':'#d04444'});
-					}else{
-					
-					$.ajax({
-						data : {'uif_id':uif_id},
-						url : 'IdCheckCon',
-						method : 'get',
-						contentType : 'application/json; charset=utf-8',
-						dataType : 'text',
-						success : function(data){ 
-							if(data=='true'){
-								$('#idCheck').html('<p class="checkblue">사용할 수 있는 아이디입니다.<p>');
-								$('#uif_id').css({'border-color':'#1c7cb4'});
-							}else{
-								$('#idCheck').html('<p class="checkred">존재하는 아이디입니다.<p>');
-								$('#uif_id').css({'border-color':'#d04444'});
-							}
-						},
-						error : function(){
-							alert("통신실패!")
-						}
-					})
-					}
-				}
 				
 				function uif_nickCheck(){
 					
@@ -303,7 +239,7 @@
 					let pw_tag = $('#pwCheck').text();
 					let pwck_tag = $('#pwckCheck').text();
 					let nick_tag = $('#nickCheck').text();
-					if(id_tag == '사용할 수 있는 아이디입니다.' && pw_tag == '' && pwck_tag == '비밀번호가 같습니다!' && nick_tag == '사용할 수 있는 닉네임입니다.'){
+					if(pw_tag == '' && pwck_tag == '비밀번호가 같습니다!' && nick_tag == '사용할 수 있는 닉네임입니다.'){
 						$('#joinBtn').prop("disabled",false);
 						$('#joinBtn').css({'background-color':'#13547A'})
 					}else{
@@ -341,5 +277,6 @@
 	
 	
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
 </body>
 </html>
