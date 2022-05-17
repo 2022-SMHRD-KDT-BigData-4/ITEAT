@@ -20,4 +20,7 @@
 		select uif_id,uif_pw from user_info where uif_id=#{uif_id} and uif_pw=#{uif_pw}
 	</select>
 	
+	<update id="updateUif" parameterType="com.iteat.domain.UserInfo">
+		update user_info set uif_pw=#{uif_pw},uif_nick=#{uif_nick},uif_stack=#{uif_stack},uif_blog=#{uif_blog},uif_edu=#{uif_edu},uif_etc=#{uif_etc} where uif_id=#{uif_id}
+	</update>
 </mapper>

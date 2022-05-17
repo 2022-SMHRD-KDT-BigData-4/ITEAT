@@ -84,4 +84,21 @@ public class UserInfoDAO {
 		}
 		return uif;
 	}
+	public int updateUif(UserInfo userinfo) {
+		SqlSession sqlSession = sqlSessionFactory.openSession();
+		int cnt = 0;
+		try {
+			cnt = sqlSession.update("com.iteat.domain.UserInfoDAO.updateUif", userinfo);
+			if(cnt>0) {
+				sqlSession.commit();
+			}else {
+				sqlSession.rollback();
+			}
+		} catch (Exception e) {
+			
+		}finally {
+			sqlSession.close();
+		}
+		return cnt;
+	}
 }

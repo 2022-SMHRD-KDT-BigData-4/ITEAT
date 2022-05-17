@@ -16,7 +16,7 @@
 
 </head>
 <body>
-	<form action='JoinCon' method="post" accept-charset="UTF-8">
+	<form action='UpdateCon' method="post" accept-charset="UTF-8">
 
 		<div id="joinTt">개인정보수정</div>
 
@@ -130,7 +130,7 @@
 		</div>
 		</div>
 		<div id="joinDiv">
-			<input id="joinBtn" type="submit" value="가입하기">
+			<input id="joinBtn" type="submit" value="수정하기">
 		</div>
 	</form>
 	<script>	

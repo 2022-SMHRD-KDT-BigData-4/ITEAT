@@ -28,11 +28,9 @@ public class LoginCon extends HttpServlet {
 		UserInfo loginUser = dao.selectUif(uif);
 		
 		if(loginUser==null) {
-			// 로그인 실패
 			System.out.println("로그인 실패");
 			response.sendRedirect("loginFail.jsp");
 		}else {
-			// 로그인 성공
 			System.out.println("로그인 성공");
 			HttpSession session = request.getSession();
 			session.setAttribute("loginUser", loginUser);
