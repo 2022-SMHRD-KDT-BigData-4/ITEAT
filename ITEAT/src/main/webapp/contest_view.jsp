@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8" isELIgnored="false"%>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -9,65 +9,65 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+<%@ include file="header.jsp" %>
     <div class="board_wrap">
         <div class="board_title">
-            °ø¸ðÀü¸ðÁý
+            ê³µëª¨ì „ëª¨ì§‘
         </div>
         <div class="board_view_wrap">
             <div class="board_view">
                 <div class="title">
-                    °ø¸ðÀü ÇÔ²²ÇØ¿ä
+                    ê³µëª¨ì „ í•¨ê»˜í•´ìš”
                 </div>
                 <div class="info">
                     <dl>
-                        <dt>ÀÛ¼ºÀÚ</dt>
-                        <dd>¹Ì´Ï</dd>
+                        <dt>ìž‘ì„±ìž</dt>
+                        <dd>ë¯¸ë‹ˆ</dd>
                     </dl>
                     <dl>
-                        <dt>Áö¿ª</dt>
-                        <dd>±¤ÁÖ</dd>
+                        <dt>ì§€ì—­</dt>
+                        <dd>ê´‘ì£¼</dd>
                     </dl>
                     <dl>
-                        <dt>ÀÛ¼ºÀÏ</dt>
+                        <dt>ìž‘ì„±ì¼</dt>
                         <dd>2022-05-14</dd>
                     </dl>
                     <dl>
-                        <dt>¸ðÁý¿©ºÎ</dt>
-                        <dd>¸ðÁýÁß</dd>
+                        <dt>ëª¨ì§‘ì—¬ë¶€</dt>
+                        <dd>ëª¨ì§‘ì¤‘</dd>
                     </dl>
                 </div>
                 <div class="tag">
-                    ÅÂ±×µé¾î°¥ÀÚ¸®
+                    íƒœê·¸ë“¤ì–´ê°ˆìžë¦¬
                 </div>
                 <div class="cont">
-                    ±Û ³»¿ëÀÌ µé¾î°©´Ï´Ù<br>
-                    ±Ùµ¥ ÀÌ°Ç ÀÛ¼ºÀÚ°¡ ¾´±ÛÀ»<br>
-                    ¿¬°áÇØ¾ßÇÒÅÙµ¥<br>
-                    ÀÏ´Ü º¸¿©Áö´Â ºÎºÐ¸¸ <br>
-                    ÇßÀ½ ¤»¤»
+                    ê¸€ ë‚´ìš©ì´ ë“¤ì–´ê°‘ë‹ˆë‹¤<br>
+                    ê·¼ë° ì´ê±´ ìž‘ì„±ìžê°€ ì“´ê¸€ì„<br>
+                    ì—°ê²°í•´ì•¼í• í…ë°<br>
+                    ì¼ë‹¨ ë³´ì—¬ì§€ëŠ” ë¶€ë¶„ë§Œ <br>
+                    í–ˆìŒ ã…‹ã…‹
                 </div>
             </div>
             <div class="comment">                    
-                <p>ÀÇ°ß³²±â±â</p>
+                <p>ì˜ê²¬ë‚¨ê¸°ê¸°</p>
                 <form>
-                <textarea name="comment" rows="3" cols="30" placeholder="´ñ±Û¾²±â"></textarea>
-                <button id="ment" type="submit" name="button" cor>¿Ã¸®±â</button>    
+                <textarea name="comment" rows="3" cols="30" placeholder="ëŒ“ê¸€ì“°ê¸°"></textarea>
+                <button id="ment" type="submit" name="button" cor>ì˜¬ë¦¬ê¸°</button>    
                 </form>
             </div>
             
             <div class="comment_view">
-                <span class="writer"> ÀÛ¼ºÀÚ</span> <span class="text"> ³»¿ë</span>
+                <span class="writer"> ìž‘ì„±ìž</span> <span class="text"> ë‚´ìš©</span>
             </div>      
             <div class="comment_view">
-                <span class="writer"> ÀÛ¼ºÀÚ</span> <span class="text"> ³»¿ë</span>
+                <span class="writer"> ìž‘ì„±ìž</span> <span class="text"> ë‚´ìš©</span>
             </div> 
             <div class="comment_view">
-                <span class="writer"> ÀÛ¼ºÀÚ</span> <span class="text"> ³»¿ë</span>
+                <span class="writer"> ìž‘ì„±ìž</span> <span class="text"> ë‚´ìš©</span>
             </div> 
             
             <div class="bt_wrap">
-                <a href="contest_list.jsp" class="on">¸ñ·Ï</a>
+                <a href="contest_list.jsp" class="on">ëª©ë¡</a>
             </div>
         </div>
         <div class="conment">
@@ -75,5 +75,7 @@
 
         </div>
     </div>
+    
+    <%@ include file="footer.jsp" %>
 </body>
 </html>

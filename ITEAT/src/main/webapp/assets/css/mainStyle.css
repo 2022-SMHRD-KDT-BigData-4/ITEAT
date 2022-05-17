@@ -137,8 +137,9 @@ h1, h2, h3, h4, h5, h6 {
 #header .logo img {
   max-height: 40px;
 }
+
 .fixed-top {
-  background-color: #4668a2;
+  background-color: #13547A;
 }
 
 /*--------------------------------------------------------------
@@ -1710,7 +1711,7 @@ section {
 --------------------------------------------------------------*/
 #footer {
   font-size: 14px;
-  background: #37517e;
+  background: #13547A;
 }
 
 #footer .footer-newsletter {

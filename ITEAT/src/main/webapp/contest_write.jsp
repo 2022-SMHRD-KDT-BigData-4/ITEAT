@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8" isELIgnored="false"%>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -12,48 +12,48 @@
 
 </head>
 <body>
-
+<%@ include file="header.jsp" %>
 <div class="board_wrap">
-        <!-- ±Û¿Ã¸®´Â °Ô½ÃÆÇ ¹¯°í´äÇÏ±â -->
+        <!-- ê¸€ì˜¬ë¦¬ëŠ” ê²Œì‹œíŒ ë¬»ê³ ë‹µí•˜ê¸° -->
         <div class="board_title">
-            °ø¸ðÀü / ±Û¾²±â
+            ê³µëª¨ì „ / ê¸€ì“°ê¸°
         </div>
-        <!-- ±Û ¿Ã¸®´Â °Ô½ÃÆÇ ÀüÃ¼ -->
+        <!-- ê¸€ ì˜¬ë¦¬ëŠ” ê²Œì‹œíŒ ì „ì²´ -->
         <div class="board_write_wrap">
             <div class="board_write">
                 <div class="title"> 
-                    <input type="text" placeholder="Á¦¸ñÀ» ÀÔ·ÂÇÏ¼¼¿ä">
+                    <input type="text" placeholder="ì œëª©ì„ ìž…ë ¥í•˜ì„¸ìš”">
                 
                 <span class="option">
                     <select class="form-select form-select-lg" aria-label=".form-select-lg example" style="width: 80px;  display: inline;">
-                        <option selected>Æ÷Áö¼Ç</option>
-                        <option value="pstFront">ÇÁ·ÐÆ®</option>
-                        <option value="pstBack">¹é</option>
-                        <option value="pstEtc">±âÅ¸</option>
+                        <option selected>í¬ì§€ì…˜</option>
+                        <option value="pstFront">í”„ë¡ íŠ¸</option>
+                        <option value="pstBack">ë°±</option>
+                        <option value="pstEtc">ê¸°íƒ€</option>
                     </select>
                   &nbsp
                   <select class="form-select form-select-lg mb-3"  aria-label=".form-select-lg example" style="width: 70px; display: inline;">
-                    <option selected>Áö¿ª</option>
-                    <option value="seoul">¼­¿ï</option>
-                    <option value="gyeonggi">°æ±â</option>
-                    <option value="gwangju">±¤ÁÖ</option>
-                    <option value="busan">ºÎ»ê</option>
-                    <option value="daegu">´ë±¸</option>
-                    <option value="daejeon">´ëÀü</option>
-                    <option value="gangwon">°­¿ø</option>
-                    <option value="chungbuk">ÃæºÏ</option>
-                    <option value="chungnam">Ãæ³²</option>
-                    <option value="jeonnam">Àü³²</option>
-                    <option value="jeonbuk">ÀüºÏ</option>
-                    <option value="gyeongnam">°æ³²</option>
-                    <option value="gyeongbuk">°æºÏ</option>
-                    <option value="areaEtc">±âÅ¸</option>
+                    <option selected>ì§€ì—­</option>
+                    <option value="seoul">ì„œìš¸</option>
+                    <option value="gyeonggi">ê²½ê¸°</option>
+                    <option value="gwangju">ê´‘ì£¼</option>
+                    <option value="busan">ë¶€ì‚°</option>
+                    <option value="daegu">ëŒ€êµ¬</option>
+                    <option value="daejeon">ëŒ€ì „</option>
+                    <option value="gangwon">ê°•ì›</option>
+                    <option value="chungbuk">ì¶©ë¶</option>
+                    <option value="chungnam">ì¶©ë‚¨</option>
+                    <option value="jeonnam">ì „ë‚¨</option>
+                    <option value="jeonbuk">ì „ë¶</option>
+                    <option value="gyeongnam">ê²½ë‚¨</option>
+                    <option value="gyeongbuk">ê²½ë¶</option>
+                    <option value="areaEtc">ê¸°íƒ€</option>
                   </select>
                   &nbsp
                   <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" style="width: 85px;display: inline;" >
-                    <option selected>¸ðÁý¿©ºÎ</option>
-                    <option value="conIng">¸ðÁýÁß</option>
-                    <option value="conEnd">¸ðÁý¸¶°¨</option>
+                    <option selected>ëª¨ì§‘ì—¬ë¶€</option>
+                    <option value="conIng">ëª¨ì§‘ì¤‘</option>
+                    <option value="conEnd">ëª¨ì§‘ë§ˆê°</option>
                   </select>
                 </span></div>
 
@@ -62,20 +62,22 @@
                   </div>
 
                   <label class="input-file-button" for="input-file" >
-                      »çÁø ¾÷·Îµå
+                      ì‚¬ì§„ ì—…ë¡œë“œ
                   </label>
                   <input type="file" id="input-file" name="uploadFile" accept="image/png, image/jpeg">
             </div>
 
 
 
-            <!--¹öÆ°-->
+            <!--ë²„íŠ¼-->
             <div class="bt_wrap">
-                <a href="contest_view.jsp" id="on" class="btn btn-primary btn-lg">µî·ÏÇÏ±â</a>&nbsp                
-                <a href="contest_list.jsp" id="onn" class="btn btn-primary btn-lg">µÚ·Î°¡±â</a>
+                <a href="contest_view.jsp" id="on" class="btn btn-primary btn-lg">ë“±ë¡í•˜ê¸°</a>&nbsp                
+                <a href="contest_list.jsp" id="onn" class="btn btn-primary btn-lg">ë’¤ë¡œê°€ê¸°</a>
             </div>
         </div>
     </div>
+    
+    <%@ include file="footer.jsp" %>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
 </body>

@@ -517,3 +517,11 @@ div.title > span > div > ul > label{
     height: 45px;
     border: 1px solid #13547A !important;
 }
+
+
+/*user_list.jsp table*/
+.board_list_wrap table{
+    width: 100%;
+    height: 90px;
+    font-size: 20px;
+}

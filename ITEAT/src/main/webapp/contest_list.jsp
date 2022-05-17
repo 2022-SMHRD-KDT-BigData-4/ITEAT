@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8" isELIgnored="false"%>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -11,97 +11,104 @@
 
 </head>
 <body>
-  <!-- ÀüÃ¼ °¨½Î±â -->
+
+
+<%@ include file="header.jsp" %>
+
+
+
+  <!-- ì „ì²´ ê°ì‹¸ê¸° -->
     <div class="board_wrap">
-        <!-- Á¦¸ñ ¿µ¿ª -->
+        <!-- ì œëª© ì˜ì—­ -->
         <div class="board_title">
-            °ø¸ðÀü ¸ðÁý
+            ê³µëª¨ì „ ëª¨ì§‘
         </div>
-        <!-- °Ë»öÃ¢ºÎºÐ -->
+        <!-- ê²€ìƒ‰ì°½ë¶€ë¶„ -->
         <div class ="search">
-            <input type="text" placeholder="°Ë»ö¾î¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä">
-            <button>°Ë»ö</button>
+            <input type="text" placeholder="ê²€ìƒ‰ì–´ë¥¼ ìž…ë ¥í•´ì£¼ì„¸ìš”">
+            <button>ê²€ìƒ‰</button>
         </div>
 
-        <!-- ¸®½ºÆ®¿µ¿ª ÀüÃ¼ -->
+        <!-- ë¦¬ìŠ¤íŠ¸ì˜ì—­ ì „ì²´ -->
         <div class="board_list_wrap">
-            <!-- ¸®½ºÆ®¿µ¿ª -->
+            <!-- ë¦¬ìŠ¤íŠ¸ì˜ì—­ -->
             <div class="board_list">
                 <div class="top">
-                    <div class="writer">ÀÛ¼ºÀÚ</div>
-                    <div class="title">Á¦¸ñ</div>
-                    <div class="local">Áö¿ª</div>
-                    <div class="position">Æ÷Áö¼Ç</div>
-                    <div class="date">ÀÛ¼º³¯Â¥</div>
-                    <div class="recruit">¸ðÁý¿©ºÎ</div>
-                    <div class="hits">Á¶È¸¼ö</div>
+                    <div class="writer">ìž‘ì„±ìž</div>
+                    <div class="title">ì œëª©</div>
+                    <div class="local">ì§€ì—­</div>
+                    <div class="position">í¬ì§€ì…˜</div>
+                    <div class="date">ìž‘ì„±ë‚ ì§œ</div>
+                    <div class="recruit">ëª¨ì§‘ì—¬ë¶€</div>
+                    <div class="hits">ì¡°íšŒìˆ˜</div>
                 </div>
                 <div>
-                    <div class="writer">¹Ì´Ï</div>
-                    <div class="title"><a href="contest_view.html">¸ð¸£°Ú¾î¿ä</a></div>
-                    <div class="local">±¤ÁÖ</div>
-                    <div class="position">¹é¿£µå</div>
+                    <div class="writer">ë¯¸ë‹ˆ</div>
+                    <div class="title"><a href="contest_view.html">ëª¨ë¥´ê² ì–´ìš”</a></div>
+                    <div class="local">ê´‘ì£¼</div>
+                    <div class="position">ë°±ì—”ë“œ</div>
                     <div class="date">2022-05-14</div>
-                    <div class="recruit">¸ðÁýÁß</div>
+                    <div class="recruit">ëª¨ì§‘ì¤‘</div>
                     <div class="hits">23</div>
                 </div>
                 <div>
-                    <div class="writer">¹Ì´Ï</div>
-                    <div class="title"><a href="contest_view.html">¸ð¸£°Ú¾î¿ä</a></div>
-                    <div class="local">±¤ÁÖ</div>
-                    <div class="position">¹é¿£µå</div>
+                    <div class="writer">ë¯¸ë‹ˆ</div>
+                    <div class="title"><a href="contest_view.html">ëª¨ë¥´ê² ì–´ìš”</a></div>
+                    <div class="local">ê´‘ì£¼</div>
+                    <div class="position">ë°±ì—”ë“œ</div>
                     <div class="date">2022-05-14</div>
-                    <div class="recruit">¸ðÁýÁß</div>
+                    <div class="recruit">ëª¨ì§‘ì¤‘</div>
                     <div class="hits">23</div>
                 </div>
                 <div>
-                    <div class="writer">¹Ì´Ï</div>
-                    <div class="title"><a href="contest_view.html">¸ð¸£°Ú¾î¿ä</a></div>
-                    <div class="local">±¤ÁÖ</div>
-                    <div class="position">¹é¿£µå</div>
+                    <div class="writer">ë¯¸ë‹ˆ</div>
+                    <div class="title"><a href="contest_view.html">ëª¨ë¥´ê² ì–´ìš”</a></div>
+                    <div class="local">ê´‘ì£¼</div>
+                    <div class="position">ë°±ì—”ë“œ</div>
                     <div class="date">2022-05-14</div>
-                    <div class="recruit">¸ðÁýÁß</div>
+                    <div class="recruit">ëª¨ì§‘ì¤‘</div>
                     <div class="hits">23</div>
                 </div>
                 <div>
-                    <div class="writer">¹Ì´Ï</div>
-                    <div class="title"><a href="contest_view.html">¸ð¸£°Ú¾î¿ä</a></div>
-                    <div class="local">±¤ÁÖ</div>
-                    <div class="position">¹é¿£µå</div>
+                    <div class="writer">ë¯¸ë‹ˆ</div>
+                    <div class="title"><a href="contest_view.html">ëª¨ë¥´ê² ì–´ìš”</a></div>
+                    <div class="local">ê´‘ì£¼</div>
+                    <div class="position">ë°±ì—”ë“œ</div>
                     <div class="date">2022-05-14</div>
-                    <div class="recruit">¸ðÁýÁß</div>
+                    <div class="recruit">ëª¨ì§‘ì¤‘</div>
                     <div class="hits">23</div>
                 </div>
                 <div>
-                    <div class="writer">¹Ì´Ï</div>
-                    <div class="title"><a href="contest_view.html">¸ð¸£°Ú¾î¿ä</a></div>
-                    <div class="local">±¤ÁÖ</div>
-                    <div class="position">¹é¿£µå</div>
+                    <div class="writer">ë¯¸ë‹ˆ</div>
+                    <div class="title"><a href="contest_view.html">ëª¨ë¥´ê² ì–´ìš”</a></div>
+                    <div class="local">ê´‘ì£¼</div>
+                    <div class="position">ë°±ì—”ë“œ</div>
                     <div class="date">2022-05-14</div>
-                    <div class="recruit">¸ðÁýÁß</div>
+                    <div class="recruit">ëª¨ì§‘ì¤‘</div>
                     <div class="hits">23</div>
                 </div>
             </div>
-            <!-- ¸®½ºÆ® ÆäÀÌÁö¿µ¿ª -->
+            <!-- ë¦¬ìŠ¤íŠ¸ íŽ˜ì´ì§€ì˜ì—­ -->
             <div class="paging">
                 
-                <a href="#" class="bt">ÀÌÀü</a>
+                <a href="#" class="bt">ì´ì „</a>
                 <a href="#" class="num on">1</a>
                 <a href="#" class="num">2</a>
                 <a href="#" class="num">3</a>
                 <a href="#" class="num">4</a>
                 <a href="#" class="num">5</a>
-                <a href="#" class="bt">´ÙÀ½</a>
+                <a href="#" class="bt">ë‹¤ìŒ</a>
 
             </div>
-            <!-- ¸®½ºÆ® ¹öÆ°¿µ¿ª -->
+            <!-- ë¦¬ìŠ¤íŠ¸ ë²„íŠ¼ì˜ì—­ -->
             <div class="bt_wrap">
-                <a href="study_write.jsp" class="on">¿Ã¸®±â</a>
-                <!--<a href="#">¼öÁ¤</a>-->
+                <a href="study_write.jsp" class="on">ì˜¬ë¦¬ê¸°</a>
+                <!--<a href="#">ìˆ˜ì •</a>-->
             </div>
         </div>
     </div>
 
+<%@ include file="footer.jsp" %>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
 </body>

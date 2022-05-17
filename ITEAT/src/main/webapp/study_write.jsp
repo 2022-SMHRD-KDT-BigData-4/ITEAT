@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8" isELIgnored="false"%>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -11,17 +11,17 @@
 	<link rel="stylesheet" href="assets/css/studyCss.css">
 </head>
 <body>
-
+<%@ include file="header.jsp" %>
     <div class="board_wrap">
-        <!-- ±€ø√∏Æ¥¬ ∞‘Ω√∆« πØ∞Ì¥‰«œ±‚ -->
+        <!-- Í∏ÄÏò¨Î¶¨Îäî Í≤åÏãúÌåê Î¨ªÍ≥†ÎãµÌïòÍ∏∞ -->
         <div class="board_title">
-            Ω∫≈Õµ∏¡˝ / ±€æ≤±‚
+            Ïä§ÌÑ∞ÎîîÎ™®Ïßë / Í∏ÄÏì∞Í∏∞
         </div>
-        <!-- ±€ ø√∏Æ¥¬ ∞‘Ω√∆« ¿¸√º -->
+        <!-- Í∏Ä Ïò¨Î¶¨Îäî Í≤åÏãúÌåê Ï†ÑÏ≤¥ -->
         <div class="board_write_wrap">
             <div class="board_write">
                 <div class="title"> 
-                     <input type="text" placeholder="¡¶∏Ò¿ª ¿‘∑¬«œººø‰"> 
+                     <input type="text" placeholder="Ï†úÎ™©ÏùÑ ÏûÖÎ†•ÌïòÏÑ∏Ïöî"> 
                
 
 
@@ -29,7 +29,7 @@
 
                     <div class="btn-group">
                         <button id="stackBtn" class="btn btn-sm dropdown-toggle btn-outline-light" type="button"  data-bs-toggle="dropdown" aria-expanded="false">
-                                Ω∫≈√ º±≈√
+                                Ïä§ÌÉù ÏÑ†ÌÉù
                         </button>
                         <ul class="dropdown-menu" >
                             <label class="dropdown-item"><input class="form-check-input" type="checkbox" name="stack" value="JAVA" id="flexCheckChecked" >
@@ -47,8 +47,8 @@
                             <label class="dropdown-item"><input class="form-check-input" type="checkbox" name="stack" value="PHP" id="flexCheckChecked" >
                                 <label class="form-check-label" for="flexCheckChecked">PHP</label></label>
                     
-                            <label class="dropdown-item"><input class="form-check-input" type="checkbox" name="stack" value="C£ØC££" id="flexCheckChecked">
-                                <label class="form-check-label" for="flexCheckChecked">C £Ø C££</label></label>
+                            <label class="dropdown-item"><input class="form-check-input" type="checkbox" name="stack" value="CÔºèCÔºÉ" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">C Ôºè CÔºÉ</label></label>
                     
                             <label class="dropdown-item"><input class="form-check-input" type="checkbox" name="stack" value="HTML" id="flexCheckChecked">
                                 <label class="form-check-label" for="flexCheckChecked">HTML</label></label>
@@ -68,34 +68,34 @@
                             <label class="dropdown-item"><input class="form-check-input" type="checkbox" name="stack" value="React" id="flexCheckChecked" >
                                 <label class="form-check-label" for="flexCheckChecked">React</label></label>
                             
-                            <label class="dropdown-item"><input class="form-check-input" type="checkbox" name="stack" value="±‚≈∏" id="flexCheckChecked" >
-                                <label class="form-check-label" for="flexCheckChecked">±‚≈∏</label></label>
+                            <label class="dropdown-item"><input class="form-check-input" type="checkbox" name="stack" value="Í∏∞ÌÉÄ" id="flexCheckChecked" >
+                                <label class="form-check-label" for="flexCheckChecked">Í∏∞ÌÉÄ</label></label>
                         </ul>
                     </div>
                     &nbsp
 
                     <select class="form-select form-select-lg mb-3"  aria-label=".form-select-lg example" style="width: 70px; display: inline;">
-                        <option selected>¡ˆø™</option>
-                        <option value="seoul">º≠øÔ</option>
-                        <option value="gyeonggi">∞Ê±‚</option>
-                        <option value="gwangju">±§¡÷</option>
-                        <option value="busan">∫ŒªÍ</option>
-                        <option value="daegu">¥Î±∏</option>
-                        <option value="daejeon">¥Î¿¸</option>
-                        <option value="gangwon">∞≠ø¯</option>
-                        <option value="chungbuk">√Ê∫œ</option>
-                        <option value="chungnam">√Ê≥≤</option>
-                        <option value="jeonnam">¿¸≥≤</option>
-                        <option value="jeonbuk">¿¸∫œ</option>
-                        <option value="gyeongnam">∞Ê≥≤</option>
-                        <option value="gyeongbuk">∞Ê∫œ</option>
-                        <option value="areaEtc">±‚≈∏</option>
+                        <option selected>ÏßÄÏó≠</option>
+                        <option value="seoul">ÏÑúÏö∏</option>
+                        <option value="gyeonggi">Í≤ΩÍ∏∞</option>
+                        <option value="gwangju">Í¥ëÏ£º</option>
+                        <option value="busan">Î∂ÄÏÇ∞</option>
+                        <option value="daegu">ÎåÄÍµ¨</option>
+                        <option value="daejeon">ÎåÄÏ†Ñ</option>
+                        <option value="gangwon">Í∞ïÏõê</option>
+                        <option value="chungbuk">Ï∂©Î∂Å</option>
+                        <option value="chungnam">Ï∂©ÎÇ®</option>
+                        <option value="jeonnam">Ï†ÑÎÇ®</option>
+                        <option value="jeonbuk">Ï†ÑÎ∂Å</option>
+                        <option value="gyeongnam">Í≤ΩÎÇ®</option>
+                        <option value="gyeongbuk">Í≤ΩÎ∂Å</option>
+                        <option value="areaEtc">Í∏∞ÌÉÄ</option>
                     </select>
                     &nbsp
                     <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" style="width: 85px;display: inline;" >
-                        <option selected>∏¡˝ø©∫Œ</option>
-                        <option value="conIng">∏¡˝¡ﬂ</option>
-                        <option value="conEnd">∏¡˝∏∂∞®</option>
+                        <option selected>Î™®ÏßëÏó¨Î∂Ä</option>
+                        <option value="conIng">Î™®ÏßëÏ§ë</option>
+                        <option value="conEnd">Î™®ÏßëÎßàÍ∞ê</option>
                     </select>
                 </span></div>
 
@@ -109,24 +109,24 @@
                   </div>
 
                   <label class="input-file-button" for="input-file" >
-                      ªÁ¡¯ æ˜∑ŒµÂ
+                      ÏÇ¨ÏßÑ ÏóÖÎ°úÎìú
                   </label>
                   <input type="file" id="input-file" name="uploadFile" accept="image/png, image/jpeg">
             
                 </div>
 
 
-            <!--πˆ∆∞-->
+            <!--Î≤ÑÌäº-->
             <div class="bt_wrap">
-                <a href="study_view.jsp" id="on" class="btn btn-primary btn-lg">µÓ∑œ«œ±‚</a>&nbsp                
-                <a href="study_list.jsp" id="onn" class="btn btn-primary btn-lg">µ⁄∑Œ∞°±‚</a>
+                <a href="study_view.jsp" id="on" class="btn btn-primary btn-lg">Îì±Î°ùÌïòÍ∏∞</a>&nbsp                
+                <a href="study_list.jsp" id="onn" class="btn btn-primary btn-lg">Îí§Î°úÍ∞ÄÍ∏∞</a>
             </div>
         </div>
     </div>
 
 <script>
     let stackList = []
-				// ∞≥πﬂΩ∫≈√
+				// Í∞úÎ∞úÏä§ÌÉù
             $('input[name="stack"]').click(function(){
 
 				
@@ -152,6 +152,8 @@
             })
 </script>
 
+
+<%@ include file="footer.jsp" %>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
 </body>
