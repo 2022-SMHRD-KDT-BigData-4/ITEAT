@@ -19,7 +19,7 @@
 
 </head>
 <body>
-	<form action='JoinCon' method="post">
+	<form action='JoinCon' method="post" accept-charset="UTF-8">
 
 		<div id="joinTt">회원가입</div>
 
@@ -61,6 +61,8 @@
 						스택 선택
 					</button>
 					<ul class="dropdown-menu" >
+						<label class="dropdown-item"><input class="form-check-input" type="checkbox" name="uif_stack" value="none" id="flexCheckChecked" >
+							<label class="form-check-label" for="flexCheckChecked">없음</label></label>
 						<label class="dropdown-item"><input class="form-check-input" type="checkbox" name="uif_stack" value="JAVA" id="flexCheckChecked" >
 							<label class="form-check-label" for="flexCheckChecked">JAVA</label></label>
 			

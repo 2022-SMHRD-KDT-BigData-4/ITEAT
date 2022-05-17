@@ -18,7 +18,8 @@ public class JoinCon extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		response.setCharacterEncoding("UTF-8");
+		
+		request.setCharacterEncoding("UTF-8");
 		
 		String uif_id = request.getParameter("uif_id");
 		String uif_pw = request.getParameter("uif_pw");

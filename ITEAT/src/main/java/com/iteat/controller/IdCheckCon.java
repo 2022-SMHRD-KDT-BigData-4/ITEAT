@@ -17,11 +17,12 @@ public class IdCheckCon extends HttpServlet {
 
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
+		request.setCharacterEncoding("UTF-8");
+		
 		String uif_id = request.getParameter("uif_id");
 		UserInfoDAO dao = new UserInfoDAO();
 		boolean check = dao.idCheck(uif_id);
 		
-		response.setCharacterEncoding("UTF-8");
 		PrintWriter out = response.getWriter();
 		out.print(check);
 		
