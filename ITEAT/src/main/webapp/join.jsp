@@ -61,46 +61,46 @@
 						스택 선택
 					</button>
 					<ul class="dropdown-menu" >
-						<label class="dropdown-item"><input class="form-check-input" type="checkbox" name="uif_stack" value="없음" id="flexCheckChecked" >
+						<label class="dropdown-item"><input id=stackNone class="form-check-input" type="checkbox" name="uif_stack" value="없음" >
 							<label class="form-check-label" for="flexCheckChecked">없음</label></label>
-						<label class="dropdown-item"><input class="form-check-input" type="checkbox" name="uif_stack" value="JAVA" id="flexCheckChecked" >
+						<label class="dropdown-item"><input class="form-check-input" type="checkbox" name="uif_stack" value="JAVA" >
 							<label class="form-check-label" for="flexCheckChecked">JAVA</label></label>
 			
-						<label class="dropdown-item"><input class="form-check-input" type="checkbox" name="uif_stack" value="Python" id="flexCheckChecked">
+						<label class="dropdown-item"><input class="form-check-input" type="checkbox" name="uif_stack" value="Python">
 							<label class="form-check-label" for="flexCheckChecked">Python</label></label>
 			
-						<label class="dropdown-item"><input class="form-check-input" type="checkbox" name="uif_stack" value="JavaScript" id="flexCheckChecked" >
+						<label class="dropdown-item"><input class="form-check-input" type="checkbox" name="uif_stack" value="JavaScript" >
 							<label class="form-check-label" for="flexCheckChecked">JavaScript</label></label>
 			
-						<label class="dropdown-item"><input class="form-check-input" type="checkbox" name="uif_stack" value="TypeScript" id="flexCheckChecked" >
+						<label class="dropdown-item"><input class="form-check-input" type="checkbox" name="uif_stack" value="TypeScript" >
 							<label class="form-check-label" for="flexCheckChecked">TypeScript</label></label>
 							
-						<label class="dropdown-item"><input class="form-check-input" type="checkbox" name="uif_stack" value="PHP" id="flexCheckChecked" >
+						<label class="dropdown-item"><input class="form-check-input" type="checkbox" name="uif_stack" value="PHP" >
 							<label class="form-check-label" for="flexCheckChecked">PHP</label></label>
 			
-						<label class="dropdown-item"><input class="form-check-input" type="checkbox" name="uif_stack" value="C／C＃" id="flexCheckChecked">
+						<label class="dropdown-item"><input class="form-check-input" type="checkbox" name="uif_stack" value="C／C＃">
 							<label class="form-check-label" for="flexCheckChecked">C ／ C＃</label></label>
 			
-						<label class="dropdown-item"><input class="form-check-input" type="checkbox" name="uif_stack" value="HTML" id="flexCheckChecked">
+						<label class="dropdown-item"><input class="form-check-input" type="checkbox" name="uif_stack" value="HTML">
 							<label class="form-check-label" for="flexCheckChecked">HTML</label></label>
 			
-						<label class="dropdown-item"><input class="form-check-input" type="checkbox" name="uif_stack" value="CSS" id="flexCheckChecked">
+						<label class="dropdown-item"><input class="form-check-input" type="checkbox" name="uif_stack" value="CSS">
 							<label class="form-check-label" for="flexCheckChecked">CSS</label></label>
 			
 							
-						<label class="dropdown-item"><input class="form-check-input" type="checkbox" name="uif_stack" value="RDBMS" id="flexCheckChecked" >
+						<label class="dropdown-item"><input class="form-check-input" type="checkbox" name="uif_stack" value="RDBMS" >
 							<label class="form-check-label" for="flexCheckChecked">RDBMS</label></label>
 			
 								
-						<label class="dropdown-item"><input class="form-check-input" type="checkbox" name="uif_stack" value="AWS" id="flexCheckChecked" >
+						<label class="dropdown-item"><input class="form-check-input" type="checkbox" name="uif_stack" value="AWS" >
 							<label class="form-check-label" for="flexCheckChecked">AWS</label></label>
 			
 									
-						<label class="dropdown-item"><input class="form-check-input" type="checkbox" name="uif_stack" value="Spring" id="flexCheckChecked">
+						<label class="dropdown-item"><input class="form-check-input" type="checkbox" name="uif_stack" value="Spring">
 							<label class="form-check-label" for="flexCheckChecked">Spring</label></label>
 			
 										
-						<label class="dropdown-item"><input class="form-check-input" type="checkbox" name="uif_stack" value="React" id="flexCheckChecked" >
+						<label class="dropdown-item"><input class="form-check-input" type="checkbox" name="uif_stack" value="React" >
 							<label class="form-check-label" for="flexCheckChecked">React</label></label>
 			
 						
@@ -314,27 +314,50 @@
 				
 				
 				// 개발스텍 부분
-				let stackList = []
-	            $('input[name="uif_stack"]').click(function(){
+			$('input[name="uif_stack"]').click(function(){
+               if($(this).val()=='없음'){
+                  
+                  $("input[value='JAVA']").prop("checked",false);
+                  $("input[value='Python']").prop("checked",false);
+                  $("input[value='JavaScript']").prop("checked",false);
+                  $("input[value='TypeScript']").prop("checked",false);
+                  $("input[value='PHP']").prop("checked",false);
+                  $("input[value='C／C＃']").prop("checked",false);
+                  $("input[value='HTML']").prop("checked",false);
+                  $("input[value='CSS']").prop("checked",false);
+                  $("input[value='RDBMS']").prop("checked",false);
+                  $("input[value='AWS']").prop("checked",false);
+                  $("input[value='Spring']").prop("checked",false);
 
-	                if($(this).prop('checked')){
-	                    
-	                    let bgRs=$(this).val()
-	                    let bgId='bg'+$(this).val()
-	                    $('#stackRs').append('<span class="btn btn-primary btn-sm " id="'+bgId+'" >'+bgRs+'</span>')
-	                
-						
-						stackList.push(bgRs)
-	                }else{
-	                    let b='bg'+$(this).val()
-	                    let res = "#"+b
-	                    $(res).remove()
+                  $('#stackRs').empty();
+                  let bgRs="없음";
+                  let bgId='bg없음';
+                  
+                  $('#stackRs').append('<span class="btn btn-primary btn-sm" id="bg없음" >없음</span>')
 
-						stackList =stackList.filter((element) => element !== ($(this).val()));
-						
 
-	                }
-	            })
+               }else if($(this).val()!=='없음'){
+                  
+                  $('#bg없음').remove()
+                  $("input:checkbox[id='stackNone']").prop("checked", false);
+
+                  if(($(this).prop('checked'))){
+                     
+                     let bgRs=$(this).val()
+                     let bgId='bg'+$(this).val()
+                     $('#stackRs').append('<span class="btn btn-primary btn-sm " id="'+bgId+'" >'+bgRs+'</span>')
+                   
+                  }else{
+
+                     let b='bg'+$(this).val()
+                     let res = "#"+b
+                     $(res).remove()
+                  }
+
+               }
+
+
+            })
 				
 					
 	</script>

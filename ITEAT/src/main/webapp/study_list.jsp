@@ -1,3 +1,8 @@
+<%@page import="org.apache.ibatis.reflection.SystemMetaObject"%>
+<%@page import="com.iteat.domain.StudyBoard"%>
+<%@page import="com.iteat.domain.StudyBoardDAO"%>
+<%@page import="java.util.List"%>
+<%@page import="com.iteat.domain.UserInfo"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8" isELIgnored="false"%>
 <!DOCTYPE html>
@@ -11,6 +16,7 @@
 <body>
 <%@ include file="header.jsp" %>
     <!-- 전체 감싸기 -->
+    
     <div class="board_wrap">
         <!-- 제목 영역 -->
         <div class="board_title">
@@ -21,10 +27,9 @@
             <input type="text" placeholder="검색어를 입력해주세요">
             <button>검색</button>
         </div>
-
-        <!-- 리스트영역 전체 -->
+ 		<!-- 리스트영역 전체 -->
         <div class="board_list_wrap">
-            <!-- 리스트영역 -->
+        
             <div class="board_list">
                 <div class="top">
                     <div class="writer">작성자</div>
@@ -34,46 +39,34 @@
                     <div class="recruit">모집여부</div>
                     <div class="hits">조회수</div>
                 </div>
-                <div>
-                    <div class="writer">미니</div>
-                    <div class="title"><a href="study_view.jsp">모르겠어요</a></div>
-                    <div class="local">광주</div>
-                    <div class="date">2022-05-14</div>
-                    <div class="recruit">모집중</div>
-                    <div class="hits">23</div>
-                </div>
-                <div>
-                    <div class="writer">미니</div>
-                    <div class="title"><a href="study_view.jsp">모르겠어요</a></div>
-                    <div class="local">광주</div>
-                    <div class="date">2022-05-14</div>
-                    <div class="recruit">모집중</div>
-                    <div class="hits">23</div>
-                </div>
-                <div>
-                    <div class="writer">미니</div>
-                    <div class="title"><a href="study_view.jsp">모르겠어요</a></div>
-                    <div class="local">광주</div>
-                    <div class="date">2022-05-14</div>
-                    <div class="recruit">모집중</div>
-                    <div class="hits">23</div>
-                </div>
-                <div>
-                    <div class="writer">미니</div>
-                    <div class="title"><a href="study_view.jsp">모르겠어요</a></div>
-                    <div class="local">광주</div>
-                    <div class="date">2022-05-14</div>
-                    <div class="recruit">모집중</div>
-                    <div class="hits">23</div>
-                </div>
-                <div>
-                    <div class="writer">미니</div>
-                    <div class="title"><a href="study_view.jsp">모르겠어요</a></div>
-                    <div class="local">광주</div>
-                    <div class="date">2022-05-14</div>
-                    <div class="recruit">모집중</div>
-                    <div class="hits">23</div>
-                </div>
+            	 <c:choose>
+                	  <c:when test="${empty loginUser}">
+                  	   <h1>로그인을 하세요.</h1>
+                	  </c:when>
+                	  <c:otherwise>
+                	  <%
+                	    StudyBoardDAO dao = new StudyBoardDAO();
+                		List<StudyBoard> studyBoardList = dao.selectStudyBoard();
+                		pageContext.setAttribute("studyBoardList",studyBoardList);
+                		System.out.print("게시글 개수 : " + studyBoardList.size());
+                	  %>
+                    	 
+                    	 	
+                    	 		<c:forEach var="sbList" items="${studyBoardList}" varStatus="status">
+								
+								<div>
+                  				  <div class="writer">${sbList.id}</div>
+                			  	  <div class="title"><a href="study_view.jsp">${sbList.title}</a></div>
+              				      <div class="local">${sbList.region}</div>
+               				      <div class="date">${sbList.regdate}</div>
+                 				  <div class="recruit">${sbList.recruit}</div>
+               				      <div class="hits">${sbList.hit}</div>
+           					   </div>							
+							</c:forEach>
+                	  </c:otherwise>
+               		</c:choose>   	  
+       
+                
             </div>
             <!-- 리스트 페이지영역 -->
             <div class="paging">
@@ -92,6 +85,7 @@
                 <a href="study_write.jsp" class="on">올리기</a>
                 <!--<a href="#">수정</a>-->
             </div>
+            
         </div>
     </div>
     

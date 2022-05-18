@@ -1,5 +1,7 @@
 package com.iteat.domain;
 
+import java.util.List;
+
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 
@@ -89,6 +91,43 @@ public class UserInfoDAO {
 		int cnt = 0;
 		try {
 			cnt = sqlSession.update("com.iteat.domain.UserInfoDAO.updateUif", userinfo);
+			if(cnt>0) {
+				sqlSession.commit();
+			}else {
+				sqlSession.rollback();
+			}
+		} catch (Exception e) {
+			
+		}finally {
+			sqlSession.close();
+		}
+		return cnt;
+	}
+	
+	public List<UserInfo> selectAll() {
+		SqlSession sqlSession = sqlSessionFactory.openSession();
+		List<UserInfo> userInfoList = null;
+		try {
+			
+			userInfoList = sqlSession.selectList("com.iteat.domain.UserInfoDAO.selectAll");
+			
+			if(userInfoList!=null) {
+				sqlSession.commit();
+			}else {
+				sqlSession.rollback();
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}finally {
+			sqlSession.close();
+		}
+		return userInfoList;
+	}
+	public int deleteUserInfo(String uif_id) {
+		SqlSession sqlSession = sqlSessionFactory.openSession();
+		int cnt = 0;
+		try {
+			cnt = sqlSession.delete("com.iteat.domain.UserInfoDAO.deleteUserInfo", uif_id);
 			if(cnt>0) {
 				sqlSession.commit();
 			}else {

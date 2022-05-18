@@ -5,7 +5,7 @@
 <mapper namespace="com.iteat.domain.UserInfoDAO">
 
 	<insert id="insertUif" parameterType="com.iteat.domain.UserInfo">
-		insert into user_info values(#{uif_id},#{uif_pw},#{uif_nick},sysdate,1,#{uif_stack},#{uif_blog},#{uif_edu},#{uif_etc},'A')
+		insert into user_info values(#{uif_id},#{uif_pw},#{uif_nick},sysdate,1,#{uif_stack},#{uif_blog},#{uif_edu},#{uif_etc},'N')
 	</insert>
 	
 	<select id="idCheck" parameterType="String" resultType="String">
@@ -23,4 +23,12 @@
 	<update id="updateUif" parameterType="com.iteat.domain.UserInfo">
 		update user_info set uif_pw=#{uif_pw},uif_nick=#{uif_nick},uif_stack=#{uif_stack},uif_blog=#{uif_blog},uif_edu=#{uif_edu},uif_etc=#{uif_etc} where uif_id=#{uif_id}
 	</update>
+	
+	<select id="selectAll" resultType="com.iteat.domain.UserInfo">
+		select * from user_info where uif_type not in 'A'
+	</select>
+	
+	<delete id="deleteUserInfo" parameterType="String">
+		delete from user_info where uif_id=#{uif_id}
+	</delete>
 </mapper>

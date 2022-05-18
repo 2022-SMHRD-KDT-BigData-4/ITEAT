@@ -15,8 +15,6 @@
 
 <%@ include file="header.jsp" %>
 
-
-
   <!-- 전체 감싸기 -->
     <div class="board_wrap">
         <!-- 제목 영역 -->

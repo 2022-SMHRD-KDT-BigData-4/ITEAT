@@ -1,5 +1,15 @@
+<%@page import="com.iteat.domain.UserInfo"%>
+<%@page import="java.util.List"%>
+<%@page import="com.iteat.domain.UserInfoDAO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8" isELIgnored="false"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+<%
+	UserInfoDAO dao = new UserInfoDAO();
+	List<UserInfo> userInfoList = dao.selectAll();
+	pageContext.setAttribute("UserInfoList",userInfoList);
+%>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -46,29 +56,18 @@
             </div>
 
             <div>
-                <tr>
-                    <td>id</td>
-                    <td>nick</td>
-                    <td>level</td>
-                    <td>date</td>
-                    <td><a href="#">삭제</a></td>
-
-                </tr>
+                <c:forEach var="u" items="${UserInfoList}">
+					<tr>
+						<td><c:out value="${u.uif_id}"/></td>
+						<td><c:out value="${u.uif_nick}"/></td>
+						<td><c:out value="${u.uif_level}"/></td>
+						<td><c:out value="${u.date}"/></td>
+						<td><a href="DeleteCon?uif_id=${u.uif_id}">삭제</a></td>														
+					</tr>
+				</c:forEach>
 
             </div>
             </table>
-            <!-- 리스트 페이지영역 -->
-            <div class="paging">
-                
-                <a href="#" class="bt">이전</a>
-                <a href="#" class="num on">1</a>
-                <a href="#" class="num">2</a>
-                <a href="#" class="num">3</a>
-                <a href="#" class="num">4</a>
-                <a href="#" class="num">5</a>
-                <a href="#" class="bt">다음</a>
-
-            </div>
         </div>
 
 
