@@ -4,6 +4,6 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.iteat.domain.StudyBoardDAO">
 	<select id="selectStudyBoard" resultType="com.iteat.domain.StudyBoard">
-		select * from study order by study_seq
+		select * from study order by study_seq desc
 	</select>
 </mapper>

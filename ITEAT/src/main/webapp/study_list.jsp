@@ -52,7 +52,7 @@
                 	  %>
                     	 
                     	 	
-                    	 		<c:forEach var="sbList" items="${studyBoardList}" varStatus="status">
+                    	 		<c:forEach var="sbList" begin="0" end="9" items="${studyBoardList}" varStatus="status">
 								
 								<div>
                   				  <div class="writer">${sbList.id}</div>
@@ -73,10 +73,9 @@
                 
                 <a href="#" class="bt">이전</a>
                 <a href="#" class="num on">1</a>
-                <a href="#" class="num">2</a>
-                <a href="#" class="num">3</a>
-                <a href="#" class="num">4</a>
-                <a href="#" class="num">5</a>
+                <c:forEach var="a" begin="1" end="${studyBoardList.size()/10}" varStatus="status">
+                <a href="#" class="num">${status.count+1}</a>
+                </c:forEach>
                 <a href="#" class="bt">다음</a>
 
             </div>
