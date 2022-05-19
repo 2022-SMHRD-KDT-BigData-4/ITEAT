@@ -114,6 +114,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.5s;
   z-index: 997;
   padding: 15px 0;
+  position:relative;
 }
 
 #header.header-scrolled, #header.header-inner-pages {
@@ -1882,14 +1883,6 @@ section {
   transition: 0.3s;
 }
 
-/*message*/
-#msgPop{
-	position: fixed;
-	height: 350px;
-	width: 300px;
-	background-color: white;
-	border: solid #ddd 1px;
-}
 
 
 @media (max-width: 768px) {
@@ -1904,6 +1897,25 @@ section {
   #footer .credits {
     padding-top: 4px;
   }
+}
+
+/*message*/
+#msgPop{
+	height: 350px;
+	width: 300px;
+	background-color: white;
+	border: solid #ddd 1px;
+	position: absolute;
+	float: right;
+}
+
+#msgImg{
+	width:25px;
+}
+
+#msgImg:hover{
+	background-color:white;
+	cursor: pointer;
 }
 
 

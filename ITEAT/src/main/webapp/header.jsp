@@ -26,9 +26,10 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/mainStyle.css" rel="stylesheet">
+  <link href="assets/css/mainStyle2.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Arsha - v4.3.0
@@ -44,7 +45,7 @@
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo me-auto"><a href="index.html">IT eat</a></h1>
+      <h1 class="logo me-auto"><a href="main.jsp">IT eat</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -58,8 +59,8 @@
           </li>
           <li class="dropdown"><a href="#"><span>팀원모집</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="#">공모전</a></li>
-              <li><a href="#">스터디</a></li>
+              <li><a href="contest_list.jsp">공모전</a></li>
+              <li><a href="study_list.jsp">스터디</a></li>
             </ul>
           </li>
           <li><a href="#">묻고답하기</a></li>
@@ -69,10 +70,15 @@
              	  <c:when test="${empty loginUser}">
                	    <li class="login"><a href="login.jsp">로그인</a></li>
                	    <li class="Join"><a href="join.jsp">회원가입</a></li>
-              	  </c:when>
+                	  
+                	</c:when>
              	  <c:otherwise>
                 	  <li class="login"><a href="LogoutCon">로그아웃</a></li>
                 	  <li class="Join"><a href="update.jsp">개인정보수정</a></li>
+                	  <li class="message" ><img id="msgImg" src="assets/img/send.png"><li>
+                	  <c:if test="${loginUser.uif_type eq 'A'}">
+                   	  <li><a href="userList.jsp">전체회원정보</a><li>
+                 	  </c:if>
               	  </c:otherwise>
           </c:choose>
          
@@ -81,10 +87,37 @@
           
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
+        
+        
+
       </nav><!-- .navbar -->
+      
+
 
     </div>
+    
+
   </header><!-- End Header -->
+  
+            	<div id="msgPop" style="display: none; ">
+        	<div>
+    	        <a href="message_list.jsp"><button>받은쪽지보기</button></a>
+    	    </div>
+        
+   		</div>
+	<script>
+
+	$('.message').click(function(){
+
+		$('#msgPop').css('display','block')
+
+
+	})
+
+
+
+	</script>
+  
   
   
   
