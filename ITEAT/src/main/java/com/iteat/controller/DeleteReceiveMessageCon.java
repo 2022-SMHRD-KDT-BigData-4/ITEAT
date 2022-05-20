@@ -25,7 +25,7 @@ public class DeleteReceiveMessageCon extends HttpServlet {
 		}else { 
 			System.out.println("메세지삭제 실패");
 		}
-		response.sendRedirect("message_sendlist.jsp");
+		response.sendRedirect("message_receivelist.jsp");
 	}
 	
 
