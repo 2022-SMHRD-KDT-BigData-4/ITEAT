@@ -33,7 +33,7 @@
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/mainStyle2.css?ver=1.1" rel="stylesheet">
+  <link href="assets/css/mainStyle2.css?dfsdve" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Arsha - v4.3.0
@@ -42,6 +42,10 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
   <script src="https://kit.fontawesome.com/5a9fda220b.js" crossorigin="anonymous"></script>
+
+
+   <link href="${pageContext.request.contextPath}/resources/css/home.css" rel="stylesheet" type="text/css">
+
 </head>
 <body>
 
@@ -77,10 +81,17 @@
                 	  
                 	</c:when>
              	  <c:otherwise>
-                	  <li class="login"><a href="LogoutCon">로그아웃</a></li>
-                	  <li class="Join"><a href="update.jsp">개인정보수정</a></li>
-                	  <li class="loginNick"><a>${loginUser.uif_nick}</a></li>
-                	  <li class="message" ><img id="msgImg" src="assets/img/send.png"><li>
+                	  <li class="login" style="display: none;"><a href="LogoutCon">로그아웃</a></li>
+                	  <li class="Join" style="display: none;"><a href="update.jsp">개인정보수정</a></li>
+                	  
+                	  <li class="dropdown"><a href="#"><span>${loginUser.uif_nick}님</span> <i class="bi bi-chevron-down"></i></a>
+            			<ul>
+              			<li><a href="LogoutCon">로그아웃</a></li>
+              			<li><a href="update.jsp">정보수정</a></li>
+            			</ul>
+          			  </li>
+                	  
+                	  <li class="message" ><img id="msgImg" class="messageOpen" src="assets/img/send.png" onmouseover="this.src='assets/img/send_blue.png'" onmouseout="this.src='assets/img/send.png'" ><li>
                 	  <c:if test="${loginUser.uif_type eq 'A'}">
                    	  <li><a href="userList.jsp">전체회원정보</a><li>
                  	  </c:if>
@@ -103,6 +114,10 @@
     
 
   </header><!-- End Header -->
+  
+  
+  
+  	<!-- message popup -->
    <c:choose>
    <c:when test="${empty loginUser}">
    </c:when>
@@ -116,6 +131,12 @@
     %>
         <div id="msgPop" style="display: none; ">
         <div class="msgPop-open">
+        
+        	<div>
+        		<div id="popup-title">
+        			쪽지
+        		</div>
+        	</div>
         	<c:forEach var="msg" begin="0" end="4" items="${messageList}">
         	<div class="msgPop-list">
         		<span class="msgPop-title">${msg.msg_title}</span>
@@ -126,24 +147,43 @@
         	</div>
         	</c:forEach>
         </div>
-        	<div>
-    	        <a href="message_receivelist.jsp"><button>받은쪽지보기</button></a>
+        	<div class="msgPop-btn">
+    	        <a href="message_receivelist.jsp"><button id="popBtn-receive">받은쪽지</button></a>
+    	        <a href="message_sendlist.jsp"><button id="popBtn-send">보낸쪽지</button></a>
+    	        <a href="message_form.jsp"><button id="popBtn-write">쪽지작성</button></a>
     	    </div>
         
    		</div>
    		
         </c:otherwise>
       </c:choose>
+      
+      
+
+      
+      
+      
 	<script>
 
-	$('.message').click(function(){
-
-		$('#msgPop').css('display','block')
-
-
+	
+	
+	<!--message popup-->
+	$(document).on('click','.messageOpen',function(){
+			$('#msgPop').css('display','block')	;
+			$('#msgImg').prop('class','messageClose');
 	})
+	
+	$(document).on('click','.messageClose',function(){
+			$('#msgPop').css('display','none')	;
+			$('#msgImg').prop('class','messageOpen');
+	})
+	
 
 
+	
+	
+	
+	
 
 	</script>
   
