@@ -29,7 +29,7 @@
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/mainStyle2.css" rel="stylesheet">
+  <link href="assets/css/mainStyle2.css?ver=1.1" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Arsha - v4.3.0
@@ -53,7 +53,7 @@
         <ul>
           <li class="dropdown"><a href="#"><span>길잡이</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="#">로드맵</a></li>
+              <li><a href="gil_roadmap.jsp">로드맵</a></li>
               <li><a href="#">요구사항</a></li>
             </ul>
           </li>
@@ -75,6 +75,7 @@
              	  <c:otherwise>
                 	  <li class="login"><a href="LogoutCon">로그아웃</a></li>
                 	  <li class="Join"><a href="update.jsp">개인정보수정</a></li>
+                	  <li class="loginNick"><a>${loginUser.uif_nick}</a></li>
                 	  <li class="message" ><img id="msgImg" src="assets/img/send.png"><li>
                 	  <c:if test="${loginUser.uif_type eq 'A'}">
                    	  <li><a href="userList.jsp">전체회원정보</a><li>
@@ -99,7 +100,25 @@
 
   </header><!-- End Header -->
   
-            	<div id="msgPop" style="display: none; ">
+        <div id="msgPop" style="display: none; ">
+        <div class="msgPop-open">
+        	<div class="msgPop-list">
+        		<span class="msgPop-title">제목</span>
+        		<div>
+        		<span class="msgPop-sender">어드민지</span>
+        		<span class="msgPop-date">2021-20-50 00:00</span>
+        		</div>
+        	</div>
+        	<div class="msgPop-list">
+        		<span class="msgPop-title">저랑같은팀하실래요?</span>
+        		
+        		<div>
+        		<span class="msgPop-sender">어드민지</span>
+        		<span class="msgPop-date">2021-20-50 00:00</span>
+        		</div>
+        		
+        	</div>
+        </div>
         	<div>
     	        <a href="message_receivelist.jsp"><button>받은쪽지보기</button></a>
     	    </div>
