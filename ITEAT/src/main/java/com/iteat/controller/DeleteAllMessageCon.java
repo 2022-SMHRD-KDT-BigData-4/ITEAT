@@ -6,27 +6,29 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import com.iteat.domain.MessageDAO;
+import com.iteat.domain.UserInfo;
 
-@WebServlet("/DeleteSendMessageCon")
-public class DeleteSendMessageCon extends HttpServlet {
+@WebServlet("/DeleteAllMessageCon")
+public class DeleteAllMessageCon extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		int msg_seq = Integer.parseInt(request.getParameter("msg_seq"));
+		request.setCharacterEncoding("UTF-8");
 		
+		HttpSession session = request.getSession();
+		UserInfo uif = (UserInfo)session.getAttribute("loginUser");
 		MessageDAO dao = new MessageDAO();
-		
-		int cnt = dao.deleteSendMessage(msg_seq);
+		int cnt = dao.deleteAllMessage(uif.getUif_id());
 		
 		if(cnt>0) { 
 			System.out.println("메세지삭제 성공");
 		}else { 
 			System.out.println("메세지삭제 실패");
 		}
-		response.sendRedirect("message_sendlist.jsp");
+		response.sendRedirect("message_receivelist.jsp");
 	}
-	
 
 }

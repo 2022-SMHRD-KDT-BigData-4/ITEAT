@@ -68,23 +68,6 @@ public class MessageDAO {
 		return messageList;
 	}
 	
-	public int deleteSendMessage(int msg_seq) {
-		SqlSession sqlSession = SqlSessionFactory.openSession();
-		int cnt = 0;
-		try {
-			cnt = sqlSession.delete("com.iteat.domain.MessageDAO.deleteSendMessage", msg_seq);
-			if(cnt>0) {
-				sqlSession.commit();
-			}else {
-				sqlSession.rollback();
-			}
-		} catch (Exception e) {
-			
-		}finally {
-			sqlSession.close();
-		}
-		return cnt;
-	}
 	public int deleteReceiveMessage(int msg_seq) {
 		SqlSession sqlSession = SqlSessionFactory.openSession();
 		int cnt = 0;
@@ -97,6 +80,23 @@ public class MessageDAO {
 			}
 		} catch (Exception e) {
 			
+		}finally {
+			sqlSession.close();
+		}
+		return cnt;
+	}
+	public int deleteAllMessage(String msg_receiver) {
+		SqlSession sqlSession = SqlSessionFactory.openSession();
+		int cnt = 0;
+		try {
+			cnt = sqlSession.delete("com.iteat.domain.MessageDAO.deleteAllMessage", msg_receiver);
+			if(cnt>0) {
+				sqlSession.commit();
+			}else {
+				sqlSession.rollback();
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
 		}finally {
 			sqlSession.close();
 		}

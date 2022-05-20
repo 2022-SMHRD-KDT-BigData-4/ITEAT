@@ -13,10 +13,10 @@
     <select id="selectReceiveMessage" parameterType="String" resultType="com.iteat.domain.Message">
     select * from message where msg_receiver=#{msg_receiver} order by msg_seq
     </select>
-    <delete id="deleteSendMessage" parameterType="int">
-		delete from message where msg_seq=#{msg_seq}
-	</delete>
 	<delete id="deleteReceiveMessage" parameterType="int">
 		delete from message where msg_seq=#{msg_seq}
+	</delete>
+	<delete id="deleteAllMessage" parameterType="String">
+		delete from message where msg_receiver=#{msg_receiver}
 	</delete>
 </mapper>

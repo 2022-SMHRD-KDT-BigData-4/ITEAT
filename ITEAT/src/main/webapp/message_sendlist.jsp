@@ -23,7 +23,6 @@
 
         <div class="give">
             <a href="message_receivelist.jsp"><button>받은쪽지</button></a>
-            <div id="all"><a href="">전체삭제</a></div>
         </div>
 
 
@@ -52,7 +51,6 @@
                     <div class="title">제목</div>
                     <div class="writer">받은사람</div>
                     <div class="date">작성날짜</div>
-                    <div class="delete">삭제</div>
                 </div>
 			<c:forEach var="msg" items="${messageList}">
                 <div>
@@ -60,7 +58,6 @@
                     <div class="title"><a href="message_view.jsp">${msg.msg_title}</a></div>
                     <div class="writer">${msg.msg_receiver}</div>
                     <div class="date">${msg.msg_date}</div>
-                    <div class="delete"><a href="DeleteSendMessageCon?msg_seq=${msg.msg_seq}">삭제</a> <label for=""></div>
                 </div>
                 
             </c:forEach>

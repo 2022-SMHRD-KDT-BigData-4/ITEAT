@@ -23,7 +23,7 @@
 
         <div class="give">
             <a href="message_sendlist.jsp"><button>보낸쪽지</button></a>
-            <div id="all"><a href="">전체삭제</a></div>
+            <div id="all"><a href="DeleteAllMessageCon">전체삭제</a></div>
         </div>
 
 
