@@ -1,3 +1,7 @@
+<%@page import="com.iteat.domain.Message"%>
+<%@page import="java.util.List"%>
+<%@page import="com.iteat.domain.MessageDAO"%>
+<%@page import="com.iteat.domain.UserInfo"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8" isELIgnored="false"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
@@ -99,31 +103,38 @@
     
 
   </header><!-- End Header -->
-  
+   <c:choose>
+             	  <c:when test="${empty loginUser}">
+               	    
+                	</c:when>
+             	  <c:otherwise>
+  	<%
+      UserInfo uif= (UserInfo)session.getAttribute("loginUser");
+      MessageDAO dao = new MessageDAO();
+      List<Message> messageList = dao.selectReceiveMessage(uif.getUif_id());
+      pageContext.setAttribute("messageList",messageList);
+      System.out.print("메세지 개수 : " + messageList.size());
+    %>
         <div id="msgPop" style="display: none; ">
         <div class="msgPop-open">
+        	<c:forEach var="msg" begin="0" end="4" items="${messageList}">
         	<div class="msgPop-list">
-        		<span class="msgPop-title">제목</span>
+        		<span class="msgPop-title">${msg.msg_title}</span>
         		<div>
-        		<span class="msgPop-sender">어드민지</span>
-        		<span class="msgPop-date">2021-20-50 00:00</span>
-        		</div>
+        		<span class="msgPop-sender">${msg.msg_sender}</span>
+        		<span class="msgPop-date">${msg.msg_date}</span>
+        		</div>	
         	</div>
-        	<div class="msgPop-list">
-        		<span class="msgPop-title">저랑같은팀하실래요?</span>
-        		
-        		<div>
-        		<span class="msgPop-sender">어드민지</span>
-        		<span class="msgPop-date">2021-20-50 00:00</span>
-        		</div>
-        		
-        	</div>
+        	</c:forEach>
         </div>
         	<div>
     	        <a href="message_receivelist.jsp"><button>받은쪽지보기</button></a>
     	    </div>
         
    		</div>
+   		
+              	  </c:otherwise>
+          </c:choose>
 	<script>
 
 	$('.message').click(function(){

@@ -8,10 +8,10 @@
       insert into MESSAGE values (msg_seq.nextval, #{msg_sender}, #{msg_receiver}, #{msg_title}, #{msg_content}, sysdate, (SELECT UIF_NICK FROM USER_INFO WHERE UIF_ID=#{msg_sender}),(SELECT UIF_NICK FROM USER_INFO WHERE UIF_ID=#{msg_receiver}))
     </insert>
      <select id="selectSendMessage" parameterType="String" resultType="com.iteat.domain.Message">
-    select * from message where msg_sender=#{msg_sender} order by msg_seq
+    select * from message where msg_sender=#{msg_sender} order by msg_seq desc
     </select>
     <select id="selectReceiveMessage" parameterType="String" resultType="com.iteat.domain.Message">
-    select * from message where msg_receiver=#{msg_receiver} order by msg_seq
+    select * from message where msg_receiver=#{msg_receiver} order by msg_seq desc
     </select>
 	<delete id="deleteReceiveMessage" parameterType="int">
 		delete from message where msg_seq=#{msg_seq}

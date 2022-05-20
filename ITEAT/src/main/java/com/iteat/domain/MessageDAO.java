@@ -48,12 +48,12 @@ public class MessageDAO {
 		}
 		return messageList;
 	}
-	public List<Message> selectReceiveMessage(String email) {
+	public List<Message> selectReceiveMessage(String msg_receiver) {
 		SqlSession sqlSession = SqlSessionFactory.openSession();
 		List<Message> messageList = null;
 		try {
 			
-			messageList = sqlSession.selectList("com.iteat.domain.MessageDAO.selectReceiveMessage",email);
+			messageList = sqlSession.selectList("com.iteat.domain.MessageDAO.selectReceiveMessage",msg_receiver);
 			
 			if(messageList!=null) {
 				sqlSession.commit();
@@ -101,5 +101,24 @@ public class MessageDAO {
 			sqlSession.close();
 		}
 		return cnt;
+	}
+	public List<Message> selectReceive5Message(String msg_receiver) {
+		SqlSession sqlSession = SqlSessionFactory.openSession();
+		List<Message> messageList = null;
+		try {
+			
+			messageList = sqlSession.selectList("com.iteat.domain.MessageDAO.selectReceive5Message",msg_receiver);
+			
+			if(messageList!=null) {
+				sqlSession.commit();
+			}else {
+				sqlSession.rollback();
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}finally {
+			sqlSession.close();
+		}
+		return messageList;
 	}
 }
