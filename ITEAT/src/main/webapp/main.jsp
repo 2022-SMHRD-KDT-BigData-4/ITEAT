@@ -28,7 +28,7 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/mainStyle.css" rel="stylesheet">
+  <link href="assets/css/mainStyle.css?ver=1.1" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Arsha - v4.3.0
@@ -55,9 +55,7 @@
           <h2>IT EAT</h2>
           
         </div>
-        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
-          <img src="assets/img/it eat.png" class="img-fluid animated" alt="">
-        </div>
+        
       </div>
     </div>
 
@@ -78,7 +76,9 @@
             <div class="icon-box">
               <div class="icon"><i class="fa-solid fa-road"></i></div>
               <h4><a href="">길잡이</a></h4>
-              <p>로드맵과 요구사항을 통해ㄱㄱㄱㄱㄱㄱㄱㄱㄱㄱㄱㄱㄱㄱㄱㄱㄱㄱㄱㄱㄱㄱㄱ </p>
+              <p>IT 개발자의 길을 안내해드릴게요!<br>
+				지금 뜨고있는 기술을 확인하고<br>
+				로드맵을 통해 방향을 잡아보세요!</p>
             </div>
           </div>
 
@@ -86,7 +86,9 @@
             <div class="icon-box">
               <div class="icon"><i class="fa-solid fa-user-plus"></i></div>
               <h4><a href="">팀원모집</a></h4>
-              <p>공모전과 스터디에서 자신의 팀원을 모집ㄱㄱㄱㄱㄱㄱㄱㄱㄱ</p>
+              <p>개발은 혼자가 아니라 함께!<br>
+혼자 하시면 막막하잖아요?<br>
+동료를 모아 힘을 합쳐보세요!</p>
             </div>
           </div>
 
@@ -94,7 +96,9 @@
             <div class="icon-box">
               <div class="icon"><i class="fa-solid fa-circle-question"></i></i></div>
               <h4><a href="">묻고답하기</a></h4>
-              <p>모르는거나 궁금한거 있으면 물어보기 ㄱㄱㄱㄱㄱㄱㄱㄱㄱㄱㄱㄱㄱㄱㄱㄱ</p>
+              <p>코딩하다 막히셨나요?<br>
+궁금한 거 다 질문하세요!<br>
+IT EAT 회원들이 도와줄거에요!</p>
             </div>
           </div>
 
@@ -102,7 +106,9 @@
             <div class="icon-box">
               <div class="icon"><i class="fa-solid fa-fish-fins"></i></div>
               <h4><a href="">해저탐험</a></h4>
-              <p>코딩을 작성해 올려 자신만의 출석부를 꾸며나가라 ㄱㄱㄱㄱㄱㄱㄱㄱㄱ</p>
+              <p>실력향상과 즐거움을 한번에!<br>
+코드를 올려 해저탐험을 하고<br>
+수족관을 다양한 물고기로 채워보세요!</p>
             </div>
           </div>
 
@@ -121,9 +127,9 @@
             <img src="assets/img/skills.png" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
-            <h3>요즘 트랜드순위인 개발언어/기술 요구사항 순위</h3>
+            <h3>요즘 트랜드인 개발언어/기술 요구사항 순위</h3>
             <p class="fst-italic">
-              좀 더 자세하게 알고싶으면 길잡이 카테고리 ㄱㄱ
+              길잡이 카테고리에서 확인하세요
             </p>
 
             <div class="skills-content">
@@ -180,8 +186,8 @@
 
         <div class="row">
           <div class="col-lg-9 text-center text-lg-start">
-            <h1>해저탐험 준비방법</h1>
-            <p> 코딩작성을 통해 나만의 코딩출석부를 만들어보자!!</p>
+            <h1>이트이트에서 코딩을 즐기는 방법</h1>
+            <p>나만의 코딩 출석부를 만들어보자</p>
           </div>
           <div class="col-lg-3 cta-btn-container text-center">
             <a class="cta-btn align-middle" href="#portfolio">해저탐험 시작!</a>
@@ -199,7 +205,7 @@
           <h2>코딩기록으로<br>해 저 탐 험 하 자!</h2>
           <br>
           
-          <p>코딩코딩코딩코딩코딩코딩코딩코딩코딩코코딩코딩코딩코딩코딩코딩코딩코딩코딩딩코딩코딩코딩코딩코딩코딩코딩코딩코딩코딩코딩코딩코딩코딩코딩코딩</p>
+          <p>코딩을 통해 해저 여행을 할수 있다? <br> 코딩 올리고 귀여운 물고기도 얻고!</p>
         </div>
 
         
@@ -484,41 +490,7 @@
 
   </main><!-- End #main -->
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-
-
-    <div class="container footer-bottom clearfix">
-      <div class="copyright">
-      <strong><span>이민지 이정민 심우현 하종현</span></strong>
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/ -->
-        IT EAT
-      </div>
-
-    
-    
-    </div>
-  </footer><!-- End Footer -->
-
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+<%@ include file="footer.jsp" %>
 
 </body>
 </html>
