@@ -56,7 +56,7 @@
 								
 								<div>
                   				  <div class="writer">${sbList.id}</div>
-                			  	  <div class="title"><a href="study_view.jsp">${sbList.title}</a></div>
+                			  	  <div class="title"><a href="study_view.jsp?num=${sbList.num}">${sbList.title}</a></div>
               				      <div class="local">${sbList.region}</div>
                				      <div class="date">${sbList.regdate}</div>
                  				  <div class="recruit">${sbList.recruit}</div>

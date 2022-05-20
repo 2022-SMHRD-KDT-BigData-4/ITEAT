@@ -23,7 +23,7 @@
 <body>
 
 
-<%@ include file="header.jsp" %>
+
 
 
 

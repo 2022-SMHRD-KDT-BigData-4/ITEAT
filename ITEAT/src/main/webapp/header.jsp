@@ -104,10 +104,9 @@
 
   </header><!-- End Header -->
    <c:choose>
-             	  <c:when test="${empty loginUser}">
-               	    
-                	</c:when>
-             	  <c:otherwise>
+   <c:when test="${empty loginUser}">
+   </c:when>
+   <c:otherwise>
   	<%
       UserInfo uif= (UserInfo)session.getAttribute("loginUser");
       MessageDAO dao = new MessageDAO();
@@ -133,8 +132,8 @@
         
    		</div>
    		
-              	  </c:otherwise>
-          </c:choose>
+        </c:otherwise>
+      </c:choose>
 	<script>
 
 	$('.message').click(function(){

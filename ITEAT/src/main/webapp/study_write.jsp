@@ -18,6 +18,7 @@
             스터디모집 / 글쓰기
         </div>
         <!-- 글 올리는 게시판 전체 -->
+        <form action="#" method="post">
         <div class="board_write_wrap">
             <div class="board_write">
                 <div class="title"> 
@@ -122,6 +123,7 @@
                 <a href="study_list.jsp" id="onn" class="btn btn-primary btn-lg">뒤로가기</a>
             </div>
         </div>
+        </form>
     </div>
 
 <script>
