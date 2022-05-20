@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+        
+<mapper namespace="com.iteat.domain.MessageDAO">
+	<insert id="insertMessage" parameterType="com.iteat.domain.Message">
+      insert into MESSAGE values (msg_seq.nextval, #{msg_sender}, #{msg_receiver}, #{msg_title}, #{msg_content}, sysdate, (SELECT UIF_NICK FROM USER_INFO WHERE UIF_ID=#{msg_sender}),(SELECT UIF_NICK FROM USER_INFO WHERE UIF_ID=#{msg_receiver}))
+    </insert>
+     <select id="selectSendMessage" parameterType="String" resultType="com.iteat.domain.Message">
+    select * from message where msg_sender=#{msg_sender} order by msg_seq
+    </select>
+    <select id="selectReceiveMessage" parameterType="String" resultType="com.iteat.domain.Message">
+    select * from message where msg_receiver=#{msg_receiver} order by msg_seq
+    </select>
+    <delete id="deleteSendMessage" parameterType="int">
+		delete from message where msg_seq=#{msg_seq}
+	</delete>
+	<delete id="deleteReceiveMessage" parameterType="int">
+		delete from message where msg_seq=#{msg_seq}
+	</delete>
+</mapper>

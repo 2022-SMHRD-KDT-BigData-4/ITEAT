@@ -1,18 +1,16 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8" isELIgnored="false"%>
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Insert title here</title>
-<link rel="stylesheet" href="assets/css/messageCss.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>message</title>
+    <link rel="stylesheet" href="assets/css/message.css">
 </head>
 <body>
 <%@ include file="header.jsp" %>
-    
     <div class="board_wrap">
         <div class="board_title">
             쪽지
@@ -41,13 +39,28 @@
 
 
             <div class="bt">
-                <a href="message_list.jsp" class="on">보내기</a> 
+                <a href="message_sendlist.jsp" class="on">보낸쪽지함으로</a> 
                 
             </div>
         </div>
-        </div>
-    <%@ include file="footer.jsp" %>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+        <footer id="footer">
+
+
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+      <strong><span>이민지 이정민 심우현 하종현</span></strong>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/ -->
+        IT EAT
+      </div>
+
     
+    
+    </div>
+  </footer><!-- End Footer -->
 </body>
 </html>

@@ -19,6 +19,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
     <mappers>
  		<mapper resource="com/iteat/database/UserInfoMapper.xml"/>
  		<mapper resource="com/iteat/database/StudyBoardMapper.xml"/>
+ 		<mapper resource="com/iteat/database/MessageMapper.xml"/>
     </mappers>
  
 </configuration>

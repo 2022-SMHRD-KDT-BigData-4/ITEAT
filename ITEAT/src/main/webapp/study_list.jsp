@@ -52,7 +52,7 @@
                 	  %>
                     	 
                     	 	
-                    	 		<c:forEach var="sbList" begin="0" end="9" items="${studyBoardList}" varStatus="status">
+                    	 		<c:forEach var="sbList" begin="0" end="${studyBoardList.size()}" items="${studyBoardList}" varStatus="status">
 								
 								<div>
                   				  <div class="writer">${sbList.id}</div>

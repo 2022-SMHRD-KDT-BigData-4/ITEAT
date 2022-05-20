@@ -101,7 +101,7 @@
   
             	<div id="msgPop" style="display: none; ">
         	<div>
-    	        <a href="message_list.jsp"><button>받은쪽지보기</button></a>
+    	        <a href="message_receivelist.jsp"><button>받은쪽지보기</button></a>
     	    </div>
         
    		</div>
