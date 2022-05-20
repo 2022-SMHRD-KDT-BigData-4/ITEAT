@@ -10,7 +10,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IT EAT</title>
-    <link rel="stylesheet" href="assets/css/message.css">
+    <link rel="stylesheet" href="assets/css/message.css?ver=1.1">
 </head>
 <body>
 <%@ include file="header.jsp" %>
@@ -78,7 +78,7 @@
             </div>
             <!-- 리스트 버튼영역 -->
             <div class="bt_wrap">
-                <a href="message_form.jsp" class="on">쪽지작성</a>
+                <a href="message_form.jsp"><button>쪽지작성</button></a>
                 <!--<a href="#">수정</a>-->
             </div>
             

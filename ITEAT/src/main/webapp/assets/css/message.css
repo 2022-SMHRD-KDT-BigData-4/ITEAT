@@ -24,30 +24,48 @@ a {
     margin-top: 20px;
     margin-right: 150px;
     text-align: center;
-    width: 13%;
-    height: 48px;
+    width: 8%;
+    height: 45px;
     background-color: white;
     color: #13547A;
-    font-size: 16px;
+    font-size: 13px;
+    position: relative;
+    top: 91px;
     font-weight: 600;
     border: 1px solid #13547A;
     font-family: 'Noto Sans KR', sans-serif;
 }
 
 .give #all {
-    margin-top: -50px;
+ margin-top: -50px;
     position: relative;
-    left: 850px;
+    left: 900px;
     text-align: center;
-    width: 13%;
-    height: 48px;
+    width: 8%;
+    height: 45px;
     background-color: white;
     color: #13547A;
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 600;
+    top: 100px;
     border: 1px solid #13547A;
     font-family: 'Noto Sans KR', sans-serif;
     text-align: center;
+}
+
+.bt_wrap button{ 
+    margin-top: 20px;
+    margin-left: 85%;
+    text-align: center;
+    width: 13%;
+    height: 45px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 4px;
+    border: 1px solid #13547A;
+    background-color: #13547A;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 .give #all a{
@@ -85,6 +103,7 @@ a {
     font-size: 1.4rem;
 }
 
+/*
 .bt_wrap {
     margin-top: 30px;
     text-align: center;
@@ -100,6 +119,7 @@ a {
     border-radius: 2px;
     font-size: 1.4rem;
 }
+*/
 
 /*첫번째 버튼 왼쪽으로 안가게 */
 .bt_wrap a:first-child {
@@ -393,6 +413,7 @@ body > div > div.board_view_wrap > div.board_view > div.info{
     font-size: 0;
 }
 
+/*
 .bt_wrap a {
     display: inline-block;
     min-width: 80px;
@@ -402,6 +423,7 @@ body > div > div.board_view_wrap > div.board_view > div.info{
     border-radius: 2px;
     font-size: 1.4rem;
 }
+*/
 
 /*첫번째 버튼 왼쪽으로 안가게 */
 .bt_wrap a:first-child {
