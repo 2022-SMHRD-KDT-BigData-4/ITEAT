@@ -1,0 +1,635 @@
+@charset "UTF-8";
+
+#aa>div{
+  padding: 20px;
+}
+
+#chatmenu{
+  position: fixed;
+  bottom: 20px;
+  right: 20.5px;
+  border: solid 1px #0c3c53;
+  height: 100px;
+  width: 400px;
+  border-radius: 8px;
+  background-color: white;
+}
+
+#chatmenu1{
+  position: fixed;
+  bottom: 20px;
+  right: 20.5px;
+  border: solid 1px #0c3c53;
+  height: 100px;
+  width: 400px;
+  border-radius: 8px;
+  background-color: white;
+}
+
+#chatmenu2{
+  position: fixed;
+  bottom: 20px;
+  right: 20.5px;
+  border: solid 1px #0c3c53;
+  height: 100px;
+  width: 400px;
+  border-radius: 8px;
+  background-color: white;
+}
+
+#chatmenu3{
+  position: fixed;
+  bottom: 20px;
+  right: 20.5px;
+  border: solid 1px #0c3c53;
+  height: 100px;
+  width: 400px;
+  border-radius: 8px;
+  background-color: white;
+
+  
+}
+
+
+
+#first {
+  position: fixed;
+  right: 20.5px;
+}
+
+#gisa {
+  border-radius: 8px;
+  margin-left: 30px;
+  margin-top: 30px;
+  font-size: 12px;
+}
+
+#mingan {
+  border-radius: 8px;
+  margin-left: 10px;
+  margin-top: 30px;
+  font-size: 12px;
+  
+}
+
+#jungbo {
+  border-radius: 8px;
+  margin-left: 20px;
+  margin-top: 15px;
+  font-size: 12px;
+}
+
+#boan {
+  border-radius: 8px;
+  margin-left: 20px;
+  margin-top: 15px;
+  font-size: 12px;
+}
+#tongsin {
+  border-radius: 8px;
+  margin-left: 20px;
+  font-size: 12px;
+}
+
+#big {
+  border-radius: 8px;
+  margin-left: 20px;
+  font-size: 12px;
+}
+
+#sqldp {
+  border-radius: 8px;
+  margin-left: 20px;
+  margin-top: 15px;
+  font-size: 12px;
+}
+
+#dapsp {
+  border-radius: 8px;
+  margin-left: 20px;
+  margin-top: 15px;
+  font-size: 12px;
+}
+
+#adsp {
+  border-radius: 8px;
+  margin-left: 120px;
+  font-size: 12px;
+}
+
+#dap {
+  border-radius: 8px;
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+#goreceive {
+  border-radius: 8px;
+  margin-left: 30px;
+  margin-top: 30px;
+  font-size: 12px;
+}
+
+#gomain {
+  border-radius: 8px;
+  margin-left: 10px;
+  margin-top: 30px;
+  font-size: 12px;
+}
+/* .header_title{
+  position: relative;
+width: 285px;
+height: 100px;
+padding: 15px;
+background: #FFFFFF;
+-webkit-border-radius: 36px;
+-moz-border-radius: 36px;
+border-radius: 39px;
+border: solid 1px;
+border-image: linear-gradient(to right, #595cff, #13547A);
+
+border-image-slice: 1;
+left: 80px;
+top: -47px;
+
+} */
+
+.header_title{
+    position: relative;
+    left: 48px;
+    top: -40px;
+    width: 250px;
+    height: 35px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(to right, #595cff, #13547A);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    margin: 10px;
+    padding: 0px;
+    text-align: center;
+
+}
+
+
+
+
+#header2{
+    position: relative;
+    left: -230px;
+    top: -40px;
+    width: 250px;
+    height: 35px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(to right, #595cff, #13547A);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    margin: 10px;
+    padding: -10px;
+    text-align: center;
+  
+}
+
+
+
+#mygisa {
+  
+position: relative;
+left: -40px;
+top: -20px;
+width: 130px;
+height: 35px;
+border: 1px solid transparent;
+border-radius: 20px;
+background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(to right, #5503ec, #140222);
+background-origin: border-box;
+background-clip: content-box, border-box;
+margin: 10px;
+text-align: center;
+
+}
+
+
+
+#jungbotext {
+  
+position: relative;
+left: -40px;
+top: -20px;
+width: 130px;
+height: 35px;
+border: 1px solid transparent;
+border-radius: 20px;
+background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(to right, #5503ec, #140222);
+background-origin: border-box;
+background-clip: content-box, border-box;
+margin: 10px;
+text-align: center;
+
+}
+
+
+
+#boantext {
+  position: relative;
+    left: -40px;
+    top: -20px;
+    width: 130px;
+    height: 35px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(to right, #5503ec, #140222);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    margin: 10px;
+    text-align: center;
+}
+
+
+
+#bigtext {
+  position: relative;
+    left: -40px;
+    top: -20px;
+    width: 130px;
+    height: 35px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(to right, #5503ec, #140222);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    margin: 10px;
+    text-align: center;
+}
+
+
+
+#tongtext {
+  position: relative;
+    left: -40px;
+    top: -20px;
+    width: 130px;
+    height: 35px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(to right, #5503ec, #140222);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    margin: 10px;
+    text-align: center;
+}
+
+
+
+#sqldptext {
+    position: relative;
+    left: -40px;
+    top: -20px;
+    width: 130px;
+    height: 35px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(to right, #5503ec, #140222);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    margin: 10px;
+    text-align: center;
+}
+
+
+/* 스크롤바 css */
+::-webkit-scrollbar{
+  width: 10px;
+}
+
+::-webkit-scrollbar-track{
+  border-radius: 5px;
+  box-shadow: rgb(175, 173, 173);
+}
+
+::-webkit-scrollbar-thumb{
+  border-radius: 5px;
+  background-color:rgb(172, 197, 214);
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background-color: rgb(72, 105, 255);
+}
+
+#dapsptext {
+    position: relative;
+    left: -40px;
+    top: -20px;
+    width: 130px;
+    height: 35px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(to right, #5503ec, #140222);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    margin: 10px;
+    text-align: center;
+}
+
+
+
+#adsptext {
+  
+position: relative;
+left: -40px;
+top: -20px;
+width: 130px;
+height: 35px;
+border: 1px solid transparent;
+border-radius: 20px;
+background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(to right, #5503ec, #140222);
+background-origin: border-box;
+background-clip: content-box, border-box;
+margin: 10px;
+text-align: center;
+}
+
+
+
+#maintext {
+    position: relative;
+    left: -40px;
+    top: -20px;
+    width: 130px;
+    height: 35px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(to right, #5503ec, #140222);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    margin: 10px;
+    text-align: center;
+}
+
+
+
+#mymingan {
+    position: relative;
+    left: -40px;
+    top: -20px;
+    width: 130px;
+    height: 35px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(to right, #5503ec, #140222);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    margin: 10px;
+    text-align: center;
+}
+
+
+#myjungbo {
+  position: relative;
+    left: -230px;
+    top: -40px;
+    width: 250px;
+    height: 120px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(to right, #595cff, #13547A);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    margin: 10px;
+    padding: -10px;
+    text-align: center;
+}
+
+
+
+#myboan {
+  position: relative;
+    left: -230px;
+    top: -40px;
+    width: 250px;
+    height: 260px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(to right, #595cff, #13547A);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    margin: 10px;
+    padding: -10px;
+    text-align: center;
+}
+
+
+
+#mybig {
+  position: relative;
+    left: -230px;
+    top: -40px;
+    width: 250px;
+    height: 120px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(to right, #595cff, #13547A);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    margin: 10px;
+    padding: -10px;
+    text-align: center;
+}
+
+
+#mytong {
+  position: relative;
+    left: -230px;
+    top: -40px;
+    width: 250px;
+    height: 260px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(to right, #595cff, #13547A);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    margin: 10px;
+    padding: -10px;
+    text-align: center;
+}
+
+
+
+#mysqldp {
+  position: relative;
+    left: -230px;
+    top: -40px;
+    width: 250px;
+    height: 120px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(to right, #595cff, #13547A);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    margin: 10px;
+    padding: -10px;
+    text-align: center;
+}
+
+
+
+#mydapsp {
+  position: relative;
+    left: -230px;
+    top: -40px;
+    width: 250px;
+    height: 260px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(to right, #595cff, #13547A);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    margin: 10px;
+    padding: -10px;
+    text-align: center;
+}
+
+
+#myadsp{
+  position: relative;
+    left: -230px;
+    top: -40px;
+    width: 250px;
+    height: 120px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(to right, #595cff, #13547A);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    margin: 10px;
+    padding: -10px;
+    text-align: center;
+}
+
+
+#mymain {
+    position: relative;
+    left: -230px;
+    top: -40px;
+    width: 250px;
+    height: 35px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(to right, #595cff, #13547A);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    margin: 10px;
+    padding: -10px;
+    text-align: center;
+}
+
+
+
+#imgso {
+  display: inline;
+  margin-left: 10px;
+}
+
+
+#imgso2 {
+  display: inline;
+  margin-left: -270px;
+}
+
+
+
+#one {
+  margin-left: 280px;
+  font-size: 20px;
+}
+
+.btn{
+  width: 170px;
+  margin-top: 6px;
+}
+
+
+
+.chatbot{
+  position:fixed;
+  right: 50%;
+  bottom: 50px;
+  margin-right: -900px;
+  text-align: center;
+  width: 120px;
+  
+  
+}
+
+#first{
+  justify-content: space-between;
+}
+#popupClose{
+  height: 25px;
+  width: 25px;
+  
+}
+.chatbotPopup_hidden{
+  opacity: 0;
+  bottom: -20px;
+  transition: bottom 3s, opacity 3s;
+}
+
+.chatbotPopup_open{
+
+  width: 400px;
+  color: #13547A;
+  z-index: 99999;
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  box-shadow: 0 2px 8px 0 rgb(0 0 0 / 16%);
+  font-size: 14px;
+  font-family: "Noto Sans KR", sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  max-height: 600px;
+  padding-bottom: 8px;
+  transition: bottom 3s, opacity 3s;
+  opacity: 1;
+  border: solid 2px #ddd;
+
+}
+
+
+#one>div{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 15px;
+}
+
+#chatDiv>div>button:hover{
+  background-color: #19394bd6 ;
+  color: white;
+}
+
+#chatDiv>div {
+  border: solid 1px #ddd;
+}
+
+
+
+#chatmenu3>a>button:hover {
+  background-color: #19394bd6 ;
+  color: white;
+}
+
+#messages {
+  border-top: solid 1px #ddd;
+}
+
+#headline {
+  text-align: center;
+  font-size: 20px;
+}
+
+
