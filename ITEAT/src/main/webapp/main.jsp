@@ -28,7 +28,7 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/mainStyle3.css?ver=3.0" rel="stylesheet">
+  <link href="assets/css/mainStyle3.css?ver=3.1" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Arsha - v4.3.0
