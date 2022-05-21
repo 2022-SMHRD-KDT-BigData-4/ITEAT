@@ -29,7 +29,7 @@
   <link href="assets/css/chatbot.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/mainStyle.css" rel="stylesheet">
+  <link href="assets/css/mainStyle3.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Arsha - v4.3.0

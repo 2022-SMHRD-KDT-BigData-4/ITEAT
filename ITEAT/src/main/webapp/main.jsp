@@ -28,7 +28,7 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/mainStyle.css?ver=1.1" rel="stylesheet">
+  <link href="assets/css/mainStyle3.css?ver=1.3" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Arsha - v4.3.0
@@ -50,6 +50,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+          <div id="yum"><img  src="assets/img/team/iteatt.png"></div>
           <h1>코딩을 맛있게 먹는법</h1>
           <br>
           <h2>IT EAT</h2>
@@ -123,8 +124,9 @@ IT EAT 회원들이 도와줄거에요!</p>
       <div class="container" data-aos="fade-up">
 
         <div class="row">
+        
           <div class="col-lg-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
-            <img src="assets/img/skills.png" class="img-fluid" alt="">
+            <img src="assets/img/team/img.png" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
             <h3>요즘 트랜드인 개발언어/기술 요구사항 순위</h3>
@@ -416,7 +418,7 @@ IT EAT 회원들이 도와줄거에요!</p>
               <div class="member-info">
                 <h4>이민지</h4>
                 <span>팀장</span>
-                <p>안녕하세요 IT EAT 팀장입니다 ㅋㅋ</p>
+                <p>안녕하세요 IT EAT 팀장입니다!</p>
                 <div class="social">
                   <a href=""><i class="ri-twitter-fill"></i></a>
                   <a href=""><i class="ri-facebook-fill"></i></a>
@@ -433,7 +435,7 @@ IT EAT 회원들이 도와줄거에요!</p>
               <div class="member-info">
                 <h4>이정민</h4>
                 <span>팀원</span>
-                <p>안녕하세요 IT EAT 팀원입니다 ㅋㅋ</p>
+                <p>안녕하세요 IT EAT 팀원입니다!</p>
                 <div class="social">
                   <a href=""><i class="ri-twitter-fill"></i></a>
                   <a href=""><i class="ri-facebook-fill"></i></a>
@@ -450,7 +452,7 @@ IT EAT 회원들이 도와줄거에요!</p>
               <div class="member-info">
                 <h4>심우현</h4>
                 <span>팀원</span>
-                <p>안녕하세요 IT EAT 팀원입니다 ㅋㅋ</p>
+                <p>안녕하세요 IT EAT 팀원입니다!</p>
                 <div class="social">
                   <a href=""><i class="ri-twitter-fill"></i></a>
                   <a href=""><i class="ri-facebook-fill"></i></a>
@@ -467,7 +469,7 @@ IT EAT 회원들이 도와줄거에요!</p>
               <div class="member-info">
                 <h4>하종현</h4>
                 <span>팀원</span>
-                <p>안녕하세요 IT EAT 팀원입니다 ㅋㅋ</p>
+                <p>안녕하세요 IT EAT 팀원입니다!</p>
                 <div class="social">
                   <a href=""><i class="ri-twitter-fill"></i></a>
                   <a href=""><i class="ri-facebook-fill"></i></a>
