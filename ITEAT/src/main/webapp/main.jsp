@@ -28,7 +28,7 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/mainStyle3.css?ver=1.3" rel="stylesheet">
+  <link href="assets/css/mainStyle3.css?ver=3.0" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Arsha - v4.3.0
@@ -126,7 +126,7 @@ IT EAT 회원들이 도와줄거에요!</p>
         <div class="row">
         
           <div class="col-lg-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
-            <img src="assets/img/team/img.png" class="img-fluid" alt="">
+            <img src="assets/img/team/img.png" class="img-fluidd" alt="">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
             <h3>요즘 트랜드인 개발언어/기술 요구사항 순위</h3>
@@ -207,7 +207,7 @@ IT EAT 회원들이 도와줄거에요!</p>
           <h2>코딩기록으로<br>해 저 탐 험 하 자!</h2>
           <br>
           
-          <p>코딩을 통해 해저 여행을 할수 있다? <br> 코딩 올리고 귀여운 물고기도 얻고!</p>
+          <p>코딩을 통해 해저 여행을 할수 있다 ? <br> 코딩 올리고 귀여운 물고기도 얻고 !</p>
         </div>
 
         
