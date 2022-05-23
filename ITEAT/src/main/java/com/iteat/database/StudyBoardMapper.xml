@@ -14,4 +14,10 @@
 	<select id="selectSB" parameterType="int" resultType="com.iteat.domain.StudyBoard">
 		select * from study where study_seq=#{num}
 	</select>
+	<update id="updateSB" parameterType="com.iteat.domain.StudyBoard">
+		update study set study_title=#{title}, study_content=#{content}, study_recruit=#{recruit}, study_region=#{region}, study_stack=#{stack} where study_seq=#{num}
+	</update>
+	<delete id="deleteSB" parameterType="int">
+		delete from study where study_seq=#{num}
+	</delete>
 </mapper>

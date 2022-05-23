@@ -17,10 +17,12 @@
     <div class="board_wrap">
         <!-- 글올리는 게시판 묻고답하기 -->
         <div class="board_title">
-            스터디모집 / 글쓰기
+            스터디모집 / 수정하기
         </div>
         <!-- 글 올리는 게시판 전체 -->
-        <form action="study_writeCon" method="post" id="frm" name="frm">
+        <%int num = Integer.parseInt(request.getParameter("num"));%>
+        <form action="study_updateCon" method="post" id="frm" name="frm">
+        <input type="hidden" name="num" value="<%=num%>">
         <div class="board_write_wrap">
             <div class="board_write">
                 <div class="title"> 

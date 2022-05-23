@@ -38,6 +38,16 @@ public class StudyBoard {
 		this.stack = stack;
 	}
 
+	public StudyBoard(BigDecimal num, String title, String content, String recruit, String region, String stack) {
+		super();
+		this.num = num;
+		this.title = title;
+		this.content = content;
+		this.recruit = recruit;
+		this.region = region;
+		this.stack = stack;
+	}
+
 	public BigDecimal getNum() {
 		return num;
 	}

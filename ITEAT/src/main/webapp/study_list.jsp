@@ -5,6 +5,7 @@
 <%@page import="com.iteat.domain.UserInfo"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8" isELIgnored="false"%>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -53,10 +54,10 @@
                 	  %>
                     	 
                     	 	
-                    	 		<c:forEach var="sbList" begin="0" end="${studyBoardList.size()}" items="${studyBoardList}" varStatus="status">
+                    	 		<c:forEach var="sbList" begin="0" end="${fn:length(studyBoardList)}" items="${studyBoardList}" varStatus="status">
 								
 								<div>
-								  <div class="num">${studyBoardList.size()-status.count}</div>
+								  <div class="num">${studyBoardList.size()-status.count+1}</div>
                   				  <div class="writer">${sbList.id}</div>
                 			  	  <div class="title"><a href="study_view.jsp?num=${sbList.num}">${sbList.title}</a></div>
               				      <div class="local">${sbList.region}</div>

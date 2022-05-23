@@ -17,6 +17,7 @@
     StudyBoardDAO dao = new StudyBoardDAO();
     StudyBoard studyBoard = dao.selectSB(num);
     pageContext.setAttribute("studyBoard",studyBoard);
+    
 %>
     <div class="board_wrap">
         <div class="board_title">
@@ -46,7 +47,7 @@
                     </dl>
                 </div>
                 <div class="tag">
-                    태그들어갈자리
+                    ${studyBoard.stack}
                 </div>
                 <div class="cont">
                     ${studyBoard.content}
@@ -71,9 +72,16 @@
             </div> 
             
             <div class="bt_wrap">
-                <a href="study_list.jsp" class="on">목록</a>   
-            	<a href="study_write_modify.jsp" class="onno">수정</a>
-            	<a href="#" class="onno">삭제</a>
+                <a href="study_list.jsp" class="on">목록</a>
+               
+               <c:choose>
+                <c:when test="${loginUser.uif_id eq studyBoard.id}">   
+            	<a href="study_write_modify.jsp?num=${studyBoard.num}" class="onno">수정</a>
+            	<a href="study_deleteCon?num=${studyBoard.num}" class="onno">삭제</a>
+            	</c:when>
+            	<c:otherwise>
+            	</c:otherwise>
+            	</c:choose>
             </div>
         </div>
         <div class="conment">

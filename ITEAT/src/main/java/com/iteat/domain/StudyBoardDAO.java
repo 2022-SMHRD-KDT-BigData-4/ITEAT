@@ -61,4 +61,38 @@ public class StudyBoardDAO {
 		}
 		return sb;
 	}
+	public int updateSB(StudyBoard sb) {
+		SqlSession sqlSession = SqlSessionFactory.openSession();
+		int cnt = 0;
+		try {
+			cnt = sqlSession.selectOne("com.iteat.domain.StudyBoardDAO.updateSB",sb);
+			if(cnt>0) {
+				sqlSession.commit();
+			}else {
+				sqlSession.rollback();
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}finally {
+			sqlSession.close();
+		}
+		return cnt;
+	}
+	public int deleteSB(int num) {
+		SqlSession sqlSession = SqlSessionFactory.openSession();
+		int cnt = 0;
+		try {
+			cnt = sqlSession.delete("com.iteat.domain.StudyBoardDAO.deleteSB", num);
+			if(cnt>0) {
+				sqlSession.commit();
+			}else {
+				sqlSession.rollback();
+			}
+		} catch (Exception e) {
+			
+		}finally {
+			sqlSession.close();
+		}
+		return cnt;
+	}
 }
