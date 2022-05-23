@@ -7,7 +7,7 @@
 <title>Insert title here</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/qna_style.css">
+    <link rel="stylesheet" href="assets/css/qna_style.css?ver01">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
 </head>
@@ -23,7 +23,8 @@
             <div class="board_write">
                 <div class="title">
                     <div>
-                        <span><select id="qna_cate" onchange="cate()">
+                        <span>
+                        <select id="qna_cate" onchange="cate()">
                             <option value="코드">코드</option>
                             <option value="고민">고민</option>
                             </select>
@@ -81,12 +82,12 @@
             if(($('#qna_cate').val()) == '코드'){
                
                 $('#stackSltHide').css('display','flex')
-                $('#titleInput>input').css('width','75%')
+                $('#titleInput>input').css('width','79%')
                 $('.board_write .title input[type="text"]').css('margin-left','12px')
             
             }else{  //닫기
                 $('#stackSltHide').css('display','none')
-                $('#titleInput>input').css('width','860px')
+                $('#titleInput>input').css('width','79%')
                 $('.board_write .title input[type="text"]').css('margin-left','12px')
             }
 
@@ -99,6 +100,6 @@
     </script>
     
     <%@ include file="footer.jsp" %>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

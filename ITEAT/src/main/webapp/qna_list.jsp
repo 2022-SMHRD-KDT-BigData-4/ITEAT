@@ -6,7 +6,7 @@
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Insert title here</title>
-<link rel="stylesheet" href="assets/css/qna_style.css">
+<link rel="stylesheet" href="assets/css/qna_style.css?vada">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
 </head>
@@ -29,40 +29,40 @@
                     <div class="writer">작성자</div>
                     <div class="title">제목</div>
                     <div class="date">작성날짜</div>
-                    <div class="develope">개발언어</div>
+                    <div class="develope1">개발언어</div>
                 </div>
                 <div>
                     <div class="num">코드</div>
                     <div class="writer">미니</div>
-                    <div class="title"><a href="view.html">모르겠어요</a></div>
+                    <div class="title"><a href="qna_view.jsp">모르겠어요</a></div>
                     <div class="date">2022-05-14</div>
                     <div class="develope">자바</div>
                 </div>
                 <div>
                     <div class="num">코드</div>
                     <div class="writer">미니</div>
-                    <div class="title"><a href="view.html">모르겠어요</a></div>
+                    <div class="title"><a href="qna_view.jsp">모르겠어요</a></div>
                     <div class="date">2022-05-14</div>
                     <div class="develope">자바</div>
                 </div>
                 <div>
                     <div class="num">코드</div>
                     <div class="writer">미니</div>
-                    <div class="title"><a href="view.html">모르겠어요</a></div>
+                    <div class="title"><a href="qna_view.jsp">모르겠어요</a></div>
                     <div class="date">2022-05-14</div>
                     <div class="develope">자바</div>
                 </div>
                 <div>
                     <div class="num">코드</div>
                     <div class="writer">미니</div>
-                    <div class="title"><a href="view.html">모르겠어요</a></div>
+                    <div class="title"><a href="qna_view.jsp">모르겠어요</a></div>
                     <div class="date">2022-05-14</div>
                     <div class="develope">자바</div>
                 </div>
                 <div>
                     <div class="num">코드</div>
                     <div class="writer">미니</div>
-                    <div class="title"><a href="view.html">모르겠어요..</a></div>
+                    <div class="title"><a href="qna_view.jsp">모르겠어요..</a></div>
                     <div class="date">2022-05-14</div>
                     <div class="develope">자바</div>
                 </div>
