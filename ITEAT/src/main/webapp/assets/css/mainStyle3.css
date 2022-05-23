@@ -2020,7 +2020,10 @@ section {
   bottom: 20px;
 }
 
-
+#contact .container h1,.writer, title , .local, .position, .recruit{
+  width: 80%;
+  
+}
 
 
 
