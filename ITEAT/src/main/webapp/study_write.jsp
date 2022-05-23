@@ -156,9 +156,6 @@
 		}else if($('input[name="sb_stack"]:checked').length==0){
 			alert("스택을 입력하세요.");
 			return false;
-		}else if($('#sb_region').value=="지역")
-			alert("지역을 입력하세요.");
-		return false;
 		}else{
 		document.getElementById("frm").submit();
 		}
