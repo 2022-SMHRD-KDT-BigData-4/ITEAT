@@ -56,7 +56,7 @@
                 <p>의견남기기</p>
                 <form>
                 <textarea name="comment" rows="3" cols="30" placeholder="댓글쓰기"></textarea>
-                <button id="ment" type="submit" name="button" cor>올리기</button>    
+                
                 </form>
             </div>
             
@@ -71,7 +71,9 @@
             </div> 
             
             <div class="bt_wrap">
-                <a href="study_list.jsp" class="on">목록</a>
+                <a href="study_list.jsp" class="on">목록</a>   
+            	<a href="study_write_modify.jsp" class="onno">수정</a>
+            	<a href="#" class="onno">삭제</a>
             </div>
         </div>
         <div class="conment">

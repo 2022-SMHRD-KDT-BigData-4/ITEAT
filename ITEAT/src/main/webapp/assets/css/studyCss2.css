@@ -84,6 +84,7 @@ a {
 .bt_wrap a.on {
     background: rgb(19,84,122);
     color: #fff;
+    margin-left: 90%;
 }
 
 .board_list {
@@ -409,22 +410,6 @@ select{
     border-radius: 4%;
 }
 
-.bt_wrap .onno{
-	margin-top: 20px;
-	text-align: center;
-	width: 15%;
-	height: 48px;
-	background-color: white;
-	color: rgb(19,84,122);
-	font-size: 16px;
-	font-weight: 600;
-	border: 1px solid rgb(19,84,122);
-	font-family: 'Noto Sans KR', sans-serif;
-    border-radius: 4%;
-}
-
-
-
 .bt_wrap a:hover{
     background-color: rgb(19,84,122);
 }
@@ -490,8 +475,6 @@ input[type=search], input[type=email], input[type=password], input[type=text],
     height: 45px;
     color: #212529;
     border-radius: 0.5rem;
-    width: 110px;
-	top: -2px;
 }
 
 
@@ -506,7 +489,8 @@ input[type=search], input[type=email], input[type=password], input[type=text],
 	color: #333;
 	display: none;
 	outline: 0;
-
+	width: 110px;
+	top: -3px;
 	
 }
 
@@ -541,14 +525,4 @@ div.title > span > div > ul > label{
 .stackresult{
 	padding: 10px;
     border-radius: 4px;
-}
-
-
-#sb_region, #sb_recruit{
-	border-radius: 4px;
-}
-
-
-.board_write_wrap .dropdown-item .form-check-label{
-	font-size: 12px;
 }
