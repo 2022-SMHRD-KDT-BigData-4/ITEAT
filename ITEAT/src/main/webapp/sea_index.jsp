@@ -122,7 +122,7 @@
                         backgroundColor: ['#6c5ce7','#a29bfe','#4834d4','#686de0','#5D6DBE','#9FA9D8','#CCD2F0'],
                         data: [20, 10, 10,10,10,10,20]
                     }],
-                    labels: ['JAVA', 'PYthon', 'JavaScript','C／C＋＋','TypeScript','CSS','HTML']
+                    labels: ['JAVA', 'Python', 'JavaScript','C／C＋＋','TypeScript','CSS','HTML']
                 },
                 options: {
                     pieceLabel: {

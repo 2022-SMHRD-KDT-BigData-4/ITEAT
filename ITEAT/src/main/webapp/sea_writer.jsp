@@ -37,13 +37,13 @@
                 <div class="title">
                         <div id ="html">
                             <select>
-                            <option>HTML</option>
-                            <option>CSS</option>
-                            <option>JavaScript</option>
                             <option>JAVA</option>
-                            <option>Spring</option>
-                            <option>React</option>
-                            <option>sql</option>
+                            <option>Python</option>
+                            <option>JavaScript</option>
+                            <option>C／C＋＋</option>
+                            <option>TypeScript</option>
+                            <option>CSS</option>
+                            <option>HTML</option>
                             </select>
                         </div>
                         <div id="con_title">
