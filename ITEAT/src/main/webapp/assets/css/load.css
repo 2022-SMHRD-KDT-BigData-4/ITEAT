@@ -1,0 +1,326 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap');
+
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+
+@font-face {
+    font-family: 'GimpoGothicBold00';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/GimpoGothicBold00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.load_rank{
+	display:block;
+	position : relative;
+	left :250px;
+	top: 50px;
+}
+
+#tech > div{
+	display : block;
+   margin-top : 2%;
+    width : 25%;
+    
+    position: relative;
+    left : 55px;
+	
+}
+
+
+#lan > div {
+    
+    display : block;
+    margin-top : 2%;
+    width : 25%;
+   
+    position: relative;
+    left : 70px;
+    
+}
+
+#load_wrap{
+    margin : 100px auto;
+    padding: 100px auto;
+}
+
+#lan > span > h3{
+	font-family: 'GimpoGothicBold00';
+	font-size : 30px
+}
+
+#tech > span > h3{
+	font-family: 'GimpoGothicBold00';
+	font-size : 30px
+}
+
+
+
+.rank_ment{
+    font-family: 'GimpoGothicBold00';
+    display: block;
+    position : relative;
+    left : 40px;
+    
+    
+}
+
+.rank_mentt{
+    font-family: 'GimpoGothicBold00';
+    display: block;
+    position : relative;
+    left : 60px;
+    
+   
+}
+
+.load_rank {
+    margin: 0 30px;
+    padding: 0 30px;
+    
+}
+
+.title{
+    width: 20%;
+    display : inline-block;
+    
+}
+
+#tech{
+    position: relative;    
+    left: 70%; 
+    display: block;
+}
+
+#lan {
+    position: relative;
+    left: 75%;
+    
+    display: block;
+    
+
+}
+
+.solo h4{
+	font-family: 'GimpoGothicBold00';
+    /* position: fixed;
+    bottom  :20% ; */
+    font-size: 25px;
+    display: block;
+    position: relative;
+    left : 25%;
+    margin-top : 10%;
+}
+
+.solo h2{
+	font-family: 'GimpoGothicBold00';
+    /* position: fixed;
+    bottom  :20% ; */
+    
+    font-size: 30px;
+    display: block;
+    position: relative;
+    left : 22%;
+    margin-top : 0%;
+}
+
+
+#vava {
+	display : block;
+	position : relative;
+	left : 350px;
+}
+
+
+
+#css_tabs{
+    margin-top: 5%;
+}
+
+#css_tabs2{
+	position : relative;
+	display : block;
+	left : 400px
+}
+
+
+
+#css_tabs {
+    font-family:'nanumgothic', '나눔고딕', 'malgun gothic', '맑은 고딕', 'dotum', '돋움', sans-serif
+    
+}
+
+
+
+/* 탭 선택 시 표시할 요소(div) 정의(1번 탭 선택 시 첫 번째 div 요소 표시) */
+#css_tabs input:nth-of-type(1), #css_tabs input:nth-of-type(1) ~ div:nth-of-type(1), #css_tabs input:nth-of-type(2), #css_tabs input:nth-of-type(2) ~ div:nth-of-type(2), #css_tabs input:nth-of-type(3), #css_tabs input:nth-of-type(3) ~ div:nth-of-type(3) {
+    display:none
+}
+#css_tabs input:nth-of-type(1):checked ~ div:nth-of-type(1), #css_tabs input:nth-of-type(2):checked ~ div:nth-of-type(2), #css_tabs input:nth-of-type(3):checked ~ div:nth-of-type(3) {
+    display:block
+}
+/* 라벨 기본 스타일 지정 */
+#css_tabs > label {
+    display:inline-block;
+    font-variant:small-caps;
+    font-size:.9em;
+    padding:5px;
+    text-align:center;
+    width:20%;
+    line-height:1.8em;
+    font-weight:700;
+    border-radius:3px 3px 0 0;
+    background:#eee;
+    color:#777;
+    border:1px solid #ccc;
+    border-width:1px 1px 0
+}
+#css_tabs > label:hover {
+    cursor:pointer
+}
+#css_tabs label[for=tab1] {
+    margin-left:1.5em
+}
+/* 선택된 라벨, 커서를 올린 라벨 스타일 지정 */
+#css_tabs input:nth-of-type(1):checked ~ label:nth-of-type(1), #css_tabs > label[for=tab1]:hover {
+    background:rgb(12, 31, 116);
+    color:#fff
+}
+#css_tabs input:nth-of-type(2):checked ~ label:nth-of-type(2), #css_tabs > label[for=tab2]:hover {
+    background:rgb(12, 31, 116);
+    color:#fff
+}
+#css_tabs input:nth-of-type(3):checked ~ label:nth-of-type(3), #css_tabs > label[for=tab3]:hover {
+    background:rgb(12, 31, 116);
+    color:#fff
+}
+/* 실제 내용이 담긴 div 요소 스타일 지정 */
+#css_tabs .tab1_content, #css_tabs .tab2_content, #css_tabs .tab3_content {
+    padding:0px;
+    width:80%; 
+    height:100%;
+    margin-left : 1.5%; 
+    margin-top : 1%;
+    
+    
+}
+
+
+
+
+
+
+/* 2222222222222222222222222222 */
+/* 텝 2 시작!!!!!!!!!!!!!!! */
+
+#css_tabs2{
+    /* margin-right:40% */
+    /* position: relative
+    left: 10px;
+    right: 0;
+    bottom :-3000px; */
+    margin-top: 100px;
+    margin-left: 22px;
+    display : inline-block;
+}
+
+#css_tabs2 {
+    font-family:'nanumgothic', '나눔고딕', 'malgun gothic', '맑은 고딕', 'dotum', '돋움', sans-serif;
+   
+}
+/* 탭 선택 시 표시할 요소(div) 정의(1번 탭 선택 시 첫 번째 div 요소 표시) */
+#css_tabs2 input:nth-of-type(1), #css_tabs2 input:nth-of-type(1) ~ div:nth-of-type(1), #css_tabs2 input:nth-of-type(2), #css_tabs2 input:nth-of-type(2) ~ div:nth-of-type(2), #css_tabs2 input:nth-of-type(3), #css_tabs2 input:nth-of-type(3) ~ div:nth-of-type(3) {
+    display:none
+}
+#css_tabs2 input:nth-of-type(1):checked ~ div:nth-of-type(1), #css_tabs2 input:nth-of-type(2):checked ~ div:nth-of-type(2), #css_tabs2 input:nth-of-type(3):checked ~ div:nth-of-type(3) {
+    display:block;
+    
+}
+/* 라벨 기본 스타일 지정 */
+#css_tabs2 > label {
+    display:inline-block;
+    font-variant:small-caps;
+    font-size:.9em;
+    padding:5px;
+    text-align:center;
+    width:380px;
+    line-height:1.8em;
+    font-weight:700;
+    border-radius:3px 3px 0 0;
+    background:#eee;
+    color:#777;
+    border:1px solid #ccc;
+    border-width:1px 1px 0
+}
+#css_tabs2 > label:hover {
+    cursor:pointer
+}
+#css_tabs2 label[for=tab1] {
+    margin-left:1.5em
+}
+/* 선택된 라벨, 커서를 올린 라벨 스타일 지정 */
+#css_tabs2 input:nth-of-type(1):checked ~ label:nth-of-type(1), #css_tabs2 > label[for=tab2_1]:hover {
+    background:rgb(12, 31, 116);
+    color:#fff
+}
+#css_tabs2 input:nth-of-type(2):checked ~ label:nth-of-type(2), #css_tabs2 > label[for=tab2_2]:hover {
+    background:rgb(12, 31, 116);
+    color:#fff
+}
+#css_tabs2 input:nth-of-type(3):checked ~ label:nth-of-type(3), #css_tabs2 > label[for=tab2_3]:hover {
+    background:rgb(12, 31, 116);
+    color:#fff
+}
+/* 실제 내용이 담긴 div 요소 스타일 지정 */
+#css_tabs2 .tab2_1_content, #css_tabs2 .tab2_2_content, #css_tabs2 .tab2_3_content {
+    padding:0px;
+    width:80%; 
+    height:100%;
+    margin-left : 1.5%; 
+    margin-top : 1%;
+}
+
+
+/* 동영상 간격맞추기 */
+.frame {
+    
+    display : block;
+    margin-top : 2%;
+    width : 25%;
+    margin-left: 2%;
+    position: relative;
+    float: left;
+    
+}
+
+/* .frame2 {
+    
+    display : block;
+    margin-top : 2%;
+    width : 25%;
+    margin-left: 5%;
+    position: relative;
+    float: left;
+    
+}
+.frame3 {
+    
+    display : block;
+    margin-top : 2%;
+    width : 25%;
+    margin-left: 5%;
+    position: relative;
+    float: left;
+    
+} */
+
+
+
+
+
+
