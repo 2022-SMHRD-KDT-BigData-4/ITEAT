@@ -28,7 +28,7 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/mainStyle3.css?ver=3.1" rel="stylesheet">
+  <link href="assets/css/mainStyle4.css?ver=5.0" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Arsha - v4.3.0
@@ -304,31 +304,31 @@ IT EAT 회원들이 도와줄거에요!</p>
                             <div class="hits">조회수</div>
                         </div>
                         <div>
-                            <div class="writer">미니</div>
-                            <div class="title"><a href="contest_view.html">모르겠어요</a></div>
-                            <div class="local">광주</div>
-                            <div class="position">백엔드</div>
-                            <div class="date">2022-05-14</div>
+                            <div class="writer">민지</div>
+                            <div class="title"><a href="contest_view.html">공공데이터 팀원 모집!</a></div>
+                            <div class="local">목포</div>
+                            <div class="position">프론트</div>
+                            <div class="date">2022-05-21</div>
                             <div class="recruit">모집중</div>
-                            <div class="hits">23</div>
+                            <div class="hits">10</div>
                         </div>
                         <div>
-                            <div class="writer">미니</div>
-                            <div class="title"><a href="contest_view.html">모르겠어요</a></div>
-                            <div class="local">광주</div>
+                            <div class="writer">정민</div>
+                            <div class="title"><a href="contest_view.html">여행공모전 팀 모집!</a></div>
+                            <div class="local">창원</div>
                             <div class="position">백엔드</div>
-                            <div class="date">2022-05-14</div>
+                            <div class="date">2022-05-20</div>
                             <div class="recruit">모집중</div>
-                            <div class="hits">23</div>
+                            <div class="hits">14</div>
                         </div>
                         <div>
-                            <div class="writer">미니</div>
-                            <div class="title"><a href="contest_view.html">모르겠어요</a></div>
+                            <div class="writer">우현</div>
+                            <div class="title"><a href="contest_view.html">날씨데이터 팀원 구합니다</a></div>
                             <div class="local">광주</div>
                             <div class="position">백엔드</div>
-                            <div class="date">2022-05-14</div>
-                            <div class="recruit">모집중</div>
-                            <div class="hits">23</div>
+                            <div class="date">2022-05-17</div>
+                            <div class="recruit">모집마감</div>
+                            <div class="hits">33</div>
                         </div>
                     </div>
                 </div>
@@ -348,37 +348,37 @@ IT EAT 회원들이 도와줄거에요!</p>
                                   <div class="writer">작성자</div>
                                   <div class="title">제목</div>
                                   <div class="local">지역</div>
-                                  <div class="position">포지션</div>
+                                  <div class="position">개발언어</div>
                                   <div class="date">작성날짜</div>
                                   <div class="recruit">모집여부</div>
                                   <div class="hits">조회수</div>
                               </div>
                               <div>
-                                  <div class="writer">미니</div>
-                                  <div class="title"><a href="contest_view.html">모르겠어요</a></div>
-                                  <div class="local">광주</div>
-                                  <div class="position">백엔드</div>
-                                  <div class="date">2022-05-14</div>
+                                  <div class="writer">종현</div>
+                                  <div class="title"><a href="contest_view.html">java 같이 공부하실분!</a></div>
+                                  <div class="local">수원</div>
+                                  <div class="position">JAVA</div>
+                                  <div class="date">2022-05-22</div>
                                   <div class="recruit">모집중</div>
-                                  <div class="hits">23</div>
+                                  <div class="hits">16</div>
                               </div>
                               <div>
-                                  <div class="writer">미니</div>
-                                  <div class="title"><a href="contest_view.html">모르겠어요</a></div>
-                                  <div class="local">광주</div>
-                                  <div class="position">백엔드</div>
-                                  <div class="date">2022-05-14</div>
+                                  <div class="writer">민지</div>
+                                  <div class="title"><a href="contest_view.html">python 스터디하실분~</a></div>
+                                  <div class="local">목포</div>
+                                  <div class="position">Python</div>
+                                  <div class="date">2022-05-20</div>
                                   <div class="recruit">모집중</div>
-                                  <div class="hits">23</div>
+                                  <div class="hits">25</div>
                               </div>
                               <div>
-                                  <div class="writer">미니</div>
-                                  <div class="title"><a href="contest_view.html">모르겠어요</a></div>
-                                  <div class="local">광주</div>
-                                  <div class="position">백엔드</div>
-                                  <div class="date">2022-05-14</div>
-                                  <div class="recruit">모집중</div>
-                                  <div class="hits">23</div>
+                                  <div class="writer">정민</div>
+                                  <div class="title"><a href="contest_view.html">html부분 같이 공부하실분!</a></div>
+                                  <div class="local">창원</div>
+                                  <div class="position">HTML</div>
+                                  <div class="date">2022-05-15</div>
+                                  <div class="recruit">모집마감</div>
+                                  <div class="hits">40</div>
                               </div>
                           </div>
                       </div>
