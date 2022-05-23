@@ -16,7 +16,7 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link rel="stylesheet" href="assets/css/sea_index.css?ver20">
+    <link rel="stylesheet" href="assets/css/sea_index.css?ver30">
 </head>
 <body>
 
@@ -96,12 +96,12 @@
 
 
  <div class="bt">
-        <button id="writer">코드작성</button>
+        <a href="sea_writer.jsp"><button id="writer">코드작성</button></a>
     </div>
     
     
      <div class="bt">
-        <button id="list">목록으로</button>
+        <a href="sea_list.jsp"><button id="list">코드목록</button></a>
     </div>
 
 </div>
