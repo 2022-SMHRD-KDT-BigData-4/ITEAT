@@ -181,6 +181,11 @@ select{
 
 .board_write #con_title input[type="text"] {
     width: 88%;
+    width: 88%;
+    position: relative;
+    left: 100px;
+    top: -32px;
+    height: 32.6px;
 }
 
 
@@ -304,6 +309,7 @@ div .container{
 
 body > div.board_wrap > div:nth-child(3) > div > div{
     top: -60px;
+    width: 800px
 }
 
 /*수정*/
@@ -311,4 +317,49 @@ body > div.board_wrap > div:nth-child(3) > div > div{
     max-width: none;
     display: none;
 }
+
+.btn-group>.btn:first-child {
+    margin-left: 0;
+    width: 50px;
+}
+
+.btn-group-vertical>.btn, .btn-group>.btn {
+    position: relative;
+    float: left;
+    width: 40px;
+}
+
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    cursor: pointer;
+}
+
+.btn-group-sm>.btn, .btn-sm {
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 3px;
+    line-height: 1.5;
+}
+
+.btn {
+	display: inline-block;
+    font-weight: 400;
+    margin-bottom: 0;
+    white-space: nowrap;
+    touch-action: manipulation;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    background-image: none;
+    user-select: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+
+.note-popover .popover-content .dropdown-menu.note-check li a i, .panel-heading.note-toolbar .dropdown-menu.note-check li a i{
+	color: black !important;
+     visibility: inherit !important;
+}
+
+
 

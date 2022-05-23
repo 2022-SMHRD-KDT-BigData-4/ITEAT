@@ -21,7 +21,7 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/css/chatbot.css?ver1.0" rel="stylesheet">
+  <link href="assets/css/chatbot.css?ver124" rel="stylesheet">
       <link rel="stylesheet" href="assets/css/sea_write.css">
 </head>
 <body>
