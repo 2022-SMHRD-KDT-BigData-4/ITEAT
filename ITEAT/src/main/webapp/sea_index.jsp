@@ -16,7 +16,7 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link rel="stylesheet" href="assets/css/sea_index.css?ver15">
+    <link rel="stylesheet" href="assets/css/sea_index.css?ver20">
 </head>
 <body>
 
@@ -25,7 +25,7 @@
 
 
 		<div class="board_title">
-            해저 기록            
+            해저 탐험           
         </div>
 
         <div class="sea_bar_wrap">
@@ -73,7 +73,7 @@
                     <div class="calendar-controls">
                         <button type="button_prev" class="calendar-prev">&lt;</button>
                         <button type="button_next" class="calendar-next">&gt;</button>
-                        <button type="button" class="calendar-today">오늘</button>
+                        
                     </div>
                 </div>
                 <div id="calendar"></div>
@@ -89,11 +89,20 @@
 
 
         <!--ex) 글올리기 버튼-->
-        <div id="writer">
+        <div class="btt">
         <button id="ex">글올리기</button>
     </div>
         
 
+
+ <div class="bt">
+        <button id="writer">코드작성</button>
+    </div>
+    
+    
+     <div class="bt">
+        <button id="list">목록으로</button>
+    </div>
 
 </div>
 
