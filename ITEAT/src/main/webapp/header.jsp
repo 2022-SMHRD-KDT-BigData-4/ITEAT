@@ -62,7 +62,7 @@
           <li class="dropdown"><a href="#"><span>길잡이</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="gil_roadmap.jsp">로드맵</a></li>
-              <li><a href="#">요구사항</a></li>
+              <li><a href="load.jsp">요구사항</a></li>
             </ul>
           </li>
           <li class="dropdown"><a href="#"><span>팀원모집</span> <i class="bi bi-chevron-down"></i></a>
