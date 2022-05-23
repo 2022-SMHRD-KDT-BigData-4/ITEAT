@@ -371,3 +371,11 @@ body > div.board_wrap > div:nth-child(3) > div > div{
 .panel-heading.note-toolbar{
 	margin: 2px !important;
 }
+
+
+#footerid > div.board_wrap > from > div:nth-child(2) > div > div{
+	width: 795px;
+}
+#footerid > div.board_wrap > from > div:nth-child(2) > div > div > div.note-editing-area > div.note-editable.panel-body{
+	font-size: 15px;
+}

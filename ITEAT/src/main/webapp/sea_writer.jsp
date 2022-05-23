@@ -22,7 +22,7 @@
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/css/chatbot.css?ver124" rel="stylesheet">
-      <link rel="stylesheet" href="assets/css/sea_write.css">
+      <link rel="stylesheet" href="assets/css/sea_write.css?ver34">
 </head>
 <body>
 <%@ include file="header.jsp" %>
@@ -32,22 +32,23 @@
             해저탐험 / 코드작성
         </div>
         <!-- 글 올리는 게시판 전체 -->
+        <form action="seaCode_writeCon" method="post">
         <div class="board_write_wrap">
             <div class="board_write">
                 <div class="title">
                         <div id ="html">
-                            <select>
-                            <option>JAVA</option>
-                            <option>Python</option>
-                            <option>JavaScript</option>
-                            <option>C／C＋＋</option>
-                            <option>TypeScript</option>
-                            <option>CSS</option>
-                            <option>HTML</option>
+                            <select id="sc_lang" name="sc_lang">
+	                            <option value="JAVA" >JAVA</option>
+	                            <option value="Python" >Python</option>
+	                            <option value="JavaScript">JavaScript</option>
+	                            <option value="C／C＋＋">C／C＋＋</option>
+	                            <option value="TypeScript">TypeScript</option>
+	                            <option value="CSS">CSS</option>
+	                            <option value="HTML">HTML</option>
                             </select>
                         </div>
                         <div id="con_title">
-                            <input type="text" placeholder="제목을 입력하세요" name="title">
+                            <input type="text" placeholder="제목을 입력하세요" name="sc_title" id="sc_title">
                         </div>
                 </div>
                 
@@ -65,21 +66,29 @@
         <label class="input-file-button" for="input-file" >
             업로드
         </label>
-        <input type="file" id="input-file" name="uploadFile" accept="image/png, image/jpeg">
+        <input type="file" id="input-file" name="sc_file" accept="image/png, image/jpeg">
     </div>
-    </div>
-
-
-
-
-
             <div class="bt_wrap">
-           <button href="qna_view.html" class="on">등록하기</button>
+           <button type="submit" class="on">등록하기</button>
            <button href="qna_view.html" class="on">뒤로가기</button>
             </div>
+            
+            <div style="display: none;">
+            	<textarea id="idcon" name="sc_con">
+            	</textarea>
+            </div>
+            
+            </form>
+    </div>
 
 
 
+	
+
+
+
+
+    
 
 
 
@@ -97,9 +106,17 @@
                 lang: 'ko-KR',
                 height: 500,
             });
+            
+            $('#footerid > div.board_wrap > form > div:nth-child(2) > div > div > div.note-editing-area > div.note-editable.panel-body > p').prop('id','id_sc_con');
+			
 
 
         });
+        
+        $(document).on('click','.on',function(){
+        	$('#idcon').text($('#id_sc_con').text());
+        
+        })
     </script>     
      <%@ include file="footer.jsp" %>
 </body>
