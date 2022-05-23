@@ -16,7 +16,7 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link rel="stylesheet" href="assets/css/sea_index.css?ver14">
+    <link rel="stylesheet" href="assets/css/sea_index.css?ver15">
 </head>
 <body>
 
@@ -55,7 +55,7 @@
 
         <div class="level">
             
-            <h3>레   벨</h3> <progress id="progress" value="0" min="0" max="8"></progress>
+            <h4>레   벨</h4> <progress id="progress" value="0" min="0" max="8"></progress>
             <div  id="prelv"> 
                 9LV
             </div>
@@ -96,6 +96,8 @@
 
 
 </div>
+
+
 
     <script>
         //차트
