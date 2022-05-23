@@ -1,0 +1,440 @@
+@charset "UTF-8";
+
+
+.board_title {
+    
+    font-size: 30px;
+    position : relative;
+  	display : block;
+    width : 300px;
+    bottom : 100px;
+    color:  #13547A;
+    border-bottom: 1px solid #000040;
+}
+
+
+.sea_warp {
+    padding : 10%;
+    display : block;
+    background-color: rgb(240, 248, 255);
+    
+}
+
+.sea_bar_wrap {
+    position: relative;
+    display : block;    
+    float: left;    
+    
+    
+    
+  }
+  
+  
+  #bar_wrap {
+    width: 600px;
+    height: 1100px;
+    background-color: rgb(240, 248, 255);
+    /* opacity: 0.6; */
+    display: block;
+    position: relative;
+  	float : left;
+  }
+  
+  
+  
+    
+  
+  .bar{
+    display: block;
+    position: relative;
+    bottom : 0px;
+    width: 10px;
+    height:1100px;
+    background-color: rgb(171, 192, 236);
+  }
+  
+  .barbar1{
+    position: relative;    
+    bottom : 700px;
+    display: block;
+    width: 50px;
+    height: 10px;
+    background-color: rgb(171, 192, 236);
+  }
+  
+  .barbar2{
+    position: relative;    
+    bottom : 500px;
+    display: block;
+    width: 50px;
+    height: 10px;
+    background-color: rgb(171, 192, 236);
+  }
+  
+  .barbar3{
+    position: relative;    
+    bottom : 300px;
+    display: block;
+    width: 50px;
+    height: 10px;
+    background-color: rgb(171, 192, 236);
+  }
+  
+  .barbar4{
+    position: relative;    
+    bottom : 100px;
+    display: block;
+    width: 50px;
+    height: 10px;
+    background-color: rgb(171, 192, 236);
+  }
+  
+  .barbar5{
+    position: relative;    
+    bottom : 900px;
+    display: block;
+    width: 50px;
+    height: 10px;
+    background-color: rgb(171, 192, 236);
+  }
+  
+  
+  .barbar{
+    position : relative;
+    bottom: 50px;
+    display: block;
+    width: 650px;
+    height: 10px;
+    background-color: rgb(171, 192, 236);
+  }
+  
+  .f1  ,.f3 ,.f5{
+    animation: up-down 1.4s infinite ease-in-out alternate;
+  }
+  
+  .f2, .f4 {
+  	animation: upp-down 1.4s infinite ease-in-out alternate;
+  }
+  
+    @keyframes upp-down{
+    from{
+        transform: translatey(-20px);
+    }
+    to{
+        transform: translatey(0px);
+    }
+  }
+  
+  
+  
+  #el  {
+    position : relative;
+    bottom: 800px;
+    left : 50%;
+    display: block; 
+    width : 100px;
+    height:100px;
+    opacity: 0.6;  
+    animation: up-down 1.4s infinite ease-in-out alternate;
+  
+  }
+  #el1  {
+    position : relative;
+    bottom: 600px;
+    left : 40%;
+    width : 100px;
+    height:100px;
+    display: block; 
+    opacity: 0.6;  
+    animation: up-down 1.4s infinite ease-in-out alternate;
+  
+  
+  }
+  #el2  {
+    position : relative;
+    display : block;
+    bottom: 360px;
+    left : 300px;
+    opacity: 0.6;
+    width : 100px;
+    height:100px;
+  
+ 
+  
+  }
+  
+  #f  {
+    width: 100px;
+    position : relative;
+    bottom: 1240px;
+    display: block;
+    left: 250px;
+    opacity: 0.6;  
+  
+  
+  	  animation-name: rint ;
+    animation-duration :2s;
+    animation-timing-function : linear;
+    
+    
+  
+  }
+  
+  
+  @keyframes rint{
+    from{
+        left : 0px;
+        transform:rotate(0deg);
+    }
+    50%{
+        left:20%;
+    }
+    to{
+        left:30%;
+        transform :rotate(5deg);
+    }
+  }
+  
+  
+  
+  
+  
+  
+  .f1, .f2, .f3, .f4, .f5{
+    width: 90px;
+    height: 90px;
+    display: block;
+    position: relative;
+    left : 120px;
+    bottom: 40px;
+  
+    /* animation: up-down 1.4s infinite ease-in-out alternate; */
+  
+        
+  }
+  
+  
+  .calender_wrap {
+    
+    position : relative;
+    display: block;
+    float: right;
+    left:205px;
+    
+  
+  }
+  
+  
+  .chart_wrap {
+  	
+  	
+    position : relative;
+    display: block;
+    float: right;
+    right: 250px;
+    top : 500px;
+    background-color: #fff;
+    
+  }
+  
+  
+  /* 레벨바 */
+  .level{
+    position : relative;
+    display: block;
+    float: right;
+    right: 200px;
+    top : 500px;
+  }
+  
+  
+  .level h3{
+    text-align: center;
+  }
+  
+  
+  #prelv {
+    position: relative;
+    bottom: 15px;
+    left: -45px;
+  }
+  
+  #nextlv {
+    position: relative;
+    
+    bottom: 32px;
+    left: 380px;
+  }
+  
+  
+  /* 글올리기 */
+  /* 
+  #writer{
+    display: block;
+  
+    left: 200px;
+  
+  } */
+  
+  #ex {
+    background: #3A4CA8;
+    border: 1px solid #3A4CA8;
+    color: #fff;
+    width: 120px;
+    height: 50px;
+    display: block;
+    position: relative;
+    top: 700px;
+      float: right;
+      left: 400px;
+  }
+  
+  
+  
+  /* 차트 css */
+  
+  #progress {
+    width: 373px;
+    height: 44px;
+  }
+  
+  
+    .css-progressbar {
+      width: 80%;
+      animation: progressbar 2s ease-out;
+  }
+  
+  
+  @keyframes progressbar { 
+    0%  { 
+      width: 0%;
+    } 
+    100% { 
+      width: 80%;
+    }  
+  }
+  
+  
+  .lang-pie{
+    height: 500px;
+    width: 500px;
+    position: relative;
+    display: block;
+    float: right;
+    right: 130px;
+    top: 300px;
+  }
+  
+  
+  
+ 
+
+  
+  .l_text{
+    text-align: center;
+    display: block;
+    position: relative;
+    left : 300px;
+    bottom: 115px;
+  
+  }
+  
+    /* animation: up-down 1.4s infinite ease-in-out alternate;
+  }
+  
+  @keyframes up-down{
+    from{
+        transform:translateY(0px);
+    }
+    to{
+        transform: translatey(0px);
+    }
+  
+  }
+  
+  animation: 
+  up-down 2s 
+  ease-in-out infinite 
+  alternate-reverse both; */
+  
+  
+  
+  
+  @keyframes up-down{
+    from{
+        transform: translatey(0px);
+    }
+    to{
+        transform: translatey(-20px);
+    }
+  }
+  
+  
+  
+  .calendar { width: 500px; }
+.calendar table { width: 100%; }
+.calendar table > caption { 
+    font-size: larger; 
+    font-weight: bolder; 
+    color: rgb(7, 6, 98); 
+    text-align: left; 
+    padding: 10px 20px; }
+
+.calendar table > tbody > tr > td { 
+    padding: 5px 5px; 
+    text-align: center; }
+
+    .calendar table > tbody > tr > td > span { 
+        display: block; 
+        padding: 10px 10px; 
+        border-radius:10%; 
+        border: 1px solid rgb(208, 208, 208);  
+        color: white; 
+        background-color: rgb(223, 210, 210);}
+
+        /* .calendar table > tbody > tr > td > span.today { border: 1px solid rgb(5, 2, 102); border-radius: 20%; color: white; background-color: rgb(6, 9, 98); padding: 9px 9px; } */
+
+.calendar > .calendar-header { 
+    position: relative; height: 
+    50px; margin: 0px 30px;
+    margin-bottom: 5%;}
+
+.calendar > .calendar-header > .calendar-yearmonth { 
+                position: relative; 
+                margin-left: 40%; 
+                font-size: larger; 
+                font-weight: bolder; 
+                color: black; 
+                line-height: 50px; }
+
+.calendar > .calendar-header > .calendar-controls { 
+    position: 
+    absolute; 
+    top: 11px; 
+    right: 0px; }
+
+    /* .calendar > .calendar-header > .calendar-controls > button { float: left; width: 30px; height: 28px; padding: 1px 4px 0 4px; border: 1px solid #cbcbcb; background-color: #fff; font-size: 12px; cursor: pointer; }  */
+
+    .ment a {
+        display: inline-block;
+        min-width: 80px;
+        margin-left: 10px;
+        padding: 10px;
+        border: 1px solid #000;
+        border-radius: 2px;
+        font-size: 1.4rem;
+    }
+
+    .ment {
+        margin-top: 30px;
+        text-align: center;
+        font-size: 0;
+    }
+
+.ment .on{  margin-left: 95%;
+    margin-top: 2%;
+    margin-bottom: 10%;
+    background: rgb(19,84,122);
+    border: 1px solid rgb(19,84,122);
+    color: #fff;
+    width: 80px;}

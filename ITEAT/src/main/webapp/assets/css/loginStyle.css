@@ -96,3 +96,72 @@ input[type=password]:focus, input[type=text]:focus{
 #loginDiv{
   text-align: center;
 }
+
+
+.calendar { width: 500px; }
+.calendar table { width: 100%; }
+.calendar table > caption { 
+    font-size: larger; 
+    font-weight: bolder; 
+    color: rgb(7, 6, 98); 
+    text-align: left; 
+    padding: 10px 20px; }
+
+.calendar table > tbody > tr > td { 
+    padding: 5px 5px; 
+    text-align: center; }
+
+    .calendar table > tbody > tr > td > span { 
+        display: block; 
+        padding: 10px 10px; 
+        border-radius:10%; 
+        border: 1px solid rgb(208, 208, 208);  
+        color: white; 
+        background-color: rgb(223, 210, 210);}
+
+        /* .calendar table > tbody > tr > td > span.today { border: 1px solid rgb(5, 2, 102); border-radius: 20%; color: white; background-color: rgb(6, 9, 98); padding: 9px 9px; } */
+
+.calendar > .calendar-header { 
+    position: relative; height: 
+    50px; margin: 0px 30px;
+    margin-bottom: 5%;}
+
+.calendar > .calendar-header > .calendar-yearmonth { 
+                position: relative; 
+                margin-left: 40%; 
+                font-size: larger; 
+                font-weight: bolder; 
+                color: black; 
+                line-height: 50px; }
+
+.calendar > .calendar-header > .calendar-controls { 
+    position: 
+    absolute; 
+    top: 11px; 
+    right: 0px; }
+
+    /* .calendar > .calendar-header > .calendar-controls > button { float: left; width: 30px; height: 28px; padding: 1px 4px 0 4px; border: 1px solid #cbcbcb; background-color: #fff; font-size: 12px; cursor: pointer; }  */
+
+    .ment a {
+        display: inline-block;
+        min-width: 80px;
+        margin-left: 10px;
+        padding: 10px;
+        border: 1px solid #000;
+        border-radius: 2px;
+        font-size: 1.4rem;
+    }
+
+    .ment {
+        margin-top: 30px;
+        text-align: center;
+        font-size: 0;
+    }
+
+.ment .on{  margin-left: 95%;
+    margin-top: 2%;
+    margin-bottom: 10%;
+    background: rgb(19,84,122);
+    border: 1px solid rgb(19,84,122);
+    color: #fff;
+    width: 80px;}

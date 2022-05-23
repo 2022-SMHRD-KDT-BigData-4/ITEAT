@@ -39,7 +39,7 @@
   ======================================================== -->
   <script src="https://kit.fontawesome.com/5a9fda220b.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body id="footerid">
 <!--챗봇-->
    <div class="chatbot">
     <img src="assets/img/soragodong.png">
