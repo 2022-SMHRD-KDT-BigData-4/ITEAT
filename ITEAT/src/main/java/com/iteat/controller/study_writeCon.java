@@ -30,7 +30,7 @@ public class study_writeCon extends HttpServlet {
 		UserInfo uif = (UserInfo)session.getAttribute("loginUser");
 		
 		String sb_title = request.getParameter("sb_title");
-		String sb_id = uif.getUif_id();
+		String sb_nick = uif.getUif_nick();
 		String[] sb_stacks = request.getParameterValues("sb_stack");
 		String sb_region = request.getParameter("sb_region");
 		String sb_recruit = request.getParameter("sb_recruit");
@@ -42,7 +42,7 @@ public class study_writeCon extends HttpServlet {
 			sb_stack += sb_stacks[i]+" / ";
 		}
 		
-		StudyBoard sb = new StudyBoard(sb_title,sb_id,sb_content,sb_recruit,sb_region,sb_stack);
+		StudyBoard sb = new StudyBoard(sb_title,sb_nick,sb_content,sb_recruit,sb_region,sb_stack);
 		StudyBoardDAO dao = new StudyBoardDAO();
 		int cnt = dao.insertSB(sb);
 		

@@ -6,7 +6,7 @@ import java.sql.Timestamp;
 public class StudyBoard {
 	private BigDecimal num;
 	private String title;
-	private String id;
+	private String nick;
 	private String content;
 	private Timestamp regdate;
 	private String recruit;
@@ -14,12 +14,12 @@ public class StudyBoard {
 	private String stack;
 	private BigDecimal hit;
 	
-	public StudyBoard(BigDecimal num, String title, String id, String content, Timestamp regdate, String recruit,
+	public StudyBoard(BigDecimal num, String title, String nick, String content, Timestamp regdate, String recruit,
 			String region, String stack, BigDecimal hit) {
 		super();
 		this.num = num;
 		this.title = title;
-		this.id = id;
+		this.nick = nick;
 		this.content = content;
 		this.regdate = regdate;
 		this.recruit = recruit;
@@ -28,10 +28,10 @@ public class StudyBoard {
 		this.hit = hit;
 	}
 	
-	public StudyBoard(String title, String id, String content, String recruit, String region, String stack) {
+	public StudyBoard(String title, String nick, String content, String recruit, String region, String stack) {
 		super();
 		this.title = title;
-		this.id = id;
+		this.nick = nick;
 		this.content = content;
 		this.recruit = recruit;
 		this.region = region;
@@ -54,8 +54,8 @@ public class StudyBoard {
 	public String getTitle() {
 		return title;
 	}
-	public String getId() {
-		return id;
+	public String getNick() {
+		return nick;
 	}
 	public String getContent() {
 		return content;

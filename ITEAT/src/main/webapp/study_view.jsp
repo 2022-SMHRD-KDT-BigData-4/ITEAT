@@ -31,7 +31,7 @@
                 <div class="info">
                     <dl>
                         <dt>작성자</dt>
-                        <dd>${studyBoard.id}</dd>
+                        <dd>${studyBoard.nick}</dd>
                     </dl>
                     <dl>
                         <dt>지역</dt>
@@ -57,25 +57,26 @@
                 <p>의견남기기</p>
                 <form>
                 <textarea name="comment" rows="3" cols="30" placeholder="댓글쓰기"></textarea>
-                
+                <button id="ment" type="submit" name="button" cor>올리기</button>   
                 </form>
             </div>
             
+            <p>댓글</p>
             <div class="comment_view">
-                <span class="writer"> 작성자</span> <span class="text"> 내용</span>
+            	<div class="writer">작성자</div>
+            	<div class="text">ddddddddddddddddddddddddddddddddddddd</div>
+                <div class="date">2022-12-04</div>
+                
+                <div id="delete">
+                    <a href="">삭제</a>
+                </div>  
             </div>      
-            <div class="comment_view">
-                <span class="writer"> 작성자</span> <span class="text"> 내용</span>
-            </div> 
-            <div class="comment_view">
-                <span class="writer"> 작성자</span> <span class="text"> 내용</span>
-            </div> 
             
             <div class="bt_wrap">
                 <a href="study_list.jsp" class="on">목록</a>
                
                <c:choose>
-                <c:when test="${loginUser.uif_id eq studyBoard.id}">   
+                <c:when test="${loginUser.uif_nick eq studyBoard.nick}">   
             	<a href="study_write_modify.jsp?num=${studyBoard.num}" class="onno">수정</a>
             	<a href="study_deleteCon?num=${studyBoard.num}" class="onno">삭제</a>
             	</c:when>

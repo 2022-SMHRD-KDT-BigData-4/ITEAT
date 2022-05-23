@@ -11,7 +11,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/studyCss.css?ver=1.3">
+    <link rel="stylesheet" href="assets/css/studyCss.css?ver=1.2">
 <title>Insert title here</title>
 </head>
 <body>
@@ -58,7 +58,7 @@
 								
 								<div>
 								  <div class="num">${studyBoardList.size()-status.count+1}</div>
-                  				  <div class="writer">${sbList.id}</div>
+                  				  <div class="writer">${sbList.nick}</div>
                 			  	  <div class="title"><a href="study_view.jsp?num=${sbList.num}">${sbList.title}</a></div>
               				      <div class="local">${sbList.region}</div>
                				      <div class="date">${sbList.regdate}</div>
