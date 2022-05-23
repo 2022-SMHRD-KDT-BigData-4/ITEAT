@@ -71,8 +71,8 @@
               <li><a href="study_list.jsp">스터디</a></li>
             </ul>
           </li>
-          <li><a href="#">묻고답하기</a></li>
-          <li><a href="#">해저탐험</a></li>
+          <li><a href="qna_list.jsp">묻고답하기</a></li>
+          <li><a href="sea_index.jsp">해저탐험</a></li>
           
           <c:choose>
              	  <c:when test="${empty loginUser}">
@@ -129,7 +129,29 @@
       pageContext.setAttribute("messageList",messageList);
       System.out.print("메세지 개수 : " + messageList.size());
     %>
-        <div id="msgPop" style="display: none; ">
+       
+        	<c:choose>
+        	
+        	
+        	<c:when test="${empty messageList }">
+        		<div id="msgPop" style="display: none; height:160px;">
+       			 <div class="msgPop-open">
+        
+        		<div>
+        		<div id="popup-title">
+        			쪽지
+        		</div>
+        	</div>
+        	<div class="msgPop-list" style="    padding-left: 10px;
+    padding-top: 10px;
+    text-align: center;">
+        		받은 쪽지가 없습니다.
+        	</div>
+        	</c:when>
+        	
+        	
+        	<c:otherwise>
+        	<div id="msgPop" style="display: none; height:400px;">
         <div class="msgPop-open">
         
         	<div>
@@ -138,6 +160,8 @@
         		</div>
         	</div>
         	<c:forEach var="msg" begin="0" end="4" items="${messageList}">
+        	
+        	
         	<div class="msgPop-list">
         		<span class="msgPop-title">${msg.msg_title}</span>
         		<div>
@@ -146,6 +170,8 @@
         		</div>	
         	</div>
         	</c:forEach>
+        	</c:otherwise>
+        	</c:choose>
         </div>
         	<div class="msgPop-btn">
     	        <a href="message_receivelist.jsp"><button id="popBtn-receive">받은쪽지</button></a>
@@ -165,6 +191,7 @@
       
 	<script>
 
+	
 	
 	
 	<!--message popup-->
