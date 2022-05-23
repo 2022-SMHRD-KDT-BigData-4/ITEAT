@@ -1,3 +1,5 @@
+<%@page import="com.iteat.domain.StudyBoard"%>
+<%@page import="com.iteat.domain.StudyBoardDAO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8" isELIgnored="false"%>
 <!DOCTYPE html>
@@ -10,6 +12,12 @@
 </head>
 <body>
 <%@ include file="header.jsp" %>
+<%
+	int num = Integer.parseInt(request.getParameter("num"));
+    StudyBoardDAO dao = new StudyBoardDAO();
+    StudyBoard studyBoard = dao.selectSB(num);
+    pageContext.setAttribute("studyBoard",studyBoard);
+%>
     <div class="board_wrap">
         <div class="board_title">
             스터디 모집
@@ -17,35 +25,31 @@
         <div class="board_view_wrap">
             <div class="board_view">
                 <div class="title">
-                    자바공부같이하실분?
+                    ${studyBoard.title}
                 </div>
                 <div class="info">
                     <dl>
                         <dt>작성자</dt>
-                        <dd>미니</dd>
+                        <dd>${studyBoard.id}</dd>
                     </dl>
                     <dl>
                         <dt>지역</dt>
-                        <dd>광주</dd>
+                        <dd>${studyBoard.region}</dd>
                     </dl>
                     <dl>
                         <dt>작성일</dt>
-                        <dd>2022-05-14</dd>
+                        <dd>${studyBoard.regdate}</dd>
                     </dl>
                     <dl>
                         <dt>모집여부</dt>
-                        <dd>모집중</dd>
+                        <dd>${studyBoard.recruit}</dd>
                     </dl>
                 </div>
                 <div class="tag">
                     태그들어갈자리
                 </div>
                 <div class="cont">
-                    글 내용이 들어갑니다<br>
-                    근데 이건 작성자가 쓴글을<br>
-                    연결해야할텐데<br>
-                    일단 보여지는 부분만 <br>
-                    했음 ㅋㅋ
+                    ${studyBoard.content}
                 </div>
             </div>
             <div class="comment">                    

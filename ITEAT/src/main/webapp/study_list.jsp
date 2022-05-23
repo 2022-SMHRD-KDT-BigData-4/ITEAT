@@ -32,6 +32,7 @@
         
             <div class="board_list">
                 <div class="top">
+                	<div class="num">글번호</div>
                     <div class="writer">작성자</div>
                     <div class="title">제목</div>
                     <div class="local">지역</div>
@@ -55,6 +56,7 @@
                     	 		<c:forEach var="sbList" begin="0" end="${studyBoardList.size()}" items="${studyBoardList}" varStatus="status">
 								
 								<div>
+								  <div class="num">${studyBoardList.size()-status.count}</div>
                   				  <div class="writer">${sbList.id}</div>
                 			  	  <div class="title"><a href="study_view.jsp?num=${sbList.num}">${sbList.title}</a></div>
               				      <div class="local">${sbList.region}</div>

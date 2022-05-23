@@ -27,6 +27,17 @@ public class StudyBoard {
 		this.stack = stack;
 		this.hit = hit;
 	}
+	
+	public StudyBoard(String title, String id, String content, String recruit, String region, String stack) {
+		super();
+		this.title = title;
+		this.id = id;
+		this.content = content;
+		this.recruit = recruit;
+		this.region = region;
+		this.stack = stack;
+	}
+
 	public BigDecimal getNum() {
 		return num;
 	}
