@@ -51,7 +51,7 @@ a {
 
 .search button{
     width :50px;
-    height : 35px;
+    height : 48px;
     padding: 10px;
     border: 0px;
     color:#fff;
@@ -436,7 +436,7 @@ select{
 
 input[type=search], input[type=email], input[type=password], input[type=text],
 	input[type=number] {
-	width: 70%;
+	width: 75%;
 	height: 48px;
 	padding: 0 11px 1px 15px;
 	border: 1px solid #ddd;
