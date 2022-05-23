@@ -33,7 +33,7 @@
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/mainStyle2.css?dfsdve" rel="stylesheet">
+  <link href="assets/css/mainStyle2.css?audfb" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Arsha - v4.3.0
