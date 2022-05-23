@@ -1,0 +1,173 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.board_wrap {
+    width: 1000px;
+    margin: 100px auto;
+}
+
+.title{
+    width: 60%;
+    position: relative;
+    float: left;
+}
+
+.board_title {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 25px;
+    
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color:  #13547A;
+}
+
+.board_title strong {
+    font-size: 3rem;
+}
+
+.board_title p {
+    margin-top: 5px;
+    font-size: 1.4rem;
+}
+
+.bt_wrap {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0;
+}
+
+.bt_wrap a {
+    display: inline-block;
+    min-width: 80px;
+    margin-left: 10px;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 2px;
+    font-size: 1.4rem;
+}
+
+/*첫번째 버튼 왼쪽으로 안가게 */
+.bt_wrap a:first-child {
+    margin-left: 0;
+}
+
+.bt_wrap a.on {
+    background: #3A4CA8;
+    color: #fff;
+    margin-left: 90%;
+}
+
+.board_list {
+    width: 100%;
+    border-top: 2px solid #3A4CA8;
+}
+
+.board_list > div {
+    border-bottom: 1px solid #ddd;
+    font-size: 0;
+}
+
+.board_list > div.top {
+    border-bottom: 1px solid #999;
+}
+
+.board_list > div:last-child {
+    border-bottom: 1px solid #3A4CA8;
+}
+
+.board_list > div > div {
+    display: inline-block;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.board_list > div.top > div {
+    font-weight: 600;
+}
+
+
+
+.board_list .title {
+    width: 35%;
+    text-align: center;
+}
+
+.board_list .top .title {
+    text-align: center;
+}
+
+.board_list .writer {
+    width: 10%;
+}
+
+.board_list .date {
+    width: 35% !important;
+}
+
+.board_list .delete {
+    width: 5%;
+    
+    
+}
+
+
+.board_list .develope {
+	
+	width: 15%;
+	
+}
+.board_paging {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 0;
+}
+
+.board_list_wrap .paging {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0;
+}
+.board_list_wrap .paging a {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 5px 10px;
+    border-radius: 100px;
+    font-size: 12px;
+}
+.board_list_wrap .paging a:first-child {
+    margin-left: 0;
+}
+
+.board_list_wrap .paging a.bt {
+    border: 1px solid #eee;
+    background: #eee;
+}
+
+.board_list_wrap .paging a.num {
+    border: 1px solid rgb(19,84,122);
+    font-weight: 600;
+    color: rgb(19,84,122);
+}
+
+.board_list_wrap .paging a.num.on {
+    background: rgb(19,84,122);
+    color: #fff;
+}
