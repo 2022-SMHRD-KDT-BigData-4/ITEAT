@@ -306,3 +306,9 @@ body > div.board_wrap > div:nth-child(3) > div > div{
     top: -60px;
 }
 
+/*수정*/
+.note-popover.popover {
+    max-width: none;
+    display: none;
+}
+
