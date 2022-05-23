@@ -257,36 +257,24 @@ a {
 }
 
 #ment {
-    margin-left: 95%;
+    
+	position: relative;
+    left: 95%;
     margin-top: 2%;
     margin-bottom: 10%;
-    background: rgb(19,84,122);
-    border: 1px solid rgb(19,84,122);
-    color: #fff;
-    width: 80px;
+    background: rgb(255,255,255);
+    border: 1px solid #777;
+    color:#777;
+    border-radius: 4px;
+    width: 70px;
+    height : 20px;
+    font-size : 12px;
 }
 
-.comment_view {
-    padding: 20px;
-    border-top: 1px solid silver;
-    line-height: 220%;
-    font-size: 1.4rem;
-    
-}
 
-span.writer{
-    padding: 0px;
-    line-height: 220%;
-    font-size: 1.4rem;
-}
 
-span.text{
-    
-    margin-left: 5%;
-    padding: 50px;
-    line-height: 220%;
-    font-size: 1.4rem;
-}
+
+
 
 /* 글작성 */
 
@@ -470,4 +458,62 @@ select{
 /*등록 뒤로 버튼 호버 */
 .bt_wrap>.on:hover{
     cursor: pointer;
+}
+
+
+.comment_view {
+    padding: 20px;
+    border-top: 1px solid silver;
+    border-bottom: 1px solid silver;
+    line-height: 220%;
+    font-size: 1.4rem;
+    
+}
+
+span.writer{
+    position: relative;
+    display: block;
+    padding: 0px;
+    line-height: 220%;
+    font-size: 1.4rem;
+}
+
+span.text{
+    position: relative;
+    display: contents;
+    left: 30%;
+    
+    line-height: 220%;
+    font-size: 1.4rem;
+}
+
+span.date{
+    position: relative;
+    display: block;
+    left: 680px;
+   top : 20px;
+    line-height: 220%;
+    font-size: 1.4rem;
+    
+}
+
+p{
+    font-size: 18px;
+    position: relative;
+    bottom: 10px;
+    left: 10px;
+}
+
+
+#delete{
+    position: relative;
+    display: block;
+    left: 740px;
+    top : 10px;
+    width: 50px;
+    text-align: center;
+    background: rgb(255, 255, 255);
+    border: 1px solid #777;
+    color: #777;
+    border-radius: 4px;
 }
