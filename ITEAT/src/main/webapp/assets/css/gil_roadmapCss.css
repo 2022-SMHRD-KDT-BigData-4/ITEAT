@@ -196,9 +196,10 @@ section.container{
 /*확대이미지*/
 
 
-.imgDiv{
-    cursor : url(../img/gil_roadmap/zoom_blue.cur), auto;
+.imgDiv div .roadImg{
+	    cursor : url(../img/gil_roadmap/zoom_blue.cur), auto;
 }
+
 
 #road_hr{
     margin-top: 10%;
