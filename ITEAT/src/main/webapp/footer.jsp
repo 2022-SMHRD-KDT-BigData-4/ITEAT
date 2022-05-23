@@ -26,7 +26,7 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/css/chatbot.css?ver1.0" rel="stylesheet">
+  <link href="assets/css/chatbot.css?ver12" rel="stylesheet">
 
   <!-- Template Main CSS File -->
   <link href="assets/css/mainStyle3.css" rel="stylesheet">
@@ -89,8 +89,8 @@
 
           </div>
           <div id="chatmenu2" style="display: none;">
-            <button id="sqldp" type="button" class="btn btn-outline-dark btn-sm">SQLP/SQLD</button>
-            <button id="dapsp" type="button" class="btn btn-outline-dark btn-sm">DAP/DASP</button>
+            <button id="sqldp" type="button" class="btn btn-outline-dark btn-sm">SQLP / SQLD</button>
+            <button id="dapsp" type="button" class="btn btn-outline-dark btn-sm">DAP / DASP</button>
             <button id="adsp" type="button" class="btn btn-outline-dark btn-sm">ADSP</button>
           </div>
 

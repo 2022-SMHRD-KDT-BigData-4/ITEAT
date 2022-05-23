@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/contestCss.css">
+    <link rel="stylesheet" href="assets/css/contestCss.css?ver03">
 <title>Insert title here</title>
 </head>
 <body>
@@ -56,15 +56,13 @@
                 </form>
             </div>
             
+            <p>댓글</p>
             <div class="comment_view">
-                <span class="writer"> 작성자</span> <span class="text"> 내용</span>
-            </div>      
-            <div class="comment_view">
-                <span class="writer"> 작성자</span> <span class="text"> 내용</span>
-            </div> 
-            <div class="comment_view">
-                <span class="writer"> 작성자</span> <span class="text"> 내용</span>
-            </div> 
+                <span class="writer"> 작성자</span> 
+                <span class="text"> 내dssddassdfdfhsldfjslkdfjskldjsdfsdfsdfsdfsdfsdflksjdfklasdjflksdjfklsdjfklsdjflkjfffffffffffffffffffffffdddddddddddd용</span>
+                <span class="date">2022-05-23</span>
+               
+            </div>   
             
             <div class="bt_wrap">
                 <a href="contest_list.jsp" class="on">목록</a>

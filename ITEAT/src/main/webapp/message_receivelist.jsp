@@ -10,7 +10,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IT EAT</title>
-    <link rel="stylesheet" href="assets/css/message.css?ver=1.1">
+    <link rel="stylesheet" href="assets/css/message.css?ver=2.2">
 </head>
 <body>
 <%@ include file="header.jsp" %>
@@ -49,7 +49,7 @@
                 		System.out.print("메세지 개수 : " + messageList.size());
                 	  %>
             <!-- 리스트영역 -->
-            <div class="board_list">
+            <div class="board_list" id="blist">
                 <div class="top">
                     <div class="title">제목</div>
                     <div class="writer">보낸사람</div>
@@ -91,24 +91,6 @@
          </c:choose>
         </div>
     </div>
-    <footer id="footer">
-
-
-    <div class="container footer-bottom clearfix">
-      <div class="copyright">
-      <strong><span>이민지 이정민 심우현 하종현</span></strong>
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/ -->
-        IT EAT
-      </div>
-
-    
-    
-    </div>
-  </footer><!-- End Footer -->
+<%@ include file="footer.jsp" %>
 </body>
 </html> 

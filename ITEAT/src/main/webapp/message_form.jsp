@@ -36,31 +36,13 @@
                 <span id="za">0/1000자</span>
             </div>
             <div class="bt_wrap">
-                <a href="#" onclick="return chk_form()" class="on">보내기</a> 
+                <a href="#" onclick="return chk_form()" class="on"><button> 보내기</button></a> 
                 
             </div>
         </div>
         </form>
     </div>
-    <footer id="footer">
 
-
-    <div class="container footer-bottom clearfix">
-      <div class="copyright">
-      <strong><span>이민지 이정민 심우현 하종현</span></strong>
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/ -->
-        IT EAT
-      </div>
-
-    
-    
-    </div>
-  </footer><!-- End Footer -->
     <script>
     	function chk_form(){
     		if(document.getElementById("wr").value==''){
@@ -80,5 +62,7 @@
     	
     	
     </script>
+    
+    <%@ include file="footer.jsp" %>
 </body>
 </html>
