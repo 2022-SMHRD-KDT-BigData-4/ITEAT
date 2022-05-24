@@ -18,11 +18,21 @@
 }
 
 
+@font-face {
+    font-family: 'HallymGothic-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2204@1.0/HallymGothic-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
 .roadTitle{
-   font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
     font-size: 30px;
-    margin-top: 5px;
-    margin-bottom: 10px;
+    display : inline-block;
+    position : relative;
+    top : 20px;
+    
     color:  #13547A;
     margin: 34px 0px -50px 379px;
 }
@@ -64,19 +74,27 @@
 }
 
 #lan > span > h3{
-	font-family: 'GimpoGothicBold00';
-	font-size : 30px
+	font-family: 'HallymGothic-Regular';
+	font-size : 20px;
+	display : block;
+	position : relative;
+	left : 30px;
+	bottom : 5px;
 }
 
 #tech > span > h3{
-	font-family: 'GimpoGothicBold00';
-	font-size : 30px
+	font-family: 'HallymGothic-Regular';
+	font-size : 20px;
+	display : block;
+	position : relative;
+	left : 50px;
+	bottom : 5px;
 }
 
 
 
 .rank_ment{
-    font-family: 'GimpoGothicBold00';
+    font-family: 'HallymGothic-Regular';
     display: block;
     position : relative;
     left : 40px;
@@ -85,7 +103,7 @@
 }
 
 .rank_mentt{
-    font-family: 'GimpoGothicBold00';
+    font-family: 'HallymGothic-Regular';
     display: block;
     position : relative;
     left : 60px;
@@ -121,7 +139,7 @@
 }
 
 .solo h4{
-	font-family: 'GimpoGothicBold00';
+	font-family: 'HallymGothic-Regular';
     /* position: fixed;
     bottom  :20% ; */
     font-size: 25px;
@@ -132,7 +150,7 @@
 }
 
 .solo h2{
-	font-family: 'GimpoGothicBold00';
+	font-family: 'HallymGothic-Regular';
     /* position: fixed;
     bottom  :20% ; */
     
@@ -140,7 +158,7 @@
     display: block;
     position: relative;
     left : 22%;
-    margin-top : 0%;
+    margin-top : 15px;
 }
 
 
