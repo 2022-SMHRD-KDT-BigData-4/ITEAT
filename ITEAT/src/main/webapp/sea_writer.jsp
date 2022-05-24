@@ -72,7 +72,7 @@
             	<button type="submit" class="on">등록하기</button>
             </div>
            <div>
-          		<button href="qna_view.html" class="back">뒤로가기</button>
+          		<button type="button" onclick="location.href='sea_list.jsp' " class="back">목록으로</button>
            </div>
            
            

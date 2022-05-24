@@ -12,8 +12,8 @@
 	
 	
 	<!-- 글리스트보기 : 선택리스트 -->
-	<select id="selectSeaCode" resultType="com.iteat.domain.SeaCode">
-		SELECT code_seq, code_title, code_content, code_date, code_nick, code_lang FROM (SELECT ROWNUM AS NUM, code.* FROM code ORDER BY code_seq) WHERE NUM BETWEEN 1 AND 999 ORDER BY NUM DESC
+	<select id="selectSeaCode" parameterType="String" resultType="com.iteat.domain.SeaCode">
+		SELECT code_seq, code_title, code_content, code_date, code_nick, code_lang FROM (SELECT ROWNUM AS NUM, code.* FROM code ORDER BY code_seq) WHERE code_nick=#{code_nick} AND NUM BETWEEN 1 AND 999  ORDER BY NUM DESC
 	</select>
 
 

@@ -34,12 +34,12 @@ public class SeaCodeDAO {
 	
 	
 	// 리스트 보기 -selectList
-	public List<SeaCode> selectSeaCode(){
+	public List<SeaCode> selectSeaCode(String code_nick){
 
 		SqlSession sqlSession = SqlSessionFactory.openSession();
 		List<SeaCode> scList = null;
 		try {
-			scList = sqlSession.selectList("com.iteat.domain.SeaCodeDAO.selectSeaCode");
+			scList = sqlSession.selectList("com.iteat.domain.SeaCodeDAO.selectSeaCode", code_nick);
 			if(scList!=null) {
 				sqlSession.commit();
 			}else {

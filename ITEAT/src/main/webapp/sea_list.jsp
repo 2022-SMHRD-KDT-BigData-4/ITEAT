@@ -43,8 +43,9 @@
 					
 					<c:otherwise>
 					<%
+						UserInfo uif = (UserInfo)session.getAttribute("loginUser");
 						SeaCodeDAO sc_dao = new SeaCodeDAO();
-						List<SeaCode> seaCodeList = sc_dao.selectSeaCode();
+						List<SeaCode> seaCodeList = sc_dao.selectSeaCode(uif.getUif_nick());
 						pageContext.setAttribute("seaCodeList", seaCodeList);
 						System.out.print("코드개수 : " + seaCodeList.size());					
 					%>

@@ -23,8 +23,8 @@ a {
 }
 
 .board_wrap {
-    width: 1000px;
-    margin: 100px auto;
+    width: 800px !important;
+    margin-left: 460px !important;
 }
 
 .board_title {
