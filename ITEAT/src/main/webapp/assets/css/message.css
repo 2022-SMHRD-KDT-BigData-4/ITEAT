@@ -40,9 +40,9 @@ a {
 }
 
 .give #all {
- margin-top: -50px;
+    margin-top: -50px;
     position: relative;
-    left: 736px;
+    left: 916px;
     text-align: center;
     width: 8%;
     height: 45px;
@@ -50,7 +50,7 @@ a {
     color: #13547A;
     font-size: 13px;
     font-weight: 600;
-    top: 100px;
+    top: 16px;
     border: 1px solid #13547A;
     font-family: 'Noto Sans KR', sans-serif;
     text-align: center;
@@ -475,4 +475,9 @@ body > div > div.board_view_wrap > div.board_view > div.info{
     color: #fff;
     margin-left: 50px;
     
+}
+
+
+#sendmsg{
+	top: 10px;
 }

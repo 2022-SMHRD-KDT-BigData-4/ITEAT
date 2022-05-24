@@ -10,7 +10,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IT EAT</title>
-    <link rel="stylesheet" href="assets/css/message.css?ve132">
+    <link rel="stylesheet" href="assets/css/message.css?ve35485">
 </head>
 <body id="msg_body">
 <%@ include file="header.jsp" %>
@@ -22,7 +22,7 @@
         </div>
 
         <div class="give">
-            <a href="message_sendlist.jsp"><button>보낸쪽지</button></a>
+            <a href="message_sendlist.jsp"><button id="sendmsg">보낸쪽지</button></a>
             <div id="all"><a href="DeleteAllMessageCon">전체삭제</a></div>
         </div>
 

@@ -12,7 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>message</title>
-    <link rel="stylesheet" href="assets/css/sea_view.css?ve454">
+    <link rel="stylesheet" href="assets/css/sea_view.css?ver544">
 </head>
 <body id="seaview">
 
@@ -35,12 +35,12 @@
                     ${seaCode.code_title}
                 </div>
                 <div class="info">
-                  	<dl>
-                  		<dt>${seaCode.code_lang}</dt>
-                  	</dl>
-                    <dl>
-                        <dt>${seaCode.code_date}</dt>
-                    </dl>
+                  	<div class="info_prop1">
+                  		<span>${seaCode.code_lang}</span>
+                  	</div>
+                    <div class="info_prop2">
+                        <span>${seaCode.code_date}</span>
+                    </div>
                 </div>
 
 
@@ -51,7 +51,7 @@
 
 
              <div class="bt">
-        <a href="sea_list.jsp"><button id="list">목록으로</button></a>
+        		<a href="sea_list.jsp"><button id="list">목록으로</button></a>
     		</div>
         </div>
         
