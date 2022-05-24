@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'HallymGothic-Regular';
 
 }
 
@@ -16,7 +17,7 @@ ul, li {
 
 a {
     text-decoration: none;
-    color: inherit;
+    color: #3A4CA8;
 }
 
 .board_wrap {
@@ -26,10 +27,10 @@ a {
 
 .board_title {
     font-family: 'Noto Sans KR', sans-serif;
-    font-size: 30px;
-    
-    margin-top: 5px;
-    margin-bottom: 10px;
+    font-size: 25px;
+    display : inline-block;
+    position : relative ;
+    bottom:20px;
     color:  #13547A;;
 }
 
@@ -108,6 +109,15 @@ a {
     text-align: center;
 }
 
+.board_list .title a{
+    font-family: 'HallymGothic-Regular';
+    color: rgb(0,0,0);
+    
+}
+
+
+
+
 .board_list .top .title {
     text-align: center;
 }
@@ -159,13 +169,13 @@ a {
 }
 
 .board_list_wrap .paging a.num {
-    border: 1px solid rgb(19,84,122);
+    border: 1px solid #3A4CA8;
     font-weight: 600;
-    color: rgb(19,84,122);
+    color: #3A4CA8;
 }
 
 .board_list_wrap .paging a.num.on {
-    background: rgb(19,84,122);
+    background: #3A4CA8;
     color: #fff;
 }
 
@@ -414,17 +424,17 @@ select{
         color: #fff;
         margin-left: 100%;
     */
-    width: 150px;
+    width: 100px;
     margin-left: 10px;
     padding: 10px;
     
     text-align: center;
     height: 48px;
-    background-color: rgb(19,84,122);
+    background-color: #3A4CA8;
     color: white;
     font-size: 16px;
-    font-weight: 600;
-    border: 1px solid rgb(19,84,122);
+    font-weight: 500px;
+    border: 1px solid #3A4CA8;
     font-family: 'Noto Sans KR', sans-serif;
     border-radius: 4%;
     
@@ -482,7 +492,7 @@ span.text{
     position: relative;
     display: contents;
     left: 30%;
-    
+    width:50%;
     line-height: 220%;
     font-size: 1.4rem;
 }
@@ -490,8 +500,10 @@ span.text{
 span.date{
     position: relative;
     display: block;
-    left: 680px;
-   top : 20px;
+    top : 15px;
+    left: 640px;
+   	bottom : 0px;
+   	width:50%;
     line-height: 220%;
     font-size: 1.4rem;
     
@@ -501,7 +513,7 @@ p{
     font-size: 18px;
     position: relative;
     bottom: 10px;
-    left: 10px;
+    
 }
 
 
@@ -517,3 +529,66 @@ p{
     color: #777;
     border-radius: 4px;
 }
+
+#delete>a{
+	color : #777;
+	text-decoration : none;
+}
+
+
+
+
+.bt #writer{
+    background: #3A4CA8;
+    border: 1px solid #3A4CA8;
+    color: #fff;
+    width: 100px;
+    height: 50px;
+    display: block;
+    position: relative;
+    top: 10px;
+    left: 705px;
+    font-size : 15px;
+    font-family: 'HallymGothic-Regular';
+
+}
+
+.bt #list{
+    background: #3A4CA8;
+    border: 1px solid #3A4CA8;
+    color: #fff;
+    width: 100px;
+    height: 50px;
+    display: block;
+    position: relative;
+    top: 30px;
+    left : 800px;
+    font-size : 15px;
+    font-family: 'HallymGothic-Regular';
+
+}
+
+
+.board_list_wrap{
+	font-family: 'HallymGothic-Regular';
+}
+
+#c_p {
+	position : relative;
+	left : 10px;
+}
+
+
+
+
+
+@font-face {
+    font-family: 'HallymGothic-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2204@1.0/HallymGothic-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+    
+  

@@ -6,7 +6,7 @@
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Insert title here</title>
-<link rel="stylesheet" href="assets/css/qna_style.css?vada">
+<link rel="stylesheet" href="assets/css/qna_style.css?ver04">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
 </head>
@@ -80,8 +80,8 @@
 
             </div>
             <!-- 리스트 버튼영역 -->
-            <div class="bt_wrap">
-                <a href="qna_write.jsp" class="on">올리기</a>
+            <div class="bt">
+                <a href="qna_write.jsp"><button id="writer">질문작성</button></a>
                 <!--<a href="#">수정</a>-->
             </div>
         </div>

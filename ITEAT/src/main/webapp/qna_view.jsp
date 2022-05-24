@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/qna_style.css?ver.03">
+    <link rel="stylesheet" href="assets/css/qna_style.css?ver.11">
 <title>Insert title here</title>
 </head>
 <body>
@@ -48,21 +48,24 @@
             <div class="comment">                    
                 <p>의견남기기</p>
                 <form>
-                <textarea name="comment" rows="3" cols="30" placeholder="댓글쓰기"></textarea>
+                <textarea name="comment" rows="3" cols="30" placeholder=""></textarea>
                 <button id="ment" type="submit" name="button" cor>올리기</button>    
                 </form>
             </div>
             
-            <p>댓글</p>
+            <p id="c_p">댓글</p>
             <div class="comment_view">
                 <span class="writer"> 작성자</span> 
-                <span class="text"> 내dssddassdfdfhsldfjslkdfjskldjsdfsdfsdfsdfsdfsdflksjdfklasdjflksdjfklsdjfklsdjflkjfffffffffffffffffffffffdddddddddddd용</span>
+                <span class="text"> 내용 내가 더 많이 사랑한 죄 널 너무나 많이 그리워 한 죄 눈물로 앓고있다고 ...이렇게</span>
                 <span class="date">2022-05-23</span>
+                <div id="delete">
+                    <a href="">삭제</a>
+                </div>  
                 
             </div>   
             
-            <div class="bt_wrap">
-                <a href="qna_list.jsp" class="on">목록</a>
+            <div class="bt">
+                <a href="qna_list.jsp"><button id="list">목록으로</button></a>
             </div>
         </div>
         <div class="conment">
