@@ -22,7 +22,7 @@
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/css/chatbot.css?ver124" rel="stylesheet">
-      <link rel="stylesheet" href="assets/css/sea_write.css?ver34">
+      <link rel="stylesheet" href="assets/css/sea_write.css?ver35">
 </head>
 <body>
 <%@ include file="header.jsp" %>

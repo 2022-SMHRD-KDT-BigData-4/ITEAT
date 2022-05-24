@@ -123,9 +123,9 @@ a {
 }
 
 .board_title {
-    font-family: 'Noto Sans KR', sans-serif;
-    font-size: 25px;
-    width : 50%;
+   font-family: 'Noto Sans KR', sans-serif;
+    font-size: 30px;
+    
     margin-top: 5px;
     margin-bottom: 10px;
     color:  #13547A;;
@@ -488,29 +488,19 @@ body > div > div.board_view_wrap > div.board_view > div.info{
 
 /* 목록버튼 */
 
-.bt {
-    margin-top: 10px;
-    text-align: center;
-    font-size: 0;
-    margin-left: 600px;
-}
 
 
-.bt a {
-    display: inline-block;
-    min-width: 80px;
-    margin-top : 5%;
-    padding: 10px;
-    border: 1px solid #000;
-    border-radius: 2px;
-    font-size: 1.4rem;
-    margin-left : 10px;
-}
 
-
-.bt a.on {
-    background: rgb(19,84,122);
+#list{
+     background: #3A4CA8;
+    border: 1px solid #3A4CA8;
+    font-size : 10px;
     color: #fff;
-    margin-left: 50px;
-    
-}
+    width: 100px;
+    height: 40px;
+    display: block;
+    position: relative;
+    top: 50px;
+    left: 680px;
+;
+    }
