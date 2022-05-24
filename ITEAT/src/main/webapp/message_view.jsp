@@ -9,7 +9,7 @@
     <title>message</title>
     <link rel="stylesheet" href="assets/css/message.css">
 </head>
-<body>
+<body id="msg_body">
 <%@ include file="header.jsp" %>
     <div class="board_wrap">
         <div class="board_title">

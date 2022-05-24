@@ -10,9 +10,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IT EAT</title>
-    <link rel="stylesheet" href="assets/css/message.css?ver=2.2">
+    <link rel="stylesheet" href="assets/css/message.css?ve132">
 </head>
-<body>
+<body id="msg_body">
 <%@ include file="header.jsp" %>
     <!-- 전체 감싸기 -->
     <div class="board_wrap">

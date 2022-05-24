@@ -12,9 +12,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IT EAT</title>
-    <link rel="stylesheet" href="assets/css/sea_list.css?ver22">
+    <link rel="stylesheet" href="assets/css/sea_list.css?ver5412">
 </head>
-<body>
+<body id="sealist">
 <%@ include file="header.jsp" %>
 
     <!-- 전체 감싸기 -->

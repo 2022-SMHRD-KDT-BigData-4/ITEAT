@@ -18,9 +18,9 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link rel="stylesheet" href="assets/css/sea_index.css?ver31">
+    <link rel="stylesheet" href="assets/css/sea_index.css?vers324">
 </head>
-<body>
+<body id="sea_main">
 
 <%@ include file="header.jsp" %>
 

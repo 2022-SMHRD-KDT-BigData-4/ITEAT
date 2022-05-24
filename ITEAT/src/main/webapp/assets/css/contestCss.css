@@ -6,6 +6,10 @@
     font-family: 'HallymGothic-Regular';
 }
 
+#con_list{
+	padding-top:82.5px;
+}
+
 html {
     font-size: 10px;
 }

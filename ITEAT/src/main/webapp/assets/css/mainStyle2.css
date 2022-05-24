@@ -115,7 +115,8 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.5s;
   z-index: 997;
   padding: 15px 0;
-  position:relative;
+  position:fixed;
+  top:0px;
 }
 
 #header.header-scrolled, #header.header-inner-pages {
@@ -403,12 +404,13 @@ h1, h2, h3, h4, h5, h6 {
 
 /*message*/
 #msgPop{
-	width: 300px;
-	background-color: white;
-	border: solid #ddd 1px;
-	position: absolute;
+    width: 300px;
+    background-color: white;
+    border: solid #ddd 1px;
+    position: fixed;
     left: 1440px;
-    z-index: 100;
+    z-index: 13000;
+    top: 89px;
 	
 }
 

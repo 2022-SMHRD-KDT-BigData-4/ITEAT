@@ -22,9 +22,9 @@
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/css/chatbot.css?ver126" rel="stylesheet">
-      <link rel="stylesheet" href="assets/css/sea_write.css?verkjjkj65652165">
+      <link rel="stylesheet" href="assets/css/sea_write.css?ver54">
 </head>
-<body>
+<body id="seawrite">
 <%@ include file="header.jsp" %>
     <div class="board_wrap">
         <!-- 글올리는 게시판 묻고답하기 -->

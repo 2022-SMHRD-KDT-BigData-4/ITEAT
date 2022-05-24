@@ -26,10 +26,10 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/css/chatbot.css?ver12" rel="stylesheet">
+  <link href="assets/css/chatbot.css?ver444" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/mainStyle3.css" rel="stylesheet">
+  <link href="assets/css/mainStyle3.css?ver234dsf" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Arsha - v4.3.0
@@ -37,7 +37,7 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
-  <script src="https://kit.fontawesome.com/5a9fda220b.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/5ab.js" crossorigin="anonymous"></script>
 </head>
 <body id="footerid">
 <!--챗봇-->

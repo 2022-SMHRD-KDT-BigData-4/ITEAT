@@ -29,6 +29,11 @@
     background-color: rgb(72, 105, 255);
 }
 
+
+#gil_road{
+	padding-top:82.5px;
+}
+
 body {
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 25px;

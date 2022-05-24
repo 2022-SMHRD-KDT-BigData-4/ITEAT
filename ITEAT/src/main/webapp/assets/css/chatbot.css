@@ -559,7 +559,7 @@ text-align: center;
   margin-right: -900px;
   text-align: center;
   width: 120px;
-  
+  z-index: 30;
   
 }
 

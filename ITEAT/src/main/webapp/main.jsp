@@ -51,7 +51,7 @@
       <div class="row">
         <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
           <div id="yum"><img  src="assets/img/team/iteatt.png"></div>
-          <h1>코딩을 맛있게 먹는법</h1>
+          <h1>코딩을 맛있게 먹는 법</h1>
           <br>
           <h2>IT EAT</h2>
           

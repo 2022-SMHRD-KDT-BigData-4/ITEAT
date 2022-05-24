@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Document</title>
 
-<link rel="stylesheet" href="assets/css/joinCss.css" />
+<link rel="stylesheet" href="assets/css/joinCss.css?525" />
 <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 <style type="text/css"></style>
 <script type="text/javascript"

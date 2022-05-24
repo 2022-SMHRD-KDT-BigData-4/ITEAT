@@ -6,11 +6,11 @@
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Insert title here</title>
-<link rel="stylesheet" href="assets/css/contestCss.css?var=1.9">
+<link rel="stylesheet" href="assets/css/contestCss.css?var=251">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
 </head>
-<body>
+<body id="con_list">
 
 
 <%@ include file="header.jsp" %>
@@ -100,7 +100,7 @@
             </div>
             <!-- 리스트 버튼영역 -->
             <div class="bt_wrap">
-                <a href="study_write.jsp" class="on">올리기</a>
+                <a href="contest_write.jsp" class="on">올리기</a>
                 <!--<a href="#">수정</a>-->
             </div>
         </div>

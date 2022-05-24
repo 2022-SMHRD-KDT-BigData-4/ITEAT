@@ -12,9 +12,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>message</title>
-    <link rel="stylesheet" href="assets/css/sea_view.css?ver05">
+    <link rel="stylesheet" href="assets/css/sea_view.css?ve454">
 </head>
-<body>
+<body id="seaview">
 
 
 <%@ include file="header.jsp" %>

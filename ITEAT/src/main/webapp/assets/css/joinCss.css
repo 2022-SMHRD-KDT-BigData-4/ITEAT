@@ -136,6 +136,7 @@ input[type=search]:focus, input[type=email]:focus, input[type=password]:focus,
 
 #joinDiv {
 	text-align: center;
+	margin: 50px 0px 50px 0px;
 }
 
 .dbCkRs {

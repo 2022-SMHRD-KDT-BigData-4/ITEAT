@@ -12,10 +12,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="assets/css/studyCss.css?ver123123">
+        <link rel="stylesheet" href="assets/css/studyCss.css?ver15423">
 <title>Insert title here</title>
 </head>
-<body>
+<body id="studybody">
 <%@ include file="header.jsp" %>
 
 <%

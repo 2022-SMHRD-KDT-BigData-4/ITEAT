@@ -33,7 +33,7 @@
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/mainStyle2.css?audfb" rel="stylesheet">
+  <link href="assets/css/mainStyle2.css?kjkjk22" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Arsha - v4.3.0
@@ -72,7 +72,15 @@
             </ul>
           </li>
           <li><a href="qna_list.jsp">묻고답하기</a></li>
-          <li><a href="sea_index.jsp">해저탐험</a></li>
+          
+          <c:choose>
+          	<c:when test="${empty loginUser}">
+          		<li id="nosea"><a href="#">해저탐험</a></li>
+          	</c:when>
+          	<c:otherwise>
+          		<li id="yessea"><a href="sea_index.jsp">해저탐험</a></li>
+          	</c:otherwise>
+          </c:choose>
           
           <c:choose>
              	  <c:when test="${empty loginUser}">
@@ -207,6 +215,10 @@
 	
 
 
+	$(document).on('click','#nosea',function(){
+		alert('로그인을 해주세요')
+	})
+	
 	
 	
 	

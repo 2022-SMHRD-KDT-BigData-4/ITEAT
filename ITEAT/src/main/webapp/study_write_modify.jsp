@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Insert title here</title>
 	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-	<link rel="stylesheet" href="assets/css/studyCss.css">
+	<link rel="stylesheet" href="assets/css/studyCss.css?5412">
 	<link href="resources/bootstrap-5.2.0-beta1-dist/js/bootstrap.js">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 	
 </head>
-<body>
+<body id="studybody">
 <%@ include file="header.jsp" %>
     <div class="board_wrap">
         <!-- 글올리는 게시판 묻고답하기 -->
