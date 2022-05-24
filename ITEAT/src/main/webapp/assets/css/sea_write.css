@@ -130,6 +130,7 @@ span.text{
 
 .board_write {
     border-top: 1px solid rgb(11, 9, 76);
+    width: 994px;
     margin-bottom: 10%;
 }
 
@@ -177,7 +178,7 @@ select{
     border-radius: 4px;
 	font-size: 18px;
     margin-left: 10px;
-    width: 88%;
+    width: 90%;
     position: relative;
     left: 100px;
     top: -32px;
