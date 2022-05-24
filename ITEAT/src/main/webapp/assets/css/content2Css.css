@@ -1,0 +1,580 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'HallymGothic-Regular';
+}
+
+html {
+    font-size: 10px;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.board_wrap {
+    width: 1000px;
+    margin: 100px auto;
+}
+
+.board_title {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 30px;
+    
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color:  #13547A;;
+}
+
+.board_title strong {
+    font-size: 3rem;
+}
+.search{
+    
+    float : right ;
+    
+}
+
+
+
+.search input{
+    font-size: 15px;
+    width: 300px;
+    height : 30px;
+    padding : 10px;
+    border:0px;
+    float:left
+}
+
+.search button{
+    width :50px;
+    height : 40px;
+    font-size : 14px;
+    
+    border: 1px soild #3A4CA8 ;
+    color:#fff;
+    background-color: #3A4CA8;
+    
+    position : relative ;
+    top : 5px
+}
+
+.bt_wrap {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0;
+}
+
+.bt_wrap a {
+    display: inline-block;
+    min-width: 80px;
+    margin-left: 10px;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 2px;
+    font-size: 1.4rem;
+}
+
+/*ù��° ��ư �������� �Ȱ��� */
+.bt_wrap a:first-child {
+    margin-left: 0;
+}
+
+.bt_wrap a.on {
+    background: #3A4CA8;
+    color: #fff;
+    margin-left: 90%;
+}
+
+.board_list {
+    margin-top: 10%;
+    width: 100%;
+    border-top: 2px solid #3A4CA8;
+}
+
+.board_list > div {
+    border-bottom: 1px solid #ddd;
+    font-size: 0;
+}
+
+.board_list > div.top {
+    border-bottom: 1px solid #999;
+}
+
+.board_list > div:last-child {
+    border-bottom: 1px solid #3A4CA8;
+}
+
+.board_list > div > div {
+    display: inline-block;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.board_list > div.top > div {
+    font-weight: 600;
+}
+
+.board_list .num {
+    width: 10%;
+}
+
+.board_list .title {
+    width: 40%;
+    text-align: center;
+}
+
+.board_list .top .title {
+    text-align: center;
+}
+
+.board_list .writer {
+    width: 10%;
+}
+.board_list .position {
+    width: 10%;
+}
+
+.board_list .date {
+    width: 10%;
+}
+
+.board_list .local {
+    width: 10%;
+}
+.board_list .hits {
+    width: 10%;
+}
+.board_list .recruit {
+    width: 10%;
+}
+
+.board_paging {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 0;
+}
+
+.board_list_wrap .paging {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0;
+}
+.board_list_wrap .paging a {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 5px 10px;
+    border-radius: 100px;
+    font-size: 12px;
+}
+.board_list_wrap .paging a:first-child {
+    margin-left: 0;
+}
+
+.board_list_wrap .paging a.bt {
+    border: 1px solid #eee;
+    background: #eee;
+}
+
+.board_list_wrap .paging a.num {
+    border: 1px solid #3A4CA8;
+    font-weight: 600;
+    color: rgb(19,84,122);
+}
+
+.board_list_wrap .paging a.num.on {
+    background: #3A4CA8;
+    color: #fff;
+}
+
+
+
+.board_view {
+    width: 100%;
+    border-top: 2px solid #3A4CA8;
+}
+
+.board_view .title {
+    padding: 20px 15px;
+    border-bottom: 1px #ddd;
+    font-size: 2rem;
+}
+
+.board_view .info {
+    padding: 1px;
+    border-top: 1px solid #999;
+    font-size: 0;
+    
+}
+
+.board_view .info dl {
+    position: relative;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.board_view .info dl:first-child {
+    padding-left: 0;
+}
+
+.board_view .info dl::before {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 0;
+    display: block;
+    width: 1px;
+    height: 13px;
+    background: #ddd;
+}
+
+.board_view .info dl:first-child::before {
+    display: none;
+}
+
+.board_view .info dl dt,
+.board_view .info dl dd {
+    display: inline-block;
+    font-size: 1.4rem;
+}
+
+.board_view .info dl dt {
+
+}
+
+
+.board_view .info dl dd {
+    margin-left: 10px;
+    color: #777;
+}
+
+.board_view .tag {
+    padding: 3px;
+    border-bottom: 1px solid rgb(220, 220, 220);
+    font-size: 5px;
+    
+}
+
+.board_view .cont {
+	height: 654px;
+    margin-top: 3%;
+    padding: 15px;
+    border-bottom: 1px solid #777;
+    line-height: 220%;
+    font-size: 1.4rem;
+}
+
+.comment p {
+    padding: 10px;
+    margin-top: 20px;
+    font-size: medium;
+}
+
+.comment textarea {
+    width: 100%;
+    height: 100px;
+    padding: 0 11px 1px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    appearance: none;
+    outline: 0;
+
+}
+
+#ment {
+	position: relative;
+    left: 95%;
+    margin-top: 2%;
+    margin-bottom: 10%;
+    background: rgb(255,255,255);
+    border: 1px solid #777;
+    color:#777;
+    border-radius: 4px;
+    width: 70px;
+    height : 20px;
+    font-size : 12px;;
+}
+
+
+/* ���ۼ� */
+
+.board_write {
+    border-top: 2px solid rgb(19,84,122);
+    margin-bottom: 10%;
+}
+
+.board_write .title {
+    padding: 20px 0px 20px 0px;
+    display: block;
+    box-sizing: border-box;
+    border: 0 ;
+    resize: vertical;
+}
+
+
+.option {
+    float: right;
+    padding: 0px;
+    position : relative;
+    bottom : 40px;
+    left : 15px;
+    
+}
+
+
+select{
+    width: 80px;
+    padding: .8em .5em;
+    border: 0.5px solid silver;
+    border-radius: 0px;
+    
+    }
+
+
+.board_write .title input[type="text"] {
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.board_write #cont {
+    border-top: 1px solid silver;
+    border-bottom: 1px solid silver;
+}
+
+/* .board_write #cont textarea {
+    
+    display: block;
+    width: 100%;
+    height: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 0;
+    resize: vertical;
+} */
+
+
+
+
+.bt_wrap {
+    
+    text-align: center;
+    font-size: 0;
+}
+
+.bt_wrap a {
+    display: inline-block;
+    min-width: 80px;
+    margin-left: 10px;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 2px;
+    font-size: 1.4rem;
+}
+
+/*ù��° ��ư �������� �Ȱ��� */
+.bt_wrap a:first-child {
+    margin-left: 0;
+}
+
+
+.bt_wrap a {
+	margin-top: 20px;
+	text-align: center;
+	width: 15%;
+	height: 48px;
+	background-color: rgb(19,84,122);
+	color: white;
+	font-size: 16px;
+	font-weight: 600;
+	border: 1px solid rgb(19,84,122);
+	font-family: 'Noto Sans KR', sans-serif;
+    border-radius: 4%;
+}
+
+.bt_wrap a:hover{
+    background-color: rgb(19,84,122);
+}
+
+.board_write .title input[type="text"]{
+    width: 70%;
+}
+
+input[type=search], input[type=email], input[type=password], 
+	input[type=number] {
+	width: 75%;
+	height: 48px;
+	padding: 0 11px 1px 15px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #333;
+	appearance: none;
+	outline: 0;
+}
+
+input[type=text] {
+	width: 75%;
+	height: 41px;
+	
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #333;
+	appearance: none;
+	outline: 0;
+	position : relative ;
+	top : 4px;
+	
+}
+
+
+/*contest_write �����Է�*/
+#cont>textarea{
+	width: 100%;
+	height: 500px;
+	padding: 0 11px 1px 15px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 1.5;
+	color: #333;
+	appearance: none;
+	outline: 0;
+}
+
+#cont{
+    padding-top: 20px;
+}
+
+.form-select{
+    height: 45px;
+    border: 1px solid #13547A !important;
+}
+
+.input-file-button{
+    margin-top: 10px;
+    font-size: 13px;
+    padding: 6px 25px;
+    background-color: white;
+    border-radius: 4px;
+    color: #13547A;
+    cursor: pointer;
+    border: 1px solid #13547A ;
+    float: right;
+}
+
+#input-file{
+    
+    display: none;
+}
+
+
+.comment_view {
+    padding: 20px;
+    border-top: 1px solid silver;
+    border-bottom: 1px solid silver;
+    line-height: 200%;
+    font-size: 1.4rem;
+    
+}
+
+span.writer{
+    position: relative;
+    display: block;
+    padding: 0px;
+    line-height: 220%;
+    font-size: 1.4rem;
+}
+
+span.text{
+    position: relative;
+    display: contents;
+    left: 30%;
+    
+    line-height: 220%;
+    font-size: 1.4rem;
+}
+
+span.date{
+    position: relative;
+    display: block;
+    left: 680px;
+   top : 50px;
+    line-height: 220%;
+    font-size: 1.4rem;
+    
+}
+
+p{
+    font-size: 18px;
+    position: relative;
+    bottom: 10px;
+    
+}
+
+
+#delete{
+    position: relative;
+    display: block;
+    left: 780px;
+    top : 80px;
+    width: 50px;
+    text-align: center;
+    background: rgb(255, 255, 255);
+    border: 1px solid #777;
+    color: #777;
+    border-radius: 4px;
+}
+
+#delete>a{
+	color : #777;
+}
+
+.board_list .title a{
+	color : rgb(0,0,0);
+}
+
+#footerid > div.board_wrap > div.board_list_wrap > div.bt_wrap > a {
+	
+	position : relative;
+	float : right;
+	left : 25px;
+	bottom : 25px;
+}
+
+
+#c_p {
+	position : relative;
+	left : 10px;
+	
+}
+
+#v_l {
+	position : relative;
+	left : 600px;
+	top : 50px;
+}
+
+@font-face {
+    font-family: 'HallymGothic-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2204@1.0/HallymGothic-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
