@@ -1,0 +1,599 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'HallymGothic-Regular';
+
+}
+
+#qna_body{
+	padding-top:82.5px;
+}
+
+html {
+    font-size: 10px;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #3A4CA8;
+}
+
+.board_wrap {
+    width: 1000px;
+    margin: 100px auto;
+}
+
+.board_title {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 25px;
+    display : inline-block;
+    position : relative ;
+    bottom:20px;
+    color:  #13547A;;
+}
+
+.board_title strong {
+    font-size: 3rem;
+}
+
+.board_title p {
+    margin-top: 5px;
+    font-size: 1.4rem;
+}
+
+.bt_wrap {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0;
+}
+
+.bt_wrap a {
+    display: inline-block;
+    min-width: 80px;
+    margin-left: 10px;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 2px;
+    font-size: 1.4rem;
+}
+
+/*泥ル쾲吏� 踰꾪듉 �쇊履쎌쑝濡� �븞媛�寃� */
+.bt_wrap a:first-child {
+    margin-left: 0;
+}
+
+.bt_wrap a.on {
+    background: rgb(32, 9, 106);
+    color: #fff;
+    margin-left: 90%;
+    height: 50%;
+}
+
+.board_list {
+    width: 100%;
+    border-top: 2px solid rgb(18, 2, 73);
+}
+
+.board_list > div {
+    border-bottom: 1px solid #ddd;
+    font-size: 0;
+}
+
+.board_list > div.top {
+    border-bottom: 1px solid #999;
+}
+
+.board_list > div:last-child {
+    border-bottom: 1px solid rgb(18, 2, 73);
+}
+
+.board_list > div > div {
+    display: inline-block;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.board_list > div.top > div {
+    font-weight: 600;
+}
+
+.board_list .num {
+    width: 10%;
+}
+
+.board_list .title {
+    width: 60%;
+    text-align: center;
+}
+
+.board_list .title a{
+    font-family: 'HallymGothic-Regular';
+    color: rgb(0,0,0);
+    
+}
+
+
+
+
+.board_list .top .title {
+    text-align: center;
+}
+
+.board_list .writer {
+    width: 10%;
+}
+
+.board_list .date {
+    width: 10%;
+}
+
+
+.board_list .develope1 {
+    width: 28%;
+    text-align: right;
+}
+
+.board_list .develope {
+    width: 26%;
+    text-align: right;
+}
+
+.board_paging {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 0;
+}
+
+.board_list_wrap .paging {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0;
+}
+.board_list_wrap .paging a {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 5px 10px;
+    border-radius: 100px;
+    font-size: 12px;
+}
+.board_list_wrap .paging a:first-child {
+    margin-left: 0;
+}
+
+.board_list_wrap .paging a.bt {
+    border: 1px solid #eee;
+    background: #eee;
+}
+
+.board_list_wrap .paging a.num {
+    border: 1px solid #3A4CA8;
+    font-weight: 600;
+    color: #3A4CA8;
+}
+
+.board_list_wrap .paging a.num.on {
+    background: #3A4CA8;
+    color: #fff;
+}
+
+.board_view {
+    width: 100%;
+    border-top: 2px solid #000;
+}
+
+.board_view .title {
+    padding: 20px 15px;
+    border-bottom: 1px #ddd;
+    font-size: 2rem;
+}
+
+.board_view .info {
+    padding: 1px;
+    border-top: 1px solid #999;
+    font-size: 0;
+    
+}
+
+.board_view .info dl {
+    position: relative;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.board_view .info dl:first-child {
+    padding-left: 0;
+}
+
+.board_view .info dl::before {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 0;
+    display: block;
+    width: 1px;
+    height: 13px;
+    background: #ddd;
+}
+
+.board_view .info dl:first-child::before {
+    display: none;
+}
+
+.board_view .info dl dt,
+.board_view .info dl dd {
+    display: inline-block;
+    font-size: 1.4rem;
+}
+
+.board_view .info dl dt {
+
+}
+
+
+.board_view .info dl dd {
+    margin-left: 10px;
+    color: #777;
+}
+
+.board_view .cont {
+    padding: 15px;
+    border-bottom: 1px solid #777;
+    line-height: 220%;
+    font-size: 1.4rem;
+}
+
+.comment p {
+    padding: 10px;
+    margin-top: 20px;
+    font-size: medium;
+}
+
+.comment textarea {
+    width: 100%;
+    height: 100px;
+    padding: 0 11px 1px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    appearance: none;
+    outline: 0;
+
+}
+
+#ment {
+    
+	position: relative;
+    left: 95%;
+    margin-top: 2%;
+    margin-bottom: 10%;
+    background: rgb(255,255,255);
+    border: 1px solid #777;
+    color:#777;
+    border-radius: 4px;
+    width: 70px;
+    height : 20px;
+    font-size : 12px;
+}
+
+
+
+
+
+
+/* 湲��옉�꽦 */
+
+.board_write {
+    border-top: 1px solid rgb(11, 9, 76);
+    margin-bottom: 10%;
+}
+
+.board_write .title {
+    padding: 15px;
+}
+
+select{
+    
+    position:relative;
+    width: 90px;
+    padding: .8em .5em;
+
+    height: 40px;
+    background-color: white;
+    border-radius: 4px;
+    color: #13547A;
+
+    
+    border: 1px solid #13547A ;
+    
+}
+
+.board_write .title dl {
+    font-size: 0;
+}
+
+.board_write .info dl {
+    display: inline-block;
+    width: 50%;
+    vertical-align: middle;
+}
+
+.board_write .title dt,
+.board_write .title dd {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1.4rem;
+}
+
+.board_write .title dt{
+    width: 100px;
+}
+
+.board_write .title dd {
+    width: calc(100% - 100px);
+}
+
+.board_write .title input[type="text"] {
+	position: relative;
+	left: -24px;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 79%;
+    border: #ddd solid 1px;
+    border-radius: 4px;
+    height: 40px;
+    margin-left: 12px;
+}
+
+
+
+.board_write .cont textarea {
+	margin-top: 25px;
+    display: block;
+    width: 100%;
+    height: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 0;
+    resize: vertical;
+
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+
+
+
+.bt_wrap {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0;
+}
+
+.bt_wrap a {
+    display: inline-block;
+    min-width: 80px;
+    margin-left: 10px;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 2px;
+    font-size: 1.4rem;
+}
+
+/*泥ル쾲吏� 踰꾪듉 �쇊履쎌쑝濡� �븞媛�寃� */
+.bt_wrap a:first-child {
+    margin-left: 0;
+}
+
+.bt_wrap a.on {
+    background: rgb(19,84,122);
+    color: #fff;
+    margin-left: 100%;    
+    
+}
+
+
+
+/*�뙆�씪 �뾽濡쒕뱶 踰꾪듉*/
+.input-file-button{
+    margin-top: 10px;
+    font-size: 13px;
+    padding: 6px 25px;
+    background-color: white;
+    border-radius: 4px;
+    color: #13547A;
+    cursor: pointer;
+    border: 1px solid #13547A ;
+    float: right;
+    top: -80px;
+}
+
+#input-file{
+    display: none;
+}
+
+/*�뙆�씪 �뾽濡쒕뱶 踰꾪듉 �걹*/
+
+.bt_wrap .on {
+    /*    background: rgb(19,84,122);
+        color: #fff;
+        margin-left: 100%;
+    */
+    width: 100px;
+    margin-left: 10px;
+    padding: 10px;
+    
+    text-align: center;
+    height: 48px;
+    background-color: #3A4CA8;
+    color: white;
+    font-size: 16px;
+    font-weight: 500px;
+    border: 1px solid #3A4CA8;
+    font-family: 'Noto Sans KR', sans-serif;
+    border-radius: 4%;
+    
+        
+    }
+
+
+/*�뼵�뼱 �꽑�깮�븯�뒗嫄� */
+#stackSltHide{
+    float: right;
+    
+}
+
+#qna_cate {
+	position: relavtive;
+	right: 17px;
+}
+
+#stackSlt{
+	position: relative;
+	right: -15px;
+	bottom: 40px;
+    width: 90px;
+    height: 40px;
+	font-family: 'Noto Sans KR', sans-serif;
+    font-size: 12px;
+}
+/*�뼵�뼱 �꽑�깮�븯�뒗嫄� �걹 */
+
+
+/*�벑濡� �뮘濡� 踰꾪듉 �샇踰� */
+.bt_wrap>.on:hover{
+    cursor: pointer;
+}
+
+
+.comment_view {
+    padding: 20px;
+    border-top: 1px solid silver;
+    border-bottom: 1px solid silver;
+    line-height: 220%;
+    font-size: 1.4rem;
+    
+}
+
+span.writer{
+    position: relative;
+    display: block;
+    padding: 0px;
+    line-height: 220%;
+    font-size: 1.4rem;
+}
+
+span.text{
+    position: relative;
+    display: contents;
+    left: 30%;
+    width:50%;
+    line-height: 220%;
+    font-size: 1.4rem;
+}
+
+span.date{
+    position: relative;
+    display: block;
+    top : 15px;
+    left: 640px;
+   	bottom : 0px;
+   	width:50%;
+    line-height: 220%;
+    font-size: 1.4rem;
+    
+}
+
+p{
+    font-size: 18px;
+    position: relative;
+    bottom: 10px;
+    
+}
+
+
+#delete{
+    position: relative;
+    display: block;
+    left: 740px;
+    top : 10px;
+    width: 50px;
+    text-align: center;
+    background: rgb(255, 255, 255);
+    border: 1px solid #777;
+    color: #777;
+    border-radius: 4px;
+}
+
+#delete>a{
+	color : #777;
+	text-decoration : none;
+}
+
+
+
+
+.bt #writer{
+    background: #3A4CA8;
+    border: 1px solid #3A4CA8;
+    color: #fff;
+    width: 100px;
+    height: 50px;
+    display: block;
+    position: relative;
+    top: 10px;
+    left: 705px;
+    font-size : 15px;
+    font-family: 'HallymGothic-Regular';
+
+}
+
+.bt #list{
+    background: #3A4CA8;
+    border: 1px solid #3A4CA8;
+    color: #fff;
+    width: 100px;
+    height: 50px;
+    display: block;
+    position: relative;
+    top: 30px;
+    left : 800px;
+    font-size : 15px;
+    font-family: 'HallymGothic-Regular';
+
+}
+
+
+.board_list_wrap{
+	font-family: 'HallymGothic-Regular';
+}
+
+#c_p {
+	position : relative;
+	left : 10px;
+}
+
+
+
+
+
+@font-face {
+    font-family: 'HallymGothic-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2204@1.0/HallymGothic-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+    
+  
