@@ -8,11 +8,11 @@ import com.iteat.database.SqlSessionManager;
 public class SBCommentDAO {
 	SqlSessionFactory SqlSessionFactory = SqlSessionManager.getSqlSession();
 	
-	public int insertSBComm() {
+	public int insertSBComm(SBComment sbc) {
 		SqlSession sqlSession = SqlSessionFactory.openSession();
 		int cnt = 0;
 		try {
-			cnt = sqlSession.insert("com.iteat.database.SBCommentDAO.insertSBComm", sqlSession);
+			cnt = sqlSession.insert("com.iteat.domain.SBCommentDAO.insertSBComm",sbc);
 			if(cnt>0) {
 				sqlSession.commit();
 			}else {

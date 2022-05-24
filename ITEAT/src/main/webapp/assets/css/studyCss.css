@@ -297,19 +297,6 @@ a {
     
 }
 
-span.writer{
-    padding: 0px;
-    line-height: 220%;
-    font-size: 1.4rem;
-}
-
-span.text{
-    
-    margin-left: 5%;
-    padding: 50px;
-    line-height: 220%;
-    font-size: 1.4rem;
-}
 
 /* 占쏙옙占쌜쇽옙 */
 
@@ -551,4 +538,60 @@ div.title > span > div > ul > label{
 
 .board_write_wrap .dropdown-item .form-check-label{
 	font-size: 12px;
+}
+.comment_view {
+    padding: 20px;
+    border-top: 1px solid silver;
+    border-bottom: 1px solid silver;
+    line-height: 220%;
+    font-size: 1.4rem;
+    
+}
+
+span.writer{
+    position: relative;
+    display: block;
+    padding: 0px;
+    line-height: 220%;
+    font-size: 1.4rem;
+}
+
+span.text{
+    position: relative;
+    display: contents;
+    left: 30%;
+    
+    line-height: 220%;
+    font-size: 1.4rem;
+}
+
+span.date{
+    position: relative;
+    display: block;
+    left: 85%;
+   
+    line-height: 220%;
+    font-size: 1.4rem;
+    
+}
+
+p{
+    font-size: 18px;
+    position: relative;
+    bottom: 10px;
+    left: 10px;
+}
+
+
+#delete{
+    position: relative;
+    display: block;
+    float: right;
+    bottom: 30px;
+    width: 50px;
+    text-align: center;
+    background: rgb(255, 255, 255);
+    border: 1px solid #777;
+    color: rgb(0, 0, 0);
+    border-radius: 4px;
 }

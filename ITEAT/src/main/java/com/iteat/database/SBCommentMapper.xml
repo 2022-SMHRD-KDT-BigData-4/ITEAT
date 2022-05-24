@@ -3,9 +3,8 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
  <mapper namespace="com.iteat.domain.SBCommentDAO">
-	<insert id="insertSBComm" parameterType="com.iteat.database.SBComment">
+	<insert id="insertSBComm" parameterType="com.iteat.domain.SBComment">
 		insert into study_comment values(stu_cmt_seq.nextval,#{sbnum},#{content},sysdate,#{nick},0)
 	</insert>
-
-
 </mapper>
+

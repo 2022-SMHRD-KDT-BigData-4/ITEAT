@@ -20,6 +20,15 @@ public class SBComment {
 		this.nick = nick;
 		this.like = like;
 	}
+	
+
+	public SBComment(BigDecimal sbnum, String content, String nick) {
+		super();
+		this.sbnum = sbnum;
+		this.content = content;
+		this.nick = nick;
+	}
+
 
 	public BigDecimal getCmnum() {
 		return cmnum;

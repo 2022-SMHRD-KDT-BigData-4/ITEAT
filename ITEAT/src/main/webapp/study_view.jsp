@@ -1,3 +1,5 @@
+<%@page import="com.iteat.domain.SBComment"%>
+<%@page import="com.iteat.domain.SBCommentDAO"%>
 <%@page import="com.iteat.domain.StudyBoard"%>
 <%@page import="com.iteat.domain.StudyBoardDAO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
@@ -55,22 +57,16 @@
             </div>
             <div class="comment">                    
                 <p>의견남기기</p>
-                <form>
-                <textarea name="comment" rows="3" cols="30" placeholder="댓글쓰기"></textarea>
-                <button id="ment" type="submit" name="button" cor>올리기</button>   
+                <form action="insertSBCommentCon?num=${studyBoard.num}" method="post">
+                <textarea name="content" rows="3" cols="30" placeholder="댓글쓰기"></textarea>
+                <button id="ment" type="submit" name="button">올리기</button>   
                 </form>
             </div>
+           			
+           		
+           			 <p>댓글</p>
+           			 
             
-            <p>댓글</p>
-            <div class="comment_view">
-            	<div class="writer">작성자</div>
-            	<div class="text">ddddddddddddddddddddddddddddddddddddd</div>
-                <div class="date">2022-12-04</div>
-                
-                <div id="delete">
-                    <a href="">삭제</a>
-                </div>  
-            </div>      
             
             <div class="bt_wrap">
                 <a href="study_list.jsp" class="on">목록</a>
