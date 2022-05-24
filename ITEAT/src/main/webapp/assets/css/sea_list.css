@@ -76,26 +76,25 @@ a {
 .bt_wrap a.on {
     background: #3A4CA8;
     color: #fff;
-    margin-left: 90%;
+    margin-left: 0%;
+    margin-top: 20px;
+    text-align: center;
+    width: 15%;
+    height: 48px;
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid rgb(19,84,122);
+    font-family: 'Noto Sans KR', sans-serif;
+    border-radius: 4%;
 }
 
 .board_list {
     width: 100%;
-    border-top: 2px solid #3A4CA8;
     
 }
 
-.board_list > div {
-    border-bottom: 1px solid #ddd;
-    font-size: 0;
-}
-
-.board_list > div.top {
-    border-bottom: 1px solid #999;
-}
-
 .board_list > div:last-child {
-    border-bottom: 1px solid #3A4CA8;
+    border-bottom: 2px solid #3A4CA8;
 }
 
 .board_list > div > div {
@@ -106,7 +105,7 @@ a {
 }
 
 .board_list > div.top > div {
-    font-weight: 600;
+    border-bottom: 2px solid #3A4CA8;
 }
 
 
@@ -137,12 +136,17 @@ a {
 }
 
 .board_list .title {
-    width: 35%;
+    width: 40%;
     text-align: center;
     position :relative;
 	display : block;
 	float : left
 }
+
+.board_list .title a{
+	
+	color: black;
+	}
 .board_list .develope {
 	
 	width: 15%;
@@ -164,9 +168,11 @@ a {
 }
 
 .board_list_wrap .paging {
-    margin-top: 20px;
+    margin-top: 500px;
     text-align: center;
     font-size: 0;
+    border-top: 2px solid #3A4CA8;
+    padding-top: 30px;
 }
 .board_list_wrap .paging a {
     display: inline-block;
