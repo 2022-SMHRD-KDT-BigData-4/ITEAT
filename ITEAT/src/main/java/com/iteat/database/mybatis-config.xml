@@ -21,6 +21,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
  		<mapper resource="com/iteat/database/StudyBoardMapper.xml"/>
  		<mapper resource="com/iteat/database/MessageMapper.xml"/>
  		<mapper resource="com/iteat/database/SBCommentMapper.xml"/>
+ 		<mapper resource="com/iteat/database/SeaCodeMapper.xml"/>
     </mappers>
  
 </configuration>

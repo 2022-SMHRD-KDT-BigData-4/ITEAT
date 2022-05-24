@@ -1,3 +1,5 @@
+<%@page import="com.iteat.domain.SeaCode"%>
+<%@page import="com.iteat.domain.SeaCodeDAO"%>
 <%@page import="org.apache.ibatis.reflection.SystemMetaObject"%>
 <%@page import="java.util.List"%>
 
@@ -16,6 +18,13 @@
 
 
 <%@ include file="header.jsp" %>
+
+<%
+	int codeSeq = Integer.parseInt(request.getParameter("num"));
+	SeaCodeDAO sc_dao = new SeaCodeDAO();
+	SeaCode seaCode = sc_dao.selectSC(codeSeq);
+	pageContext.setAttribute("seaCode", seaCode);
+%>
     <div class="board_wrap">
          <div class="board_title">
             해저탐험 / 글
@@ -23,19 +32,20 @@
         <div class="board_view_wrap">
             <div class="board_view">
                 <div class="title">
-                    글제목
+                    ${seaCode.code_title}
                 </div>
                 <div class="info">
-                  
+                  	<dl>
+                  		<dt>${seaCode.code_lang}</dt>
+                  	</dl>
                     <dl>
-                        <dt>작성일</dt>
-                        <dd>2022-05-14</dd>
+                        <dt>${seaCode.code_date}</dt>
                     </dl>
                 </div>
 
 
                 <div id="mail_view_cont">
-                    내용들어갈거임 ㅋㅋ 
+                    ${seaCode.code_content}
                 </div>
             </div>
 

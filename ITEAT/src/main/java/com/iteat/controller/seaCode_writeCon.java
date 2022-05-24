@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import com.iteat.domain.SeaCode;
+import com.iteat.domain.SeaCodeDAO;
 import com.iteat.domain.UserInfo;
 
 
@@ -26,13 +27,21 @@ public class seaCode_writeCon extends HttpServlet {
 		String sc_title = request.getParameter("sc_title");
 		String sc_con = request.getParameter("sc_con");
 		String sc_lang = request.getParameter("sc_lang");
+		String sc_nick = uif.getUif_nick();
 		
+		SeaCode sc = new SeaCode(sc_title, sc_con, sc_lang, sc_nick);
+		SeaCodeDAO sc_dao = new SeaCodeDAO();
+		int cnt = sc_dao.insertSC(sc);
 		
-		System.out.println(sc_lang);
-		System.out.println(sc_title );
-		System.out.println(sc_con);
+		System.out.println("cnt" + cnt);
 		
-		SeaCode sc = new SeaCode(sc_lang, sc_title, sc_con);
+		if(cnt>0) {
+			System.out.println("코드작성 성공");
+			response.sendRedirect("sea_list.jsp");
+		}else {
+			System.out.println("코드작성 실패");
+			response.sendRedirect("sea_writer.jsp");
+		}
 		
 		
 	}

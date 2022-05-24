@@ -36,11 +36,12 @@ public class SeaCode {
 	}
 
 	
-	public SeaCode(String code_title, String code_content, String code_lang) {
+	public SeaCode(String code_title, String code_content, String code_lang, String code_nick) {
 		super();
 		this.code_title = code_title;
 		this.code_content = code_content;
 		this.code_lang = code_lang;
+		this.code_nick = code_nick;
 	}
 
 

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+        
+        
+<mapper namespace="com.iteat.domain.SeaCodeDAO">
+	<!-- 등록: 삽입 -->
+	<insert id="insertSC" parameterType="com.iteat.domain.SeaCode">
+		INSERT INTO code VALUES (code_seq.nextval, #{code_title}, #{code_content}, sysdate, #{code_nick}, #{code_lang})
+	</insert>
+	
+	
+	<!-- 글리스트보기 : 선택리스트 -->
+	<select id="selectSeaCode" resultType="com.iteat.domain.SeaCode">
+		SELECT code_seq, code_title, code_content, code_date, code_nick, code_lang FROM (SELECT ROWNUM AS NUM, code.* FROM code ORDER BY code_seq) WHERE NUM BETWEEN 1 AND 999 ORDER BY NUM DESC
+	</select>
+
+
+	<!-- 상세보기: 선택 -->
+	<select id="selectSC" parameterType="int" resultType="com.iteat.domain.SeaCode">
+		SELECT * FROM code WHERE code_seq=#{code_seq}
+	</select>
+	
+	<!-- 당일 올린 글 갯수: 카운트 -->
+	<select id="countSC" parameterType="String" resultType="int">
+		SELECT COUNT(*) FROM code WHERE code_date like (select TO_CHAR(sysdate, 'YY/MM/DD') from dual) AND code_nick=#{code_nick}
+	</select>
+	
+</mapper>

@@ -1,3 +1,5 @@
+<%@page import="com.iteat.domain.SeaCode"%>
+<%@page import="com.iteat.domain.SeaCodeDAO"%>
 <%@page import="org.apache.ibatis.reflection.SystemMetaObject"%>
 <%@page import="java.util.List"%>
 <%@page import="com.iteat.domain.UserInfo"%>
@@ -21,6 +23,15 @@
 <body>
 
 <%@ include file="header.jsp" %>
+
+
+<%
+	UserInfo uif = (UserInfo)session.getAttribute("loginUser");
+	SeaCodeDAO sc_dao = new SeaCodeDAO();
+	int code_count = sc_dao.countSC(uif.getUif_nick());
+	
+%>
+
 	  <div class="sea_warp" style="display: inline-block;">
 
 
@@ -55,7 +66,7 @@
 
         <div class="level">
             
-            <h4>레   벨</h4> <progress id="progress" value="0" min="0" max="8"></progress>
+            <h4 id="levelH4">레   벨</h4> <progress id="progress" value="0" min="0" max="8"></progress>
             <div  id="prelv"> 
                 9LV
             </div>
@@ -87,11 +98,8 @@
             <canvas id="lang-pie"></canvas>
         </div>
 
-
-        <!--ex) 글올리기 버튼-->
-        <div class="btt">
-        <button id="ex">글올리기</button>
-    </div>
+		
+	
         
 
 
@@ -133,12 +141,6 @@
                     }
                 }
             });
-
-            // $('canvas').css('width','300px')
-            // $('canvas').css('height','300px')
-            // $('canvas').css('text-align','center')
-            // $('canvas').attr('width','500px')
-            // $('canvas').attr('height','500px')
 
             
             
@@ -221,6 +223,8 @@
             var yearmonth = $(".calendar-yearmonth").text().split(".");
             alert(yearmonth[0] + "." + yearmonth[1] + "." + $(event.target).text());
         });
+        
+        $()
         //------------------------------------달력끝--------------------------------------------
 
 
@@ -294,13 +298,10 @@
 
 
 
-
         //ex글올리기버튼
-        let codeCnt=0;  // 오늘 업로드한 코드 게시글 갯수
         let date=new Date();
         let tod=date.getDate();
         let colorCnt =0;    // 현재 달력에 진한색 갯수
-
 
 
 
@@ -312,34 +313,32 @@
             colorCnt+=1;
             }
         })
-        alert('진한색 갯수:'+colorCnt)
 
 
         
         // lev = 현재 레벨 = 진한색 갯수
         let lev = colorCnt;
-        alert('현재 레벨:' + lev)
 
 
-
-        // 글올리고(버튼누르고)
-        $('#ex').click(function(){
+        
+		$('tbody>tr>td>span').text()==tod
+        
+        
+        $(document).ready(function(){
 
             // 버튼 누르는 만큼(글올린갯수만큼) 카운트세기
             // codeCnt : 오늘 올린 글 갯수
-            codeCnt+=1;
-            alert('오늘 올린 글 갯수: ' + codeCnt)
 
             //오늘날짜 찾아서 글 갯수만큼 색칠하기  
             $('tbody>tr>td>span').each(function(){
                 if($(this).text()==tod){
-                    if( codeCnt >= 8 ){
+                    if( <%=code_count%> >= 8 ){
                         $(this).css('background-color','#3A4CA8')
-                        }else if( codeCnt >= 6 ){
+                        }else if( <%=code_count%> >= 6 ){
                         $(this).css('background-color','#5D6DBE')
-                        }else if( codeCnt >= 4 ){
+                        }else if( <%=code_count%> >= 4 ){
                         $(this).css('background-color','#9FA9D8')
-                        }else if( codeCnt >= 1 ){
+                        }else if( <%=code_count%> >= 1 ){
                         $(this).css('background-color','#CCD2F0')
                         
                     }
@@ -354,29 +353,24 @@
                     colorCnt+=1;
                 }
             })
-            alert('진한색 갯수:'+colorCnt)
 
 
 
             //오늘 올린 글 갯수가 8개 이상이면 1 렙업
             // (원래 lev+=1 이런식이 맞는데... 걍 10으로 고정하겠음ㅎㅎ)
             // (글 갯수가 8개 이상이면 lev=10)
-            if(codeCnt>=8){
+            if(<%=code_count%>>=8){
                 lev=10;
-                alert('현재 레벨:' + lev)
             }
             //레벨이 10이 넘어가면 잠수부아래로이동, 레벨10 물고기 나타나기
             if(lev>=10){
-                alert('지금 글올린갯수 8이상이여야하는데 지금 몇개올림?' + codeCnt)
-                alert('지금 달력에 진한색 갯수 10개여야하는데 지금 몇개임?' + colorCnt)
-                alert('지금 레벨 10이여야하는데 렙몇?' + lev)
                 $('#f').css('top','-1080px')
                 $('.f1').prop('src','assets/img/sea/fish1.png')
                 $('#prelv').text('10LV')
                 $('#nextlv').text('11LV')
                 $('#progress').prop('value','0')
             }else {
-                $('#progress').prop('value',codeCnt)
+                $('#progress').prop('value',<%=code_count%>)
             }
             
 

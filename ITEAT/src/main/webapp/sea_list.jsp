@@ -1,3 +1,5 @@
+<%@page import="com.iteat.domain.SeaCode"%>
+<%@page import="com.iteat.domain.SeaCodeDAO"%>
 <%@page import="org.apache.ibatis.reflection.SystemMetaObject"%>
 <%@page import="java.util.List"%>
 
@@ -27,48 +29,37 @@
             <div class="board_list">
                 <div class="top">
                     
+                    <div class="seq">번호</div>
                     <div class="title">제목</div>
                     <div class="develope">언어</div>
                     <div class="date">작성날짜</div>
-                    <div class="delete">삭제</div>
                 </div>
 
-                <div>
-                    
-                    <div class="title"><a href="view.html">모르겠어요</a></div>
-                    <div class="develope">미니</div>
-                    <div class="date">2022-05-14</div>
-                    <div class="delete"><input type="checkbox" class="input_chk"> <label for=""></div>
-                </div>
-
-                <div>
-                    
-                    <div class="title"><a href="view.html">모르겠어요</a></div>
-                    <div class="develope">미니</div>
-                    <div class="date">2022-05-14</div>
-                    <div class="delete"><input type="checkbox" class="input_chk"> <label for=""></div>
-                </div>
-
-                <div>
-                    
-                    <div class="title"><a href="view.html">모르겠어요</a></div>
-                    <div class="develope">미니</div>
-                    <div class="date">2022-05-14</div>
-                    <div class="delete"><input type="checkbox" class="input_chk"> <label for=""></div>
-                </div>
-                <div>
-                    
-                    <div class="title"><a href="view.html">모르겠어요</a></div>
-                    <div class="develope">미니</div>
-                    <div class="date">2022-05-14</div>
-                    <div class="delete"><input type="checkbox" class="input_chk"> <label for=""></div>
-                </div>
-                <div>
-                    <div class="title"><a href="view.html">모르겠어요</a></div>
-                    <div class="develope">미니</div>
-                    <div class="date">2022-05-14</div>
-                    <div class="delete"><input type="checkbox" class="input_chk"> <label for=""></div>
-                </div>
+				<c:choose>
+					<c:when test ="${empty loginUser }">
+					<h1>로그인을 하세요</h1>
+					</c:when>
+					
+					<c:otherwise>
+					<%
+						SeaCodeDAO sc_dao = new SeaCodeDAO();
+						List<SeaCode> seaCodeList = sc_dao.selectSeaCode();
+						pageContext.setAttribute("seaCodeList", seaCodeList);
+						System.out.print("코드개수 : " + seaCodeList.size());					
+					%>
+						<c:forEach var="scList" begin="0" end="${seaCodeList.size()}" items="${seaCodeList}" varStatus="status">
+		                <div>
+		                    <div class="seq">${seaCodeList.size()-status.count+1}</div>
+		                    <div class="title"><a href="sea_view.jsp?num=${scList.code_seq}">${scList.code_title }</a></div>
+		                    <div class="develope">${scList.code_lang}</div>
+		                    <div class="date">${scList.code_date}</div>
+		                </div>
+						</c:forEach>
+					</c:otherwise>
+                </c:choose>
+                
+                
+                
             </div>
             <!-- 리스트 페이지영역 -->
             <div class="paging">
@@ -84,7 +75,7 @@
             </div>
             <!-- 리스트 버튼영역 -->
             <div class="bt_wrap">
-                <a href="sea_write.jsp" class="on">올리기</a>
+                <a href="sea_writer.jsp" class="on">올리기</a>
             </div>
         </div>
     </div>
