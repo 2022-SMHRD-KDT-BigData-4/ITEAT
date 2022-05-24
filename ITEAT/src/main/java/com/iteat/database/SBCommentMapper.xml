@@ -6,5 +6,11 @@
 	<insert id="insertSBComm" parameterType="com.iteat.domain.SBComment">
 		insert into study_comment values(stu_cmt_seq.nextval,#{sbnum},#{content},sysdate,#{nick},0)
 	</insert>
+	<select id="selectSBComm" parameterType="int" resultType="com.iteat.domain.SBComment">
+		select * from study_comment where stu_qna_seq=#{num} order by stu_cmt_seq desc
+	</select>
+	<delete id="deleteSBC" parameterType="int">
+		delete from study_comment where stu_cmt_seq=#{num}
+	</delete>
 </mapper>
 

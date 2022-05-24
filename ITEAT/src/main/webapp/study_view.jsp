@@ -2,8 +2,11 @@
 <%@page import="com.iteat.domain.SBCommentDAO"%>
 <%@page import="com.iteat.domain.StudyBoard"%>
 <%@page import="com.iteat.domain.StudyBoardDAO"%>
+<%@page import="com.iteat.domain.UserInfo"%>
+<%@page import="java.util.List"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8" isELIgnored="false"%>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -14,6 +17,7 @@
 </head>
 <body>
 <%@ include file="header.jsp" %>
+
 <%
 	int num = Integer.parseInt(request.getParameter("num"));
     StudyBoardDAO dao = new StudyBoardDAO();
@@ -57,15 +61,43 @@
             </div>
             <div class="comment">                    
                 <p>의견남기기</p>
+                 	   <c:choose>
+                	  <c:when test="${empty loginUser}">
+                  	   <h1>로그인을 하세요.</h1>
+                	  </c:when>
+                	  <c:otherwise>
                 <form action="insertSBCommentCon?num=${studyBoard.num}" method="post">
                 <textarea name="content" rows="3" cols="30" placeholder="댓글쓰기"></textarea>
                 <button id="ment" type="submit" name="button">올리기</button>   
                 </form>
+                <p>댓글</p>
+               		 <%
+                	    SBCommentDAO sbcdao = new SBCommentDAO();
+                		List<SBComment> SBCommentList = sbcdao.selectSBComm(num);
+                		pageContext.setAttribute("SBCommentList",SBCommentList);
+                		System.out.print("댓글 개수 : " + SBCommentList.size());
+                	  %>
+                    	 
+                    	 	
+                    	 		<c:forEach var="SBCList" begin="0" end="${fn:length(SBCommentList)}" items="${SBCommentList}">
+								
+               				      <div class="comment_view">
+               						 <span class="writer">${SBCList.nick}${SBList.cmnum}</span> 
+               						 <span class="text"> ${SBCList.content}</span>
+          						     <span class="date">${SBCList.date}</span>
+          						     <c:choose>
+          						     <c:when test="${SBCList.nick eq loginUser.uif_nick}">   
+          						       <div id="delete">
+                   						 <a href="sbc_deleteCon?num=${SBCList.cmnum}">삭제</a>
+               						   </div>  
+               						  </c:when>
+               						  </c:choose>
+               					  </div>   
+								</c:forEach>
+                </c:otherwise>
+               </c:choose>  
             </div>
-           			
-           		
-           			 <p>댓글</p>
-           			 
+
             
             
             <div class="bt_wrap">
