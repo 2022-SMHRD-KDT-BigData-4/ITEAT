@@ -12,7 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IT EAT</title>
-    <link rel="stylesheet" href="assets/css/sea_list.css?ver21">
+    <link rel="stylesheet" href="assets/css/sea_list.css?ver22">
 </head>
 <body>
 <%@ include file="header.jsp" %>
@@ -34,6 +34,7 @@
                     <div class="develope">언어</div>
                     <div class="date">작성날짜</div>
                 </div>
+                
 
 				<c:choose>
 					<c:when test ="${empty loginUser }">
@@ -78,7 +79,7 @@
                 <a href="sea_writer.jsp" class="on">올리기</a>
             </div>
         </div>
-    </div>
+    
 
 
 

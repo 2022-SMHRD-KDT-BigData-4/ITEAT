@@ -21,8 +21,8 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/css/chatbot.css?ver124" rel="stylesheet">
-      <link rel="stylesheet" href="assets/css/sea_write.css?ver35">
+  <link href="assets/css/chatbot.css?ver126" rel="stylesheet">
+      <link rel="stylesheet" href="assets/css/sea_write.css?verkjjkj65652165">
 </head>
 <body>
 <%@ include file="header.jsp" %>
@@ -68,10 +68,15 @@
         </label>
         <input type="file" id="input-file" name="sc_file" accept="image/png, image/jpeg">
     </div>
-            <div class="bt_wrap">
-           <button type="submit" class="on">등록하기</button>
-           <button href="qna_view.html" class="on">뒤로가기</button>
+            <div>
+            	<button type="submit" class="on">등록하기</button>
             </div>
+           <div>
+          		<button href="qna_view.html" class="back">뒤로가기</button>
+           </div>
+           
+           
+           
             
             <div style="display: none;">
             	<textarea id="idcon" name="sc_con">

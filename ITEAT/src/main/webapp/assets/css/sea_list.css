@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 * {
+	font-family: 'HallymGothic-Regular';
     margin: 0;
     padding: 0;
 }
@@ -77,6 +78,7 @@ a {
 .board_list {
     width: 100%;
     border-top: 2px solid #3A4CA8;
+    
 }
 
 .board_list > div {
@@ -105,10 +107,6 @@ a {
 
 
 
-.board_list .title {
-    width: 35%;
-    text-align: center;
-}
 
 .board_list .top .title {
     text-align: center;
@@ -118,9 +116,6 @@ a {
     width: 10%;
 }
 
-.board_list .date {
-    width: 35% !important;
-}
 
 .board_list .delete {
     width: 5%;
@@ -129,10 +124,34 @@ a {
 }
 
 
+
+.board_list .seq {
+	position :relative;
+	display : block;
+	width: 10%;
+	float : left
+}
+
+.board_list .title {
+    width: 35%;
+    text-align: center;
+    position :relative;
+	display : block;
+	float : left
+}
 .board_list .develope {
 	
 	width: 15%;
+	position :relative;
+	display : block;
+	float : left
 	
+}
+.board_list .date {
+    width: 35% !important;
+    position :relative;
+	display : block;
+	float : left
 }
 .board_paging {
     margin-top: 50px;
@@ -170,4 +189,11 @@ a {
 .board_list_wrap .paging a.num.on {
     background: rgb(19,84,122);
     color: #fff;
+}
+
+@font-face {
+    font-family: 'HallymGothic-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2204@1.0/HallymGothic-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
 }

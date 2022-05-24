@@ -10,6 +10,10 @@
     font-style: normal;
 }
 
+* {
+	font-family: 'HallymGothic-Regular';
+	
+}
 
 .board_title {
     
@@ -482,7 +486,7 @@
     display: block;
     position: relative;
     top: 700px;
-	left: 617px;
+	left: 558px;
     }
     
    
@@ -496,7 +500,7 @@
     display: block;
     position: relative;
     top: 650px;
-    left: 465px;
+    left: 411px;
 ;
     }
    
@@ -508,3 +512,12 @@
 #calendar > table > thead > tr{
 	text-align: center;
 }
+
+
+@font-face {
+    font-family: 'HallymGothic-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2204@1.0/HallymGothic-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
