@@ -132,7 +132,7 @@ a {
 }
 
 .board_list .title {
-    width: 40%;
+    width: 30%;
     text-align: center;
 }
 
@@ -140,15 +140,19 @@ a {
     text-align: center;
 }
 
+.board_list .number {
+	width: 10%;
+}
+
 .board_list .writer {
     width: 10%;
 }
 .board_list .position {
-    width: 10%;
+    width: 14%;
 }
 
 .board_list .date {
-    width: 10%;
+    width: 16%;
 }
 
 .board_list .local {
