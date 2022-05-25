@@ -28,7 +28,7 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/mainStyle4.css?ver=5.0" rel="stylesheet">
+  <link href="assets/css/mainStyle4.css?ver=512123355.0" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Arsha - v4.3.0
@@ -301,34 +301,30 @@ IT EAT 회원들이 도와줄거에요!</p>
                             <div class="position">포지션</div>
                             <div class="date">작성날짜</div>
                             <div class="recruit">모집여부</div>
-                            <div class="hits">조회수</div>
-                        </div>
-                        <div>
-                            <div class="writer">민지</div>
-                            <div class="title"><a href="contest_view.html">공공데이터 팀원 모집!</a></div>
-                            <div class="local">목포</div>
-                            <div class="position">프론트</div>
-                            <div class="date">2022-05-21</div>
-                            <div class="recruit">모집중</div>
-                            <div class="hits">10</div>
                         </div>
                         <div>
                             <div class="writer">정민</div>
-                            <div class="title"><a href="contest_view.html">여행공모전 팀 모집!</a></div>
+                            <div class="title"><a href="content_view2.html">날씨빅데이터 공모전 팀원 모집합니다</a></div>
                             <div class="local">창원</div>
                             <div class="position">백엔드</div>
-                            <div class="date">2022-05-20</div>
+                            <div class="date"> 2022-05-24 08:20:25.0</div>
                             <div class="recruit">모집중</div>
-                            <div class="hits">14</div>
                         </div>
                         <div>
-                            <div class="writer">우현</div>
-                            <div class="title"><a href="contest_view.html">날씨데이터 팀원 구합니다</a></div>
-                            <div class="local">광주</div>
+                            <div class="writer">종현</div>
+                            <div class="title"><a href="content_view3.html">전라남도 공공데이터 공모전 팀원 구합니다</a></div>
+                            <div class="local">수원</div>
                             <div class="position">백엔드</div>
-                            <div class="date">2022-05-17</div>
+                            <div class="date">2022-05-23 10:32:43.0</div>
+                            <div class="recruit">모집중</div>
+                        </div>
+                        <div>
+                            <div class="writer">민지</div>
+                            <div class="title"><a href="content_view4.html">제주 공공데이터 공모전 팀원 구해요</a></div>
+                            <div class="local">목포</div>
+                            <div class="position">프론트</div>
+                            <div class="date"> 2022-05-25 20:34:45.0</div>
                             <div class="recruit">모집마감</div>
-                            <div class="hits">33</div>
                         </div>
                     </div>
                 </div>
@@ -351,34 +347,30 @@ IT EAT 회원들이 도와줄거에요!</p>
                                   <div class="position">개발언어</div>
                                   <div class="date">작성날짜</div>
                                   <div class="recruit">모집여부</div>
-                                  <div class="hits">조회수</div>
                               </div>
                               <div>
-                                  <div class="writer">종현</div>
-                                  <div class="title"><a href="contest_view.html">java 같이 공부하실분!</a></div>
-                                  <div class="local">수원</div>
+                                  <div class="writer">갓종현</div>
+                                  <div class="title"><a href="contest_view.html">개발언어 자바 파이썬 같이 공부하실분 모집~!!!!</a></div>
+                                  <div class="local">부산</div>
                                   <div class="position">JAVA</div>
-                                  <div class="date">2022-05-22</div>
+                                  <div class="date">2022-05-24 11:47:52.0</div>
                                   <div class="recruit">모집중</div>
-                                  <div class="hits">16</div>
                               </div>
                               <div>
-                                  <div class="writer">민지</div>
-                                  <div class="title"><a href="contest_view.html">python 스터디하실분~</a></div>
-                                  <div class="local">목포</div>
-                                  <div class="position">Python</div>
-                                  <div class="date">2022-05-20</div>
+                                  <div class="writer">adminji</div>
+                                  <div class="title"><a href="contest_view.html">JAVA 공부 서로 도우면서 같이할분 모집합니다</a></div>
+                                  <div class="local">경기</div>
+                                  <div class="position">JAVA</div>
+                                  <div class="date">2 2022-05-24 11:46:28.0 </div>
                                   <div class="recruit">모집중</div>
-                                  <div class="hits">25</div>
                               </div>
                               <div>
-                                  <div class="writer">정민</div>
-                                  <div class="title"><a href="contest_view.html">html부분 같이 공부하실분!</a></div>
-                                  <div class="local">창원</div>
-                                  <div class="position">HTML</div>
-                                  <div class="date">2022-05-15</div>
-                                  <div class="recruit">모집마감</div>
-                                  <div class="hits">40</div>
+                                  <div class="writer">시무무룩</div>
+                                  <div class="title"><a href="contest_view.html">자바 스터디할사람 모집합니다 ㅠㅠ!</a></div>
+                                  <div class="local">광주</div>
+                                  <div class="position">JAVA</div>
+                                  <div class="date">2022-05-24 09:41:37.0</div>
+                                  <div class="recruit">모집중</div>
                               </div>
                           </div>
                       </div>

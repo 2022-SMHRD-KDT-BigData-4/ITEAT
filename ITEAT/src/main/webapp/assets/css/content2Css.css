@@ -67,7 +67,7 @@ a {
 }
 
 .bt_wrap {
-    margin-top: 30px;
+    margin-top: -66px;
     text-align: center;
     font-size: 0;
 }
@@ -279,7 +279,7 @@ a {
 }
 
 .comment textarea {
-    width: 100%;
+    width: 90%;
     height: 100px;
     padding: 0 11px 1px 15px;
     border: 1px solid #ddd;
@@ -295,16 +295,15 @@ a {
 
 #ment {
 	position: relative;
-    left: 95%;
-    margin-top: 2%;
-    margin-bottom: 10%;
-    background: rgb(255,255,255);
-    border: 1px solid #777;
-    color:#777;
+    left: 10px;
+    top: -46px;
+    background: #3A4CA8;
+    border: 1px solid rgb(19,84,122);
+    color: white;
     border-radius: 4px;
-    width: 70px;
-    height : 20px;
-    font-size : 12px;;
+    width: 80px;
+    height: 100px;
+    font-size: 18px;
 }
 
 
@@ -515,11 +514,10 @@ span.text{
 span.date{
     position: relative;
     display: block;
-    left: 680px;
-   top : 50px;
+    left: 85%;
+    bottom: 73px;
     line-height: 220%;
     font-size: 1.4rem;
-    
 }
 
 p{
@@ -533,13 +531,13 @@ p{
 #delete{
     position: relative;
     display: block;
-    left: 780px;
-    top : 80px;
+    float: right;
+    bottom: 30px;
     width: 50px;
     text-align: center;
     background: rgb(255, 255, 255);
     border: 1px solid #777;
-    color: #777;
+    color: rgb(0, 0, 0);
     border-radius: 4px;
 }
 
@@ -568,8 +566,9 @@ p{
 
 #v_l {
 	position : relative;
-	left : 600px;
-	top : 50px;
+	left : 49px;
+	top : 100px;
+	margin-bottom: 64px;
 }
 
 @font-face {

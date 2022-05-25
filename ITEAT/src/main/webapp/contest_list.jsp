@@ -39,7 +39,7 @@
                 <div>
                 	<div class="number">4</div>
                     <div class="writer">정민</div>
-                    <div class="title"><a href="contest_view.jsp">날씨빅데이터 공모전 팀원 모집합니다</a></div>
+                    <div class="title"><a href="content_view2.jsp">날씨빅데이터 공모전 팀원 모집합니다</a></div>
                     <div class="local">창원</div>
                     <div class="position">백엔드</div>
                     <div class="date">2022-05-24 08:20:25.0</div>
@@ -48,7 +48,7 @@
                 <div>
                 	<div class="number">3</div>
                     <div class="writer">종현</div>
-                    <div class="title"><a href="contest_view.jsp">전라남도 공공데이터 공모전 팀원 구합니다</a></div>
+                    <div class="title"><a href="content_view3.jsp">전라남도 공공데이터 공모전 팀원 구합니다</a></div>
                     <div class="local">수원</div>
                     <div class="position">백엔드</div>
                     <div class="date">2022-05-23 10:32:43.0</div>
@@ -57,7 +57,7 @@
                 <div>
                 	<div class="number">2</div>
                     <div class="writer">민지</div>
-                    <div class="title"><a href="contest_view.jsp">제주 공공데이터 공모전 팀원 구해요</a></div>
+                    <div class="title"><a href="content_view4.jsp">제주 공공데이터 공모전 팀원 구해요</a></div>
                     <div class="local">목포</div>
                     <div class="position">프론트</div>
                     <div class="date">2022-05-25 20:34:45.0</div>
@@ -66,7 +66,7 @@
                 <div>
                 	<div class="number">1</div>
                     <div class="writer">우현</div>
-                    <div class="title"><a href="contest_view.jsp">데이터 활용 논문 공모전</a></div>
+                    <div class="title"><a href="content_view5.jsp">데이터 활용 논문 공모전</a></div>
                     <div class="local">광주</div>
                     <div class="position">프론트</div>
                     <div class="date">2022-05-22 23:30:15.0</div>

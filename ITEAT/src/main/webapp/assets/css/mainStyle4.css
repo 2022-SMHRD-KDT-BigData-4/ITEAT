@@ -28,7 +28,7 @@
 }
 
 a {
-  color: #47b2e4;
+  color: #444444;
   text-decoration: none;
 }
 
@@ -705,7 +705,7 @@ section {
 }
 
 .board_list .title {
-  width: 40%;
+  width: 35%;
   text-align: center;
 }
 
@@ -721,7 +721,7 @@ section {
 }
 
 .board_list .date {
-  width: 10%;
+  width: 25%;
 }
 
 .board_list .local {

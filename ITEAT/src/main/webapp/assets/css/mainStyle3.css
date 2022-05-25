@@ -29,7 +29,7 @@
 }
 
 a {
-  color: #47b2e4;
+  color: #444444; 
   text-decoration: none;
 }
 
@@ -269,4 +269,8 @@ h1, h2, h3, h4, h5, h6 {
 	font-family : 'Tium';
 }
 
+
+#contact > div:nth-child(1) > div > div > div:nth-child(2) > div.title > a {
+	color : rgb(0,0,0);
+}
 
