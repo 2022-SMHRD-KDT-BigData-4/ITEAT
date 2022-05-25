@@ -33,7 +33,11 @@ public class seaCode_writeCon extends HttpServlet {
 		SeaCodeDAO sc_dao = new SeaCodeDAO();
 		int cnt = sc_dao.insertSC(sc);
 		
+		
+		
 		System.out.println("cnt" + cnt);
+		System.out.println(sc_title);
+		System.out.println(sc_con);
 		
 		if(cnt>0) {
 			System.out.println("코드작성 성공");

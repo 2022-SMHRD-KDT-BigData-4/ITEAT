@@ -80,6 +80,7 @@
             
             <div style="display: none;">
             	<textarea id="idcon" name="sc_con">
+            	
             	</textarea>
             </div>
             
@@ -112,9 +113,8 @@
                 height: 500,
             });
             
-            $('#footerid > div.board_wrap > form > div:nth-child(2) > div > div > div.note-editing-area > div.note-editable.panel-body > p').prop('id','id_sc_con');
+            $('#seawrite > div.board_wrap > form > div:nth-child(2) > div > div > div.note-editing-area > div.note-editable.panel-body > p').prop('id','id_sc_con');
 			
-
 
         });
         
