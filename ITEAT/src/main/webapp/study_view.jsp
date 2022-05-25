@@ -12,7 +12,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="assets/css/studyCss.css?ver1541dd423">
+        <link rel="stylesheet" href="assets/css/studyCss.css?ver15431dd423">
 <title>Insert title here</title>
 </head>
 <body id="studybody">

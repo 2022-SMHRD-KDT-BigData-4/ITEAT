@@ -110,7 +110,7 @@ a {
 }
 
 .board_list .title {
-    width: 60%;
+    width: 40%;
     text-align: center;
 }
 
@@ -132,18 +132,22 @@ a {
 }
 
 .board_list .date {
-    width: 10%;
+    width: 16%;
 }
 
 
 .board_list .develope1 {
-    width: 28%;
-    text-align: right;
+    width: 15%;
+    text-align: center;
+}
+
+.number {
+	width: 9%;
 }
 
 .board_list .develope {
-    width: 26%;
-    text-align: right;
+    width: 15%;
+    text-align: center;
 }
 
 .board_paging {

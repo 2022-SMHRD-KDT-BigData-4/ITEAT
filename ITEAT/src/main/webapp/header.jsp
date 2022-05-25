@@ -71,7 +71,7 @@
               <li><a href="study_list.jsp">스터디</a></li>
             </ul>
           </li>
-          <li><a href="qna_list.jsp">묻고답하기</a></li>
+          <li><a href="qna_list2.jsp">묻고답하기</a></li>
           
           <c:choose>
           	<c:when test="${empty loginUser}">
