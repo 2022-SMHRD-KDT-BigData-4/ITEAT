@@ -142,7 +142,7 @@
 		</div>
 
 		<div id="joinDiv">
-			<input id="joinBtn" type="submit" value="가입하기">
+			<input id="joinBtn" type="submit" value="가입하기" style="background: #3A4CA8;">
 		</div>
 	</form>
 	<script>	

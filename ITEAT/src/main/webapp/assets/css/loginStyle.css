@@ -85,7 +85,7 @@ input[type=password]:focus, input[type=text]:focus{
   text-align: center;
   width: 50%;
   height: 48px;
-  background-color: #13547A;
+  background: #3A4CA8;
   color: white;
   font-size: 16px;
   font-weight: 600;
