@@ -11,7 +11,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/studyCss.css?ver=4655">
+    <link rel="stylesheet" href="assets/css/studyCss.css?ver=4d631dd55">
 <title>Insert title here</title>
 </head>
 <body id="studybody">
@@ -23,11 +23,7 @@
         <div class="board_title">
             스터디 모집
         </div>
-        <!-- 검색창부분 -->
-        <div class ="search">
-            <input type="text" placeholder="검색어를 입력해주세요">
-            <button>검색</button>
-        </div>
+     
  		<!-- 리스트영역 전체 -->
         <div class="board_list_wrap">
         
@@ -39,7 +35,7 @@
                     <div class="local">지역</div>
                     <div class="date">작성날짜</div>
                     <div class="recruit">모집여부</div>
-                    <div class="hits">조회수</div>
+
                 </div>
             	 <c:choose>
                 	  <c:when test="${empty loginUser}">
@@ -59,11 +55,12 @@
 								<div>
 								  <div class="num">${studyBoardList.size()-status.count+1}</div>
                   				  <div class="writer">${sbList.nick}</div>
-                			  	  <div class="title"><a href="study_view.jsp?num=${sbList.num}">${sbList.title}</a></div>
+                			  	  <div class="title" id="title1"><a href="study_view.jsp?num=${sbList.num}">${sbList.title}</a></div>
+                			  	  
               				      <div class="local">${sbList.region}</div>
                				      <div class="date">${sbList.regdate}</div>
                  				  <div class="recruit">${sbList.recruit}</div>
-               				      <div class="hits">${sbList.hit}</div>
+               				      
            					   </div>							
 							</c:forEach>
                 	  </c:otherwise>
