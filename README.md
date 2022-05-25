@@ -1,7 +1,7 @@
-# 서비스명(팀명: MATCH&FIX)
+# IT 입문자를 위한 맞춤 가이드 플랫폼(팀명: IT EAT)
 ![image](https://user-images.githubusercontent.com/99248886/166611412-9fc116d1-6efe-40ea-acc6-2ddd7b4f26e7.png)
 
-## 1. 프로젝트명
+## 1. IT 입문자를 위한 맞춤 가이드 플랫폼
 * 프로젝트주제
 * 서비스설명: 
 
