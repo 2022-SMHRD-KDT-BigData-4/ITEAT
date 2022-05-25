@@ -705,7 +705,7 @@ section {
 }
 
 .board_list .title {
-  width: 35%;
+  width: 40%;
   text-align: center;
 }
 
@@ -725,7 +725,7 @@ section {
 }
 
 .board_list .local {
-  width: 10%;
+  width: 5%;
 }
 .board_list .hits {
   width: 10%;
