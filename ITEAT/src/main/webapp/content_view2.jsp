@@ -68,9 +68,7 @@
                 <span class="writer">adminji</span> 
                 <span class="text">날씨빅데이터 공모전 관심있어서 참여하고싶습니다!</span>
                 <span class="date">2022-05-24 06:20:35.0</span>
-                <div id="delete">
-                    <a href="">삭제</a>
-                </div>  
+ 
             
             
         </div>

@@ -12,7 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IT EAT</title>
-    <link rel="stylesheet" href="assets/css/sea_list.css?vss">
+    <link rel="stylesheet" href="assets/css/sea_list.css?vsds">
 </head>
 <body id="sealist">
 <%@ include file="header.jsp" %>
@@ -68,10 +68,7 @@
                 
                 <a href="#" class="bt">이전</a>
                 <a href="#" class="num on">1</a>
-                <a href="#" class="num">2</a>
-                <a href="#" class="num">3</a>
-                <a href="#" class="num">4</a>
-                <a href="#" class="num">5</a>
+           
                 <a href="#" class="bt">다음</a>
 
             </div>

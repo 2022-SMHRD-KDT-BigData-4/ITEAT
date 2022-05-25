@@ -52,10 +52,6 @@
                 <span class="writer">adminji</span> 
                 <span class="text">자바는 이런식으로 해결해보시면됩니다!!</span>
                 <span class="date">2022-05-25 09:13:57.0</span>
-                <div id="delete">
-                    <a href="">삭제</a>
-                </div>  
-                
             </div>   
             
             <div class="bt">

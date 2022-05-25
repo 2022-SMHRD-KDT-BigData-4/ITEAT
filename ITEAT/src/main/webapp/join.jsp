@@ -142,7 +142,7 @@
 		</div>
 
 		<div id="joinDiv">
-			<input id="joinBtn" type="submit" value="가입하기" style="background: #3A4CA8;">
+			<input id="joinBtn" type="submit" value="가입하기" style="background:rgb(221,221,221);">
 		</div>
 	</form>
 	<script>	
@@ -306,7 +306,7 @@
 					let nick_tag = $('#nickCheck').text();
 					if(id_tag == '사용할 수 있는 아이디입니다.' && pw_tag == '' && pwck_tag == '비밀번호가 같습니다!' && nick_tag == '사용할 수 있는 닉네임입니다.'){
 						$('#joinBtn').prop("disabled",false);
-						$('#joinBtn').css({'background-color':'#13547A'})
+						$('#joinBtn').css({'background-color':'#3A4CA8'})
 					}else{
 						$('#joinBtn').prop("disabled",true);
 					}
