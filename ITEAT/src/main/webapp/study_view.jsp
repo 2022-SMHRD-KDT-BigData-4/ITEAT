@@ -12,7 +12,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="assets/css/studyCss.css?ver15423">
+        <link rel="stylesheet" href="assets/css/studyCss.css?ver1541dd423">
 <title>Insert title here</title>
 </head>
 <body id="studybody">
@@ -60,7 +60,7 @@
                 </div>
             </div>
             <div class="comment">                    
-                <p>의견남기기</p>
+                <p>댓글</p>
                  	   <c:choose>
                 	  <c:when test="${empty loginUser}">
                   	   <h1>로그인을 하세요.</h1>
@@ -68,9 +68,9 @@
                 	  <c:otherwise>
                 <form action="insertSBCommentCon?num=${studyBoard.num}" method="post">
                 <textarea name="content" rows="3" cols="30" placeholder="댓글쓰기"></textarea>
-                <button id="ment" type="submit" name="button">올리기</button>   
+                <button id="ment" type="submit" name="button">등록</button>   
                 </form>
-                <p>댓글</p>
+                
                		 <%
                 	    SBCommentDAO sbcdao = new SBCommentDAO();
                 		List<SBComment> SBCommentList = sbcdao.selectSBComm(num);

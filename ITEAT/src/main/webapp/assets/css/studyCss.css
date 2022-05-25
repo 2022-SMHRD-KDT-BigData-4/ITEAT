@@ -9,6 +9,8 @@
     padding: 0;
 }
 
+
+
 html {
     font-size: 10px;
 }
@@ -87,6 +89,7 @@ a {
 .bt_wrap a.on {
     background: rgb(19,84,122);
     color: #fff;
+    border-radius: 4px;
 }
 
 .board_list {
@@ -268,7 +271,7 @@ a {
 }
 
 .comment textarea {
-    width: 100%;
+    width: 90%;
     height: 100px;
     padding: 0 11px 1px 15px;
     border: 1px solid #ddd;
@@ -283,13 +286,17 @@ a {
 }
 
 #ment {
-    margin-left: 95%;
-    margin-top: 2%;
+    position: relative;
+    left: 10px;
+    top: -46px;
     margin-bottom: 10%;
     background: rgb(19,84,122);
     border: 1px solid rgb(19,84,122);
     color: #fff;
     width: 80px;
+    height: 100px;
+    font-size: 18px;
+    border-radius: 4px;
 }
 
 .comment_view {
@@ -565,7 +572,7 @@ span.text{
     left: 30%;
     
     line-height: 220%;
-    font-size: 1.4rem;
+    font-size: 15px;
 }
 
 span.date{
