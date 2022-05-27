@@ -2,24 +2,24 @@
 ![image](https://user-images.githubusercontent.com/97447115/170604198-1eb17e5a-b808-4a45-a901-173c9252ec4b.png)
 
 ## 1. IT 입문자를 위한 맞춤 가이드 플랫폼
-* 프로젝트주제
-* 서비스설명: 
+* IT 입문자를 위한 맞춤 가이드 플랫폼
+* 서비스설명: 코딩 교육을 받을 의향이 있다는 사람들이 늘어남에 따라 IT 개발 입문자들에게 방향성을 제시하고 자기개발에 도움을 주기 위한 서비스
 
 ## 2. 주요기능
-* 기능1
-* 기능2
-* 기능3
-* 기능4
-* 기능5
+* 길잡이
+* 팀원 모집
+* 묻고 답하기
+* 챗봇
+* 해저탐험
 
 ## 3. 개발환경
 |구분|내용|
 |------|---|
 |사용언어|Java, HTML, CSS, JavaScript|
-|사용한 라이브러리| Bootstrap / Kakao Map / etc...|
-|개발도구|Eclipse / RaspberryPi  /  Arduino  /  VisualStudioCode  /  AndroidStudio  / SpringFramework / etc...|
+|사용한 라이브러리| Bootstrap / chart.js |
+|개발도구|Eclipse / VisualStudioCode |
 |서버환경|tomcat 9.0|
-|데이터베이스|Firebase  /  oracle 11g / etc..|
+|데이터베이스| oracle 11g |
 
 ## 4. 아키텍처(구조)
 ![image](https://user-images.githubusercontent.com/97447115/170604592-8c47c492-4fb5-4dcd-b764-7e43b2eec112.png)
@@ -39,11 +39,15 @@
 ### 로그인/회원가입/전체회원괸리/회원정보수정/로그아웃
 ![제목을-입력해주세요_-001](https://user-images.githubusercontent.com/97447115/170605348-89bbe3c7-f787-43be-9d4c-87979de39738.png)
 
-### 옷 정보/코디 추천(날씨, 팁, 오늘의 코디, 참고할 수 있는 코디)
-![image](https://user-images.githubusercontent.com/99248886/166612875-aee9b25d-00ff-4c07-a21f-975ccd8e6a0f.png)
+### 길잡이 페이지 (로드맵, 요구사항)
+![002](https://user-images.githubusercontent.com/97447115/170609612-6a36189d-21e3-46c1-9de5-ffc156bb75a3.png)
 
-### 일정/고객센터
-![image](https://user-images.githubusercontent.com/99248886/166612374-a2f6d85b-501d-4a51-a0d1-8cde0c07ebf2.png)
+### 게시판 ( 공모전 모집, 스터디 모집, 묻고답하기 - 리스트페이지, 상세페이지 )
+![003](https://user-images.githubusercontent.com/97447115/170609684-4e21e35a-2298-4b31-8bf0-22a6474d1471.png)
+
+### 해저탐험 페이지 ( 메인페이지, 코드글 리스트 페이지)
+![004](https://user-images.githubusercontent.com/97447115/170609720-79e5e181-c4c3-4f28-8199-5b73ff40bb2c.png)
+
 
 ## 7 제작 일정
 ![달력](https://user-images.githubusercontent.com/97447115/170606687-057c215d-2ddb-42bc-8070-5158168131a4.png)
@@ -52,11 +56,9 @@
 ![image](https://user-images.githubusercontent.com/97447115/170608217-9a93f10d-3158-4eca-94a8-a0438ba13162.png)
 
 ## 9 트러블슈팅
-개념: 문제 해결을 위해 문제의 원인을 논리적이고 체계적으로 찾는 일이며 제품이나 프로세스의 운영을 재개
-프로젝트 진행하는 동안 발생했던 이슈 중 가장 기억에 남았던 문제와 해결 프로세스 나열(2가지 정도)
-* 문제1<br>
- 문제점 설명 및 해결방안
+* 깃허브 충돌<br>
+ 깃허브의 로컬 저장소의 개념을 몰라 푸쉬할 때 커밋이 꼬여 파일을 날려버렸다. 그래도 그 개념을 기억하고 있었기에 한 시간만에 복구할 수 있었다.
  
-* 문제2<br>
- 문제점 설명 및 해결방안
+* CSS 충돌<br>
+ 각 CSS 마다 중복되는 선택자가 있어서 CSS 간의 충돌이 일어났다. 개발자도구로 하나하나씩 찾아 더 자세한 선택자로 바꾸어 해결할 수 있었다.
 
