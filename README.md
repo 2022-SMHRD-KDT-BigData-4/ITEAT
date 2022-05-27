@@ -1,5 +1,5 @@
 # IT 입문자를 위한 맞춤 가이드 플랫폼(팀명: IT EAT)
-![image](https://user-images.githubusercontent.com/99248886/166611412-9fc116d1-6efe-40ea-acc6-2ddd7b4f26e7.png)
+![image](https://user-images.githubusercontent.com/97447115/170604198-1eb17e5a-b808-4a45-a901-173c9252ec4b.png)
 
 ## 1. IT 입문자를 위한 맞춤 가이드 플랫폼
 * 프로젝트주제
@@ -22,22 +22,22 @@
 |데이터베이스|Firebase  /  oracle 11g / etc..|
 
 ## 4. 아키텍처(구조)
-![서비스 아키텍처](https://user-images.githubusercontent.com/25995055/169925538-15867bd9-aa0b-42fc-a39b-88981e926e51.png)
+![image](https://user-images.githubusercontent.com/97447115/170604592-8c47c492-4fb5-4dcd-b764-7e43b2eec112.png)
 
 
 ## 5. 기능 흐름도
 ### 서비스 흐름도(유스케이스)
 #### SW 유스케이스
-![image](https://user-images.githubusercontent.com/99248886/166611717-6a761c62-393f-444b-9945-34d5533b50dc.png)
+![image](https://user-images.githubusercontent.com/97447115/170604455-ec79dfca-ac17-4925-9083-b5398c72752d.png)
 #### 서비스 흐름도(웹 화면설계서)
-![image](https://user-images.githubusercontent.com/99248886/166611795-b01ddc4f-8236-4955-ae77-be4b576025d7.png)
+![image](https://user-images.githubusercontent.com/97447115/170604466-c97e2895-6f8c-4426-bf93-534e2096b4e9.png)
 #### ER 다이어그램
-![image](https://user-images.githubusercontent.com/25995055/169925318-102784c2-893f-4fd7-bec9-a54c44b669d4.png)
+![image](https://user-images.githubusercontent.com/97447115/170604499-295833db-4ed3-47c3-8a9e-1c2d7ef520e4.png)
 
 ## 6 SW 동작 화면
 
-### 로그인/회원가입/회원괸리/회원수정/회원탈퇴
-![image](https://user-images.githubusercontent.com/99248886/166612486-a17733a6-a3bb-4fd5-873f-57020ab80a16.png)
+### 로그인/회원가입/전체회원괸리/회원정보수정/로그아웃
+![제목을-입력해주세요_-001](https://user-images.githubusercontent.com/97447115/170605348-89bbe3c7-f787-43be-9d4c-87979de39738.png)
 
 ### 옷 정보/코디 추천(날씨, 팁, 오늘의 코디, 참고할 수 있는 코디)
 ![image](https://user-images.githubusercontent.com/99248886/166612875-aee9b25d-00ff-4c07-a21f-975ccd8e6a0f.png)
@@ -46,10 +46,10 @@
 ![image](https://user-images.githubusercontent.com/99248886/166612374-a2f6d85b-501d-4a51-a0d1-8cde0c07ebf2.png)
 
 ## 7 제작 일정
-![image](https://user-images.githubusercontent.com/99248886/166612988-dc4d1968-a694-456c-b7fe-b65feef835bb.png)
+![달력](https://user-images.githubusercontent.com/97447115/170606687-057c215d-2ddb-42bc-8070-5158168131a4.png)
 
 ## 8 팀원 단위 업무 분장 및 결과표
-![image](https://user-images.githubusercontent.com/99248886/166613023-0cd70ef4-9f0d-4f6c-b8b1-7395e67684a1.png)
+![image](https://user-images.githubusercontent.com/97447115/170608217-9a93f10d-3158-4eca-94a8-a0438ba13162.png)
 
 ## 9 트러블슈팅
 개념: 문제 해결을 위해 문제의 원인을 논리적이고 체계적으로 찾는 일이며 제품이나 프로세스의 운영을 재개
